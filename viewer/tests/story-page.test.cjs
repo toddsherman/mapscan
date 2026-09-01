@@ -17,6 +17,10 @@ const processLoopAnimation = fs.readFileSync(
   path.join(viewerRoot, "components", "process-loop-animation.tsx"),
   "utf8",
 );
+const desktopMapGate = fs.readFileSync(
+  path.join(viewerRoot, "components", "desktop-map-gate.tsx"),
+  "utf8",
+);
 const styles = fs.readFileSync(
   path.join(viewerRoot, "app", "globals.css"),
   "utf8",
@@ -37,8 +41,25 @@ const sourceMaps = [
 test("publishes the project story at the MapScan root and the viewer at /map", () => {
   assert.match(storyPage, /Turning flat map images into data I could actually combine/);
   assert.match(storyPage, /href="\/map"/);
-  assert.match(mapPage, /<MapScanShell datasets=\{datasets\} \/>/);
+  assert.match(mapPage, /<DesktopMapGate datasets=\{datasets\} \/>/);
+  assert.match(desktopMapGate, /<MapScanShell datasets=\{datasets\} \/>/);
   assert.doesNotMatch(storyPage, /<MapScanShell/);
+});
+
+test("keeps MapScan desktop-only without an emoji arrow on mobile", () => {
+  assert.match(storyPage, /The map is build for desktop/);
+  assert.match(storyPage, /className="story-map-link-arrow"/);
+  assert.doesNotMatch(storyPage, /↗/);
+  assert.match(mapPage, /<DesktopMapGate datasets=\{datasets\} \/>/);
+  assert.match(desktopMapGate, /window\.matchMedia\(desktopQuery\)/);
+  assert.match(desktopMapGate, /The map is build for desktop/);
+  assert.match(styles, /@media \(max-width: 767px\)[\s\S]*\.story-map-link-desktop \{ display: none; \}/);
+  assert.match(styles, /\.story-map-link-mobile \{ display: flex;/);
+});
+
+test("labels the upcoming examples clearly", () => {
+  assert.match(storyPage, /Examples coming soon/);
+  assert.doesNotMatch(storyPage, /Examples in progress/);
 });
 
 test("shows all nine source maps with lightweight editorial previews", () => {

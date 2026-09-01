@@ -9,7 +9,7 @@ import populationDataset from "@/public/data/datasets/population-density/dataset
 import fireDataset from "@/public/data/datasets/fire-hazard-responsibility/dataset.json";
 import severeWeatherDataset from "@/public/data/datasets/severe-weather-impacts/dataset.json";
 import geologicDataset from "@/public/data/datasets/geologic-units-highres/dataset.json";
-import { MapScanShell } from "@/components/mapscan-shell";
+import { DesktopMapGate } from "@/components/desktop-map-gate";
 import type { ViewerDataset } from "@/lib/types";
 
 const datasets = [
@@ -71,5 +71,5 @@ const datasets = [
 ] as unknown as ViewerDataset[];
 
 export default function MapPage() {
-  return <MapScanShell datasets={datasets} />;
+  return <DesktopMapGate datasets={datasets} />;
 }

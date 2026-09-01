@@ -121,6 +121,41 @@ const processSteps = [
   },
 ];
 
+function ArrowIcon() {
+  return (
+    <svg
+      className="story-map-link-arrow"
+      aria-hidden="true"
+      focusable="false"
+      viewBox="0 0 16 16"
+    >
+      <path d="M3.5 12.5 12.5 3.5M6 3.5h6.5V10" />
+    </svg>
+  );
+}
+
+function InteractiveMapLink({
+  children,
+  dark = false,
+}: {
+  children: React.ReactNode;
+  dark?: boolean;
+}) {
+  const className = `story-map-link${dark ? " story-map-link-dark" : ""}`;
+
+  return (
+    <>
+      <Link className={`${className} story-map-link-desktop`} href="/map">
+        <span>{children}</span>
+        <ArrowIcon />
+      </Link>
+      <p className={`${className} story-map-link-mobile`}>
+        The map is build for desktop
+      </p>
+    </>
+  );
+}
+
 function PaperGrain() {
   return (
     <svg
@@ -169,10 +204,7 @@ export default function MapScanStoryPage() {
               viewed together. The maps existed. Their data was trapped inside
               pixels.
             </p>
-            <Link className="story-map-link" href="/map">
-              <span>Open the interactive map</span>
-              <b aria-hidden="true">↗</b>
-            </Link>
+            <InteractiveMapLink>Open the interactive map</InteractiveMapLink>
           </div>
         </section>
 
@@ -294,10 +326,7 @@ export default function MapScanStoryPage() {
                 and opacity, reorder the dataset stack, then copy a link to the
                 exact composition.
               </p>
-              <Link className="story-map-link story-map-link-dark" href="/map">
-                <span>Launch MapScan</span>
-                <b aria-hidden="true">↗</b>
-              </Link>
+              <InteractiveMapLink dark>Launch MapScan</InteractiveMapLink>
             </div>
           </div>
         </section>
@@ -315,7 +344,7 @@ export default function MapScanStoryPage() {
             </p>
           </div>
           <div className="story-insight-placeholder">
-            <span>Examples in progress</span>
+            <span>Examples coming soon</span>
             <p>Layer combinations, observations, and saved map views coming next.</p>
           </div>
         </section>
