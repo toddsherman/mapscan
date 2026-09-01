@@ -46,15 +46,16 @@ test("publishes the project story at the MapScan root and the viewer at /map", (
   assert.doesNotMatch(storyPage, /<MapScanShell/);
 });
 
-test("keeps MapScan desktop-only without an emoji arrow on mobile", () => {
-  assert.match(storyPage, /The map is build for desktop/);
+test("hides MapScan story links entirely on mobile without an emoji arrow", () => {
+  assert.doesNotMatch(storyPage, /The map is build for desktop/);
+  assert.doesNotMatch(storyPage, /story-map-link-mobile/);
   assert.match(storyPage, /className="story-map-link-arrow"/);
   assert.doesNotMatch(storyPage, /↗/);
   assert.match(mapPage, /<DesktopMapGate datasets=\{datasets\} \/>/);
   assert.match(desktopMapGate, /window\.matchMedia\(desktopQuery\)/);
   assert.match(desktopMapGate, /The map is build for desktop/);
   assert.match(styles, /@media \(max-width: 767px\)[\s\S]*\.story-map-link-desktop \{ display: none; \}/);
-  assert.match(styles, /\.story-map-link-mobile \{ display: flex;/);
+  assert.doesNotMatch(styles, /\.story-map-link-mobile/);
 });
 
 test("labels the upcoming examples clearly", () => {

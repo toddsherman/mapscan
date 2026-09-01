@@ -144,15 +144,10 @@ function InteractiveMapLink({
   const className = `story-map-link${dark ? " story-map-link-dark" : ""}`;
 
   return (
-    <>
-      <Link className={`${className} story-map-link-desktop`} href="/map">
-        <span>{children}</span>
-        <ArrowIcon />
-      </Link>
-      <p className={`${className} story-map-link-mobile`}>
-        The map is build for desktop
-      </p>
-    </>
+    <Link className={`${className} story-map-link-desktop`} href="/map">
+      <span>{children}</span>
+      <ArrowIcon />
+    </Link>
   );
 }
 
