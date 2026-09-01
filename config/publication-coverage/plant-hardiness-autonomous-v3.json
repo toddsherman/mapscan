@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "plant-hardiness-zone",
+      "accepted_raster_sha256": "14a19e982a90f4821c703fa3b151bc74783168a50ddbdc1103a1154ed07b130b",
+      "publication_raster": "../../viewer/public/data/staging/plant-hardiness-autonomous-v3/publication-class-id.png",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state"
+    }
+  ]
+}

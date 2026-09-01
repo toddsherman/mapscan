@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "rivers-v4-alignment",
+      "kind": "feature",
+      "run": "runs/rivers-county-refined-feature-v1",
+      "maximum_iterations": 4
+    }
+  ],
+  "pending_semantic_extraction": [
+    {
+      "source": "examples/rivers.jpg",
+      "status": "observed_blue_ink_retained_but_labels_and_geometry_share_ink"
+    }
+  ]
+}

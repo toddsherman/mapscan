@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_automatic_categorical_staging_preview_provenance",
+  "producer": "mapscan.automatic_extraction_preview_export",
+  "status": "needs_visual_review",
+  "publication_approved": false,
+  "approval": {
+    "status": "not_approved"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "accepted_extraction": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/global-ranking-repair-v1/plantzone/extraction-run-02/accepted-extraction.json",
+    "sha256": "9abfbdfca9b893716cde88c0db9a7b959b63a2a845aa830135c75ddeeadc78a7",
+    "schema_version": "mapscan.automatic-categorical-extraction.v1",
+    "automatic_iteration_count": 4,
+    "accepted_iteration": "extraction-04",
+    "accepted_iteration_local_count": 4,
+    "iteration_report_sha256": "f4d6b68c49afc64f354575c3ecfe58caa27be7599fbd2aca2cf7b9d7a8a91381"
+  },
+  "accepted_alignment": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/global-ranking-repair-v1/plantzone/automatic-alignment/accepted-alignment.json",
+    "sha256": "cdfde6f6dad774cd8849ca57463c3689a367e14e144efb7acae085997acd7cac",
+    "automatic_iteration_count": 40
+  },
+  "source": {
+    "path": "/Users/toddsherman/Projects/MapMap/examples/plantzone.avif",
+    "sha256": "b55e65457d9ea02e1bf879b536b4342c67a9b65b9257a4841c5e9704b61b4d00",
+    "copied_path": "source.avif",
+    "copied_sha256": "b55e65457d9ea02e1bf879b536b4342c67a9b65b9257a4841c5e9704b61b4d00"
+  },
+  "accepted_working_source": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/global-ranking-repair-v1/plantzone/source-clean/working-raster.png",
+    "sha256": "176c74271d8c4e265907226eaf0c1f72283c9f405f0bb64d1e8c0c3b09dd1420"
+  },
+  "legend": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/global-ranking-repair-v1/plantzone/extraction-run-02/legend/legend.json",
+    "sha256": "88e46e7253ec853419c5430db3e5836ae672c8b88e88718db4d393c65a59e7f5"
+  },
+  "accepted_class_raster": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/global-ranking-repair-v1/plantzone/extraction-run-02/extraction-04/web-mercator-class-id.png",
+    "sha256": "14a19e982a90f4821c703fa3b151bc74783168a50ddbdc1103a1154ed07b130b",
+    "width": 3398,
+    "height": 3920
+  },
+  "class_raster": {
+    "path": "publication-class-id.png",
+    "sha256": "14a19e982a90f4821c703fa3b151bc74783168a50ddbdc1103a1154ed07b130b",
+    "width": 3398,
+    "height": 3920,
+    "derivation": "accepted_class_raster_clipped_to_pinned_mapbox_state_interior"
+  },
+  "publication_clip": {
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "accepted_colored_pixel_count_outside_state": 0,
+    "publication_colored_pixel_count_outside_state": 0,
+    "mutated_accepted_extraction": false
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 9,
+    "screen_pixel_span_at_maximum_zoom": [
+      3768.6083583999994,
+      4347.970602140895
+    ]
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 3398,
+    "height": 3920
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "processing_reference": {
+    "path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2/manifest.json",
+    "sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "raw_hashes": {
+      "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+      "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+      "tile_aggregate_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba"
+    },
+    "state_coast_overlay": {
+      "path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2/california-state-coast-overlay.png",
+      "sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+      "width": 3398,
+      "height": 3920
+    }
+  },
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 7825798,
+    "partial_source_extent": false,
+    "missing_source_extent_pixel_count": 0,
+    "missing_source_extent_mask_sha256": null,
+    "policy": "preserve_as_transparent_nodata_never_infer"
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "state_interior_pixel_count": 5604934,
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "layers": [
+      {
+        "layer_id": "plant-hardiness-zone",
+        "accepted_raster_sha256": "14a19e982a90f4821c703fa3b151bc74783168a50ddbdc1103a1154ed07b130b",
+        "publication_raster_sha256": "14a19e982a90f4821c703fa3b151bc74783168a50ddbdc1103a1154ed07b130b",
+        "semantic_kind": "full_state_land_categorical",
+        "coverage_contract": "full_state",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 110572,
+        "classified_pixel_count_inside_state": 5494362
+      }
+    ]
+  }
+}

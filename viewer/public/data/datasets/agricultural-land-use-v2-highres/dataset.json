@@ -1,0 +1,604 @@
+{
+  "schema_version": 1,
+  "status": "approved_publication",
+  "id": "california-agricultural-land-use",
+  "title": "California Agricultural Land Use",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 11,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "exact_binary_zoom": 11
+  },
+  "source_image": "source.png",
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "author_statement": "Proceed",
+    "activated_at": "2026-08-31T21:13:44.898810+00:00"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "267a83da36dc75f44bd6daa1f87ce5fffa26bb9cde68c3fa3524947df4d2e115",
+    "raster_width": 10192,
+    "raster_height": 11758,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "provenance.json",
+    "sha256": "b66bdb3d4d10f46fd244d8b295440ba8abdb5049c973881da463e31aec5dd42d"
+  },
+  "layers": [
+    {
+      "id": "classes",
+      "label": "California Agricultural Land Use \u2014 Autonomous High-Resolution Candidate",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "wheat",
+          "class_id": 1,
+          "label": "Wheat",
+          "display_rgb": [
+            254,
+            255,
+            115
+          ],
+          "pixel_count": 124132
+        },
+        {
+          "id": "miscellaneous-grain-and-hay",
+          "class_id": 2,
+          "label": "Miscellaneous Grain and Hay",
+          "display_rgb": [
+            231,
+            230,
+            0
+          ],
+          "pixel_count": 98278
+        },
+        {
+          "id": "rice",
+          "class_id": 3,
+          "label": "Rice",
+          "display_rgb": [
+            101,
+            205,
+            170
+          ],
+          "pixel_count": 274034
+        },
+        {
+          "id": "wild-rice",
+          "class_id": 4,
+          "label": "Wild Rice",
+          "display_rgb": [
+            69,
+            137,
+            112
+          ],
+          "pixel_count": 7094
+        },
+        {
+          "id": "mixed-pasture",
+          "class_id": 5,
+          "label": "Mixed Pasture",
+          "display_rgb": [
+            233,
+            191,
+            255
+          ],
+          "pixel_count": 182594
+        },
+        {
+          "id": "miscellaneous-grasses",
+          "class_id": 6,
+          "label": "Miscellaneous Grasses",
+          "display_rgb": [
+            144,
+            70,
+            185
+          ],
+          "pixel_count": 16112
+        },
+        {
+          "id": "alfalfa-and-alfalfa-mixtures",
+          "class_id": 7,
+          "label": "Alfalfa and Alfalfa Mixtures",
+          "display_rgb": [
+            77,
+            0,
+            116
+          ],
+          "pixel_count": 186270
+        },
+        {
+          "id": "young-perennials",
+          "class_id": 8,
+          "label": "Young Perennials",
+          "display_rgb": [
+            230,
+            0,
+            170
+          ],
+          "pixel_count": 73685
+        },
+        {
+          "id": "cotton",
+          "class_id": 9,
+          "label": "Cotton",
+          "display_rgb": [
+            191,
+            209,
+            255
+          ],
+          "pixel_count": 179187
+        },
+        {
+          "id": "beans-dry",
+          "class_id": 10,
+          "label": "Beans (Dry)",
+          "display_rgb": [
+            143,
+            169,
+            226
+          ],
+          "pixel_count": 20328
+        },
+        {
+          "id": "sunflowers",
+          "class_id": 11,
+          "label": "Sunflowers",
+          "display_rgb": [
+            98,
+            131,
+            198
+          ],
+          "pixel_count": 19801
+        },
+        {
+          "id": "miscellaneous-field-crops",
+          "class_id": 12,
+          "label": "Miscellaneous Field Crops",
+          "display_rgb": [
+            66,
+            100,
+            171
+          ],
+          "pixel_count": 789
+        },
+        {
+          "id": "safflower",
+          "class_id": 13,
+          "label": "Safflower",
+          "display_rgb": [
+            37,
+            71,
+            143
+          ],
+          "pixel_count": 24680
+        },
+        {
+          "id": "corn-sorghum-and-sudan",
+          "class_id": 14,
+          "label": "Corn, Sorghum and Sudan",
+          "display_rgb": [
+            14,
+            47,
+            116
+          ],
+          "pixel_count": 229468
+        },
+        {
+          "id": "tomatoes",
+          "class_id": 15,
+          "label": "Tomatoes",
+          "display_rgb": [
+            234,
+            254,
+            191
+          ],
+          "pixel_count": 135590
+        },
+        {
+          "id": "cole-crops",
+          "class_id": 16,
+          "label": "Cole Crops",
+          "display_rgb": [
+            220,
+            242,
+            177
+          ],
+          "pixel_count": 56875
+        },
+        {
+          "id": "lettuce-leafy-greens",
+          "class_id": 17,
+          "label": "Lettuce/Leafy Greens",
+          "display_rgb": [
+            206,
+            233,
+            166
+          ],
+          "pixel_count": 32126
+        },
+        {
+          "id": "carrots",
+          "class_id": 18,
+          "label": "Carrots",
+          "display_rgb": [
+            192,
+            222,
+            152
+          ],
+          "pixel_count": 24015
+        },
+        {
+          "id": "potatoes-and-sweet-potatoes",
+          "class_id": 19,
+          "label": "Potatoes and Sweet Potatoes",
+          "display_rgb": [
+            180,
+            212,
+            139
+          ],
+          "pixel_count": 12847
+        },
+        {
+          "id": "melons-squash-and-cucumbers",
+          "class_id": 20,
+          "label": "Melons, Squash and Cucumbers",
+          "display_rgb": [
+            168,
+            201,
+            130
+          ],
+          "pixel_count": 27832
+        },
+        {
+          "id": "flowers-nursery-and-christmas-tree-farms",
+          "class_id": 21,
+          "label": "Flowers, Nursery and Christmas Tree Farms",
+          "display_rgb": [
+            153,
+            189,
+            117
+          ],
+          "pixel_count": 13191
+        },
+        {
+          "id": "bush-berries",
+          "class_id": 22,
+          "label": "Bush Berries",
+          "display_rgb": [
+            139,
+            179,
+            108
+          ],
+          "pixel_count": 4151
+        },
+        {
+          "id": "onions-and-garlic",
+          "class_id": 23,
+          "label": "Onions and Garlic",
+          "display_rgb": [
+            128,
+            168,
+            97
+          ],
+          "pixel_count": 23545
+        },
+        {
+          "id": "strawberries",
+          "class_id": 24,
+          "label": "Strawberries",
+          "display_rgb": [
+            117,
+            159,
+            87
+          ],
+          "pixel_count": 8103
+        },
+        {
+          "id": "peppers",
+          "class_id": 25,
+          "label": "Peppers",
+          "display_rgb": [
+            105,
+            148,
+            77
+          ],
+          "pixel_count": 3339
+        },
+        {
+          "id": "miscellaneous-truck-crops",
+          "class_id": 26,
+          "label": "Miscellaneous Truck Crops",
+          "display_rgb": [
+            93,
+            138,
+            69
+          ],
+          "pixel_count": 52216
+        },
+        {
+          "id": "citrus",
+          "class_id": 27,
+          "label": "Citrus",
+          "display_rgb": [
+            255,
+            201,
+            101
+          ],
+          "pixel_count": 95079
+        },
+        {
+          "id": "dates",
+          "class_id": 28,
+          "label": "Dates",
+          "display_rgb": [
+            248,
+            180,
+            79
+          ],
+          "pixel_count": 667
+        },
+        {
+          "id": "olives",
+          "class_id": 29,
+          "label": "Olives",
+          "display_rgb": [
+            240,
+            161,
+            58
+          ],
+          "pixel_count": 13876
+        },
+        {
+          "id": "kiwis",
+          "class_id": 30,
+          "label": "Kiwis",
+          "display_rgb": [
+            232,
+            140,
+            37
+          ],
+          "pixel_count": 1188
+        },
+        {
+          "id": "miscellaneous-subtropical-fruits",
+          "class_id": 31,
+          "label": "Miscellaneous Subtropical Fruits",
+          "display_rgb": [
+            224,
+            121,
+            18
+          ],
+          "pixel_count": 5151
+        },
+        {
+          "id": "avocados",
+          "class_id": 32,
+          "label": "Avocados",
+          "display_rgb": [
+            219,
+            102,
+            0
+          ],
+          "pixel_count": 1237
+        },
+        {
+          "id": "almonds",
+          "class_id": 33,
+          "label": "Almonds",
+          "display_rgb": [
+            255,
+            237,
+            191
+          ],
+          "pixel_count": 549105
+        },
+        {
+          "id": "apples",
+          "class_id": 34,
+          "label": "Apples",
+          "display_rgb": [
+            248,
+            216,
+            167
+          ],
+          "pixel_count": 135401
+        },
+        {
+          "id": "plums-prunes-and-apricots",
+          "class_id": 35,
+          "label": "Plums, Prunes and Apricots",
+          "display_rgb": [
+            242,
+            196,
+            144
+          ],
+          "pixel_count": 61068
+        },
+        {
+          "id": "cherries",
+          "class_id": 36,
+          "label": "Cherries",
+          "display_rgb": [
+            235,
+            172,
+            118
+          ],
+          "pixel_count": 19766
+        },
+        {
+          "id": "pistachios",
+          "class_id": 37,
+          "label": "Pistachios",
+          "display_rgb": [
+            230,
+            147,
+            95
+          ],
+          "pixel_count": 164359
+        },
+        {
+          "id": "pears",
+          "class_id": 38,
+          "label": "Pears",
+          "display_rgb": [
+            222,
+            119,
+            76
+          ],
+          "pixel_count": 4400
+        },
+        {
+          "id": "peaches-nectarines",
+          "class_id": 39,
+          "label": "Peaches/Nectarines",
+          "display_rgb": [
+            218,
+            92,
+            54
+          ],
+          "pixel_count": 28803
+        },
+        {
+          "id": "pomegranates",
+          "class_id": 40,
+          "label": "Pomegranates",
+          "display_rgb": [
+            210,
+            62,
+            36
+          ],
+          "pixel_count": 8712
+        },
+        {
+          "id": "miscellaneous-deciduous",
+          "class_id": 41,
+          "label": "Miscellaneous Deciduous",
+          "display_rgb": [
+            204,
+            31,
+            17
+          ],
+          "pixel_count": 7969
+        },
+        {
+          "id": "walnuts",
+          "class_id": 42,
+          "label": "Walnuts",
+          "display_rgb": [
+            199,
+            0,
+            0
+          ],
+          "pixel_count": 143790
+        },
+        {
+          "id": "grapes",
+          "class_id": 43,
+          "label": "Grapes",
+          "display_rgb": [
+            137,
+            67,
+            101
+          ],
+          "pixel_count": 349851
+        },
+        {
+          "id": "greenhouse",
+          "class_id": 44,
+          "label": "Greenhouse",
+          "display_rgb": [
+            85,
+            255,
+            0
+          ],
+          "pixel_count": 147
+        },
+        {
+          "id": "idle",
+          "class_id": 45,
+          "label": "Idle",
+          "display_rgb": [
+            205,
+            170,
+            102
+          ],
+          "pixel_count": 316216
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          45
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/classes/class-id/{z}/{x}/{y}.png?v=7ba65162d657101f",
+        "tilejson": "tiles/classes/class-id/tilejson.json",
+        "tile_file_count": 5625,
+        "tile_image_byte_count": 5221655,
+        "mean_tile_image_byte_count": 928.2942222222222,
+        "tile_set_sha256": "7ba65162d657101fb6cb6779568fb01af7f35150858efac4c9a2895da528f5ca",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ],
+  "publication_approved": true,
+  "asset_base": "/mapscan/data/staging/farms-v2-autonomous-v1/",
+  "shared_assets": {
+    "immutable_asset_count": 5628,
+    "immutable_assets_sha256": "ce5cea045034397e51162f73548debc59dafc26b2326b1e1c2c29e98089b422a"
+  }
+}

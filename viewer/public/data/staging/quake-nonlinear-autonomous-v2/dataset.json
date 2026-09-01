@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "status": "needs_visual_review",
+  "id": "earthquake-shaking-potential-california-2025-final-hybrid-v1",
+  "title": "Earthquake Shaking Potential for California",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.jpg",
+  "approval": {
+    "status": "not_approved"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "autonomous-preview-provenance.json",
+    "sha256": "c70aa05b682afb48e13b6b59e56f9e214a8a034c65011f0cc293e19d0ea218aa"
+  },
+  "layers": [
+    {
+      "id": "modified-mercalli-intensity",
+      "label": "Modified Mercalli Intensity",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "vi-strong-shaking",
+          "class_id": 1,
+          "label": "VI Strong Shaking",
+          "display_rgb": [
+            254,
+            230,
+            163
+          ],
+          "pixel_count": 347736
+        },
+        {
+          "id": "vii-very-strong-shaking",
+          "class_id": 2,
+          "label": "VII Very Strong Shaking",
+          "display_rgb": [
+            251,
+            187,
+            100
+          ],
+          "pixel_count": 1082118
+        },
+        {
+          "id": "viii-severe-shaking",
+          "class_id": 3,
+          "label": "VIII Severe Shaking",
+          "display_rgb": [
+            246,
+            132,
+            63
+          ],
+          "pixel_count": 1407535
+        },
+        {
+          "id": "ix-violent-shaking",
+          "class_id": 4,
+          "label": "IX Violent Shaking",
+          "display_rgb": [
+            234,
+            81,
+            46
+          ],
+          "pixel_count": 1433432
+        },
+        {
+          "id": "x-extreme-shaking",
+          "class_id": 5,
+          "label": "X Extreme Shaking",
+          "display_rgb": [
+            195,
+            40,
+            39
+          ],
+          "pixel_count": 991864
+        },
+        {
+          "id": "xi-devastating-shaking",
+          "class_id": 6,
+          "label": "XI Devastating Shaking",
+          "display_rgb": [
+            154,
+            27,
+            41
+          ],
+          "pixel_count": 231677
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          6
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/modified-mercalli-intensity/class-id/{z}/{x}/{y}.png?v=349e1e5942f231ea",
+        "tilejson": "tiles/modified-mercalli-intensity/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 1022787,
+        "mean_tile_image_byte_count": 2556.9675,
+        "tile_set_sha256": "349e1e5942f231ea4c81eabe6889aa976a0a17f5fc1d2813db6e6e6c90468020",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "mapscan.no-human-restart.v1",
+  "mapbox_reference": {
+    "id": "mapbox-light-v11-california-z9-v2",
+    "provider": "mapbox",
+    "root": "reference/mapbox-light-v11-california-z9-v2",
+    "manifest_sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "style": "mapbox/light-v11",
+    "tileset": "mapbox.mapbox-streets-v8",
+    "zoom": 9,
+    "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+    "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+    "tiles_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba",
+    "state_sha256": "0fba909194bd974af8805a079d507ae73648333cf7396d4f75de7d82924e4f18",
+    "state_coast_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "county_sha256": "72170b6d72047216eed0a848d7a4bf29cf207044753a6c1df3e7f5a0189f9f7a",
+    "water_sha256": "0087c420c9100baa994c6b1631043171e2adff8730abcd7cdd006984163ce0ac"
+  },
+  "maps": [
+    {
+      "id": "forest",
+      "title": "California forest cover",
+      "source": "/Users/toddsherman/Projects/MapMap/examples/forest.jpg",
+      "source_type": "categorical_sparse"
+    },
+    {
+      "id": "plantzone",
+      "title": "California plant zones",
+      "source": "/Users/toddsherman/Projects/MapMap/examples/plantzone.avif",
+      "source_type": "categorical_full_state"
+    }
+  ]
+}

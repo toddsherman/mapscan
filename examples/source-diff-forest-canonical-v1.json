@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "forest-canonical-v1",
+      "kind": "extraction",
+      "run": "runs/forest-canonical-extract-v1",
+      "repair_full_state": false
+    }
+  ]
+}

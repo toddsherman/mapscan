@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "california-fire-hazard-and-responsibility-areas",
+  "dataset_title": "California Fire Hazard and Responsibility Areas",
+  "staging_artifact_dataset_id": "california-fire-hazard-and-responsibility-areas-autonomous-v2-clipped",
+  "staging_artifact_title": "California Fire Hazard and Responsibility Areas \u2014 Autonomous State-Clipped Candidate",
+  "author_statement": "Proceed",
+  "activated_at": "2026-08-31T21:14:57.858213+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/fire-autonomous-v2-clipped/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "f00e7f1190031c55521b702e5858f36486d1ee4d61f5288f29b8be21a78076f2",
+  "staging_provenance_sha256": "e6578d6492deb754e3664e0c757cac66742e9b64d3335a6429d388abfb6fa37a",
+  "staging_package_sha256": "24b8a55c1c43941a6b41c4367c60201773417a596a0a127bc6c572b587110c28",
+  "public_dataset_sha256": "aafb731f22777f4969f674ffa41ad0bdba5acc78a01d75d5d7ce29b4494c9860",
+  "public_provenance_sha256": "27e232ab2a025d06bf5eae430e9ba8df67411dbb7902af31a152db32a52bfe82",
+  "immutable_asset_count": 815,
+  "immutable_assets_sha256": "0fa8f7818524135525938d1ed7c08a4d9315b43116bb02fcd031b7439fcf3443",
+  "source_image_sha256": "617989960866fc6d728b3b1a1cbe3a6d5e1c9edacce6bf6856637ede8b919b51",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "fire-hazard-severity",
+      "accepted_raster_sha256": "f544310c5c47fbc71557f2581c14edab5ec70ca7a6b75720b3f753185f93f30d",
+      "semantic_kind": "mutually_exclusive_categorical",
+      "coverage_contract": "sparse_visible_evidence",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 3109767
+    },
+    {
+      "layer_id": "local-responsibility-area",
+      "accepted_raster_sha256": "664974e205e216bb0e4f688c0ab352960b02b6afb157c06421ea50eb6145210c",
+      "semantic_kind": "independent_binary_dot_symbol",
+      "coverage_contract": "sparse_visible_evidence",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 5586476
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "fire-hazard-severity",
+      "category_ids": [
+        "high",
+        "moderate",
+        "very-high"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 1528523,
+      "tile_set_sha256": "fc65e557681434e5059877578cb2687a82b9c0e39b0c2038865f26c3c7a57349"
+    },
+    {
+      "layer_id": "local-responsibility-area",
+      "category_ids": [
+        "local-responsibility-area"
+      ],
+      "class_ids": [
+        1
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 143067,
+      "tile_set_sha256": "668506b42bb5163ca1d47159740c62c86544c272439ce3f3968b895bb8cf8539"
+    }
+  ]
+}

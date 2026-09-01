@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "deer",
+      "kind": "extraction",
+      "run": "runs/deer-extract-v2",
+      "repair_full_state": true
+    },
+    {
+      "id": "elevation",
+      "kind": "continuous",
+      "run": "runs/elevation-continuous-v6"
+    },
+    {
+      "id": "farms",
+      "kind": "extraction",
+      "run": "runs/farms-extract-v1",
+      "repair_full_state": false
+    },
+    {
+      "id": "fire",
+      "kind": "extraction",
+      "run": "runs/fire-extract-v4",
+      "repair_full_state": false
+    },
+    {
+      "id": "forest",
+      "kind": "extraction",
+      "run": "runs/forest-extract-v1",
+      "repair_full_state": false
+    },
+    {
+      "id": "geologic",
+      "kind": "pdf_vector",
+      "run": "runs/geologic-pdf-vector-v1"
+    },
+    {
+      "id": "landslide",
+      "kind": "extraction",
+      "run": "runs/landslide-extract-v5",
+      "repair_full_state": false
+    },
+    {
+      "id": "plant-hardiness",
+      "kind": "extraction",
+      "run": "runs/plantzone-extract-v1",
+      "candidate": "runs/plantzone-extract-v1/materialized-v2",
+      "repair_full_state": true
+    },
+    {
+      "id": "quake-shaking",
+      "kind": "extraction",
+      "run": "runs/quake-reviewed-local-extract-v2",
+      "candidate": "runs/quake-reviewed-local-extract-v2/materialized-v4",
+      "repair_full_state": true
+    },
+    {
+      "id": "rainfall",
+      "kind": "extraction",
+      "run": "runs/rainfall-reviewed-extract-v3",
+      "repair_full_state": true
+    },
+    {
+      "id": "rivers",
+      "kind": "feature",
+      "run": "runs/rivers-feature-ink-v1"
+    }
+  ],
+  "pending_semantic_validation": [
+    {
+      "source": "examples/geologic.pdf",
+      "status": "native_geometry_extracted_but_legend_glyphs_need_validation"
+    }
+  ]
+}

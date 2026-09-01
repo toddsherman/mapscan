@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "average-annual-precipitation",
+      "accepted_raster_sha256": "4685d0442f493e22c8b097d0fff8b427b4506f29880b07a563e1ed8d3175b3ff",
+      "publication_raster": "../../viewer/public/data/staging/rainfall-1981-2010-autonomous-v2/publication-class-id.png",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state"
+    }
+  ]
+}

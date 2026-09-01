@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "status": "approved_publication",
+  "id": "california-forest-cover",
+  "title": "Forest Cover of California",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.jpg",
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "authorization_statement": "Todd visually approved the exact forest-autonomous-v5 staging bytes in the active MapScan thread: \"lgtm\" on 2026-08-31.",
+    "activated_at": "2026-09-01T02:17:23.696823+00:00",
+    "author_statement": "Todd visually approved the exact forest-autonomous-v5 staging bytes in the active MapScan thread: \"lgtm\" on 2026-08-31."
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "provenance.json",
+    "sha256": "80d67985d1f292e326b01eea46dac0da2a89240629b1711ebd0a7e01a916054c"
+  },
+  "layers": [
+    {
+      "id": "forest-type",
+      "label": "Forest Cover of California",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "redwood",
+          "class_id": 1,
+          "label": "Redwood",
+          "display_rgb": [
+            49,
+            154,
+            49
+          ],
+          "pixel_count": 79188
+        },
+        {
+          "id": "western-hardwoods",
+          "class_id": 2,
+          "label": "Western hardwoods",
+          "display_rgb": [
+            206,
+            154,
+            156
+          ],
+          "pixel_count": 323431
+        },
+        {
+          "id": "douglas-fir",
+          "class_id": 3,
+          "label": "Douglas fir",
+          "display_rgb": [
+            206,
+            255,
+            207
+          ],
+          "pixel_count": 330944
+        },
+        {
+          "id": "ponderosa-pine",
+          "class_id": 4,
+          "label": "Ponderosa pine",
+          "display_rgb": [
+            155,
+            207,
+            99
+          ],
+          "pixel_count": 629285
+        },
+        {
+          "id": "fir-spruce",
+          "class_id": 5,
+          "label": "Fir-Spruce",
+          "display_rgb": [
+            255,
+            207,
+            49
+          ],
+          "pixel_count": 166444
+        },
+        {
+          "id": "pinyon-juniper",
+          "class_id": 6,
+          "label": "Pinyon-Juniper",
+          "display_rgb": [
+            156,
+            255,
+            100
+          ],
+          "pixel_count": 260601
+        },
+        {
+          "id": "lodgepole-pine",
+          "class_id": 7,
+          "label": "Lodgepole pine",
+          "display_rgb": [
+            205,
+            154,
+            99
+          ],
+          "pixel_count": 110214
+        },
+        {
+          "id": "chaparral",
+          "class_id": 8,
+          "label": "Chaparral",
+          "display_rgb": [
+            155,
+            154,
+            98
+          ],
+          "pixel_count": 305472
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          8
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/forest-type/class-id/{z}/{x}/{y}.png?v=57b6ff5960b8bf97",
+        "tilejson": "tiles/forest-type/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 835030,
+        "mean_tile_image_byte_count": 2087.575,
+        "tile_set_sha256": "57b6ff5960b8bf970ad8d9c910bf1c0e2c08875a27942dff9665a8dc577e0c87",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ],
+  "publication_approved": true,
+  "asset_base": "/mapscan/data/staging/forest-autonomous-v5/",
+  "shared_assets": {
+    "immutable_asset_count": 404,
+    "immutable_assets_sha256": "db4994ca9b3266f666fbb7ff50e11961f39f7f0a0607d015f47bf09e539930d7"
+  }
+}

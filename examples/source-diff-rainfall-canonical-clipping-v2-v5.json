@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "rainfall-canonical-clipping-v2-v5",
+      "kind": "extraction",
+      "run": "runs/rainfall-canonical-clipping-v2-extract-v5",
+      "repair_full_state": true,
+      "maximum_iterations": 4
+    }
+  ]
+}

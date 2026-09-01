@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "california-severe-weather-impacts",
+  "dataset_title": "California Severe Weather Impacts",
+  "staging_artifact_dataset_id": "california-severe-weather-impacts-autonomous-v2-clipped",
+  "staging_artifact_title": "California Severe Weather Impacts \u2014 Autonomous State-Clipped Candidate",
+  "author_statement": "Proceed",
+  "activated_at": "2026-08-31T21:14:59.203058+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/landslide-autonomous-v2-clipped/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "2668df97c8348c89a8f3a51d3600b08c7c7fcb23a21678dddedf86d52ce3be57",
+  "staging_provenance_sha256": "a889fbc0edf3558af98447c7451ffa2e59db6825fcf2d82dae09362a008f3b42",
+  "staging_package_sha256": "3403f70e77785c3cea1a5d47ab75238506b86bffc0d5c5ee1986c3eac259fc1b",
+  "public_dataset_sha256": "06cc4075730a7a24cb7173f3985e9c9c900fc6fc231266b6110332d0e0b75883",
+  "public_provenance_sha256": "6a0e897fc267845b063ac95991354a9e6c1e21f3100b2ca067034652d8be5fe7",
+  "immutable_asset_count": 1631,
+  "immutable_assets_sha256": "cb79967b5f5201a695464c56f1481b6858f7a43579ad6307c83ec3393bba167d",
+  "source_image_sha256": "ce1cceccf599a3c19535c6f28b4c055cdf03e85e4096e554c76d3a64336ddeae",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "maximum-daily-precipitation",
+      "accepted_raster_sha256": "bd4bb5e529f95a88938ac47305bfb0f82c0412b10cae308606e855b564049178",
+      "semantic_kind": "mutually_exclusive_categorical",
+      "coverage_contract": "sparse_visible_evidence",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 4646166
+    },
+    {
+      "layer_id": "landslide-susceptibility",
+      "accepted_raster_sha256": "1ee8f24412336c48b4ba2c78962a8ae103ba2ea8a7360748192651f28381760f",
+      "semantic_kind": "independent_binary_overlay",
+      "coverage_contract": "sparse_visible_evidence",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 4717196
+    },
+    {
+      "layer_id": "maximum-wind-speed",
+      "accepted_raster_sha256": "f88686c98c15dc53fa81bbd4ca4734b0e7fd47d1c15fba0a0e0f623b118f789e",
+      "semantic_kind": "independent_binary_overlay",
+      "coverage_contract": "sparse_visible_evidence",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 5083728
+    },
+    {
+      "layer_id": "predicted-flooding",
+      "accepted_raster_sha256": "83eaba11da4217800fe9425f38f9d5effa2a4ded5f742eb0a5a0fe9dda3cd548",
+      "semantic_kind": "independent_binary_overlay",
+      "coverage_contract": "sparse_visible_evidence",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 5323759
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "maximum-daily-precipitation",
+      "category_ids": [
+        "16-to-25-7-inches",
+        "4-to-8-inches",
+        "8-to-16-inches"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 323214,
+      "tile_set_sha256": "6783e99a24f066263762d3db4f1d30f0fce2fb783b9a260e11b10042bd2a53cd"
+    },
+    {
+      "layer_id": "landslide-susceptibility",
+      "category_ids": [
+        "landslide-susceptibility"
+      ],
+      "class_ids": [
+        1
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 334363,
+      "tile_set_sha256": "b103e481d636cf46a31f8daa695e341e259954e698dc271ea089ad2636cb4ade"
+    },
+    {
+      "layer_id": "maximum-wind-speed",
+      "category_ids": [
+        "maximum-wind-speed"
+      ],
+      "class_ids": [
+        1
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 193569,
+      "tile_set_sha256": "444548fdf6689f764f5afbd70867829fccc2ee1532929f415751f7593542a6db"
+    },
+    {
+      "layer_id": "predicted-flooding",
+      "category_ids": [
+        "predicted-flooding"
+      ],
+      "class_ids": [
+        1
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 240256,
+      "tile_set_sha256": "2b015e610ac2aa51f48e7574c93db90df93b027e2f6c4b701de95fa775fd7e10"
+    }
+  ]
+}

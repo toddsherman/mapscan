@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_specialized_extraction_staging_preview_provenance",
+  "producer": "mapscan.indexed_authority_preview_export",
+  "status": "needs_visual_review",
+  "publication_approved": false,
+  "approval": {
+    "status": "not_approved"
+  },
+  "accepted_extraction": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/elevation/extraction-run-03/accepted-extraction.json",
+    "sha256": "d7c78616e656f5749e6daa291c80e65d603f58b205401febb9abd03ea9770fd8",
+    "schema_version": "mapscan.automatic-continuous-numeric-extraction.v1",
+    "automatic_iteration_count": 4,
+    "accepted_iteration": "extraction-04"
+  },
+  "accepted_alignment": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/elevation/automatic-alignment/accepted-alignment.json",
+    "sha256": "7d37061d3c3d18171ced5ba91d1edbcdaadbcf8795d7b25e388da342f642d52f",
+    "automatic_iteration_count": 12
+  },
+  "source": {
+    "path": "/Users/toddsherman/Projects/MapMap/examples/elevation.gif",
+    "sha256": "6ee9ed7a7341260caa0f6c3c9e7b63eb2d7d747056eb23caba5e3b4ffd196db5",
+    "copied_path": "source.gif",
+    "copied_sha256": "6ee9ed7a7341260caa0f6c3c9e7b63eb2d7d747056eb23caba5e3b4ffd196db5"
+  },
+  "legend": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/elevation/extraction-run-03/legend/continuous-numeric-legend.json",
+    "sha256": "5cf394c306d88fbd4e9edfb13570bc2e9553b4c24b12954f140f4e7ed8cf94ac"
+  },
+  "accepted_inputs": [
+    {
+      "kind": "accepted_quantized_elevation_band_raster",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/elevation/extraction-run-03/extraction-04/mapbox-quantized-band-id.png",
+      "sha256": "37d174cae0ebdfa236b3e43deda8cdbc569cc56fa9abf209a5c86a40e5e4d3a3"
+    },
+    {
+      "kind": "accepted_depression_mask",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/elevation/extraction-run-03/extraction-04/mapbox-depression-mask.png",
+      "sha256": "481aa0f06881a62a8baba103c7bbde7c711986019d6fc48a3515e97e5bbce392"
+    },
+    {
+      "kind": "accepted_continuous_elevation_raster",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/elevation/extraction-run-03/extraction-04/mapbox-elevation-meters-plus-one.png",
+      "sha256": "a2c5152c49d01635be585ba60a1ede85d8ff88e045607a7e425efac55ccec336",
+      "publication_role": "accepted_numeric_authority_retained_in_provenance"
+    }
+  ],
+  "class_raster": {
+    "path": "accepted-class-id.png",
+    "sha256": "d343bb9fc8e97ca4e73a34221ecd398ae7e642dc210d3aead325d64f308902bc",
+    "derivation": "deterministic_class_id_composition_from_accepted_inputs",
+    "width": 3398,
+    "height": 3920
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 3398,
+    "height": 3920
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "processing_reference": {
+    "path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2/manifest.json",
+    "sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "raw_hashes": {
+      "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+      "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+      "tile_aggregate_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba"
+    },
+    "state_coast_overlay": {
+      "path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2/california-state-coast-overlay.png",
+      "sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+      "width": 3398,
+      "height": 3920
+    }
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 7825798,
+    "policy": "preserve_accepted_transparent_nodata"
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 9,
+    "screen_pixel_span_at_maximum_zoom": [
+      3768.6083583999994,
+      4347.970602140895
+    ]
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "state_interior_pixel_count": 5604934,
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "layers": [
+      {
+        "layer_id": "elevation-bands",
+        "accepted_raster_sha256": "d343bb9fc8e97ca4e73a34221ecd398ae7e642dc210d3aead325d64f308902bc",
+        "publication_raster_sha256": "d343bb9fc8e97ca4e73a34221ecd398ae7e642dc210d3aead325d64f308902bc",
+        "semantic_kind": "full_state_selectable_numeric_intervals_and_depression",
+        "coverage_contract": "full_state",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 110572,
+        "classified_pixel_count_inside_state": 5494362
+      }
+    ]
+  }
+}

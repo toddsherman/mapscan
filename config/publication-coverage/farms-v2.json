@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2-3x/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "classes",
+      "accepted_raster_sha256": "2c8e83a02f1f7cc1f3ae9ba806f35e11b049a2182854f4a38137477014aa79bc",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/farms-v2-highres-3x/automatic-extraction/extraction-04/web-mercator-class-id.png",
+      "semantic_kind": "partial_sparse_categorical",
+      "coverage_contract": "sparse_visible_evidence"
+    }
+  ]
+}

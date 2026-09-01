@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_specialized_extraction_staging_preview_provenance",
+  "producer": "mapscan.indexed_authority_preview_export",
+  "status": "needs_visual_review",
+  "publication_approved": false,
+  "approval": {
+    "status": "not_approved"
+  },
+  "accepted_extraction": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/accepted-extraction.json",
+    "sha256": "8076069b4cecd134bf80915555ac595f1f2c8e84b5892db334ebfdc653df6a68",
+    "schema_version": "mapscan.quake-native-nonlinear-extraction.v1",
+    "automatic_iteration_count": 2,
+    "accepted_iteration": null
+  },
+  "accepted_alignment": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/quake/automatic-alignment/accepted-alignment.json",
+    "sha256": "d3888bd32ce6c13fb431198976d5dfbcb00c4db15ea524ff6fc7b96c7dd80d09",
+    "automatic_iteration_count": 12
+  },
+  "source": {
+    "path": "/Users/toddsherman/Projects/MapMap/examples/quake.jpg",
+    "sha256": "2297ccdf1193335bc4d57d660ffc3e9f52188c2043c101228a7a246629bab315",
+    "copied_path": "source.jpg",
+    "copied_sha256": "2297ccdf1193335bc4d57d660ffc3e9f52188c2043c101228a7a246629bab315"
+  },
+  "legend": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/legend/ordered-band-legend.json",
+    "sha256": "ef65bbe1da968f721f299be47b456e428eb0898208bbd0588af28c996d42129d"
+  },
+  "accepted_inputs": [
+    {
+      "kind": "accepted_class_mask",
+      "class_id": 1,
+      "label": "VI Strong Shaking",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/extraction-02/class-masks/01-vi.png",
+      "sha256": "2066aa75b70d94a895d7aa3102ff3c3d7abf3d98755dc5a78cc785e8ce147efe",
+      "pixel_count": 347736
+    },
+    {
+      "kind": "accepted_class_mask",
+      "class_id": 2,
+      "label": "VII Very Strong Shaking",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/extraction-02/class-masks/02-vii.png",
+      "sha256": "f1101dac836a345d34f79247c6b146f85d1c4ac7ed11b4a3b5a76e5939645c26",
+      "pixel_count": 1082118
+    },
+    {
+      "kind": "accepted_class_mask",
+      "class_id": 3,
+      "label": "VIII Severe Shaking",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/extraction-02/class-masks/03-viii.png",
+      "sha256": "8193ab0df072d73c6afd800b03e73f43bdeb082953fd203196eb0b772865bb31",
+      "pixel_count": 1407535
+    },
+    {
+      "kind": "accepted_class_mask",
+      "class_id": 4,
+      "label": "IX Violent Shaking",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/extraction-02/class-masks/04-ix.png",
+      "sha256": "ddd4993fcfbfcb2ffb254662ae168c0e476d8399e27ce319cd0b0405b4c037ad",
+      "pixel_count": 1433432
+    },
+    {
+      "kind": "accepted_class_mask",
+      "class_id": 5,
+      "label": "X Extreme Shaking",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/extraction-02/class-masks/05-x.png",
+      "sha256": "76971c398e1ad5181f8cb47fa1b06d47aa08d531130e379057bdd1c72f9810bf",
+      "pixel_count": 991864
+    },
+    {
+      "kind": "accepted_class_mask",
+      "class_id": 6,
+      "label": "XI Devastating Shaking",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/extraction-02/class-masks/06-xi.png",
+      "sha256": "19488c600b5dc9b013c5cd92ac8db74daafe72dc6cd5d211de247816c5c15e26",
+      "pixel_count": 231677
+    },
+    {
+      "kind": "accepted_nonlinear_alignment",
+      "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-native-alignment-validation-v1/quake-nonlinear/nonlinear-refinement.json",
+      "sha256": "f12dc385c24a036bd48c065f687ac82a5fefda69c96c50e02fd8e8e35d22729f"
+    }
+  ],
+  "class_raster": {
+    "path": "accepted-class-id.png",
+    "sha256": "423fa745f9fd48173c728b90cf8e009835afaf743755e90162d0ba472a908ec4",
+    "derivation": "deterministic_class_id_composition_from_accepted_inputs",
+    "width": 3398,
+    "height": 3920
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 3398,
+    "height": 3920
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "processing_reference": {
+    "path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2/manifest.json",
+    "sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "raw_hashes": {
+      "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+      "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+      "tile_aggregate_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba"
+    },
+    "state_coast_overlay": {
+      "path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2/california-state-coast-overlay.png",
+      "sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+      "width": 3398,
+      "height": 3920
+    }
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 7825798,
+    "policy": "preserve_accepted_transparent_nodata"
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 9,
+    "screen_pixel_span_at_maximum_zoom": [
+      3768.6083583999994,
+      4347.970602140895
+    ]
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "state_interior_pixel_count": 5604934,
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "layers": [
+      {
+        "layer_id": "modified-mercalli-intensity",
+        "accepted_raster_sha256": "423fa745f9fd48173c728b90cf8e009835afaf743755e90162d0ba472a908ec4",
+        "publication_raster_sha256": "423fa745f9fd48173c728b90cf8e009835afaf743755e90162d0ba472a908ec4",
+        "semantic_kind": "full_state_land_ordered_shaking_intensity",
+        "coverage_contract": "full_state",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 110572,
+        "classified_pixel_count_inside_state": 5494362
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "examples/rainfall.png",
+  "evidence_kind": "exact_solid_thematic_class_union",
+  "solid_map_rgb": [
+    [86, 118, 150],
+    [110, 141, 171],
+    [134, 163, 193],
+    [159, 186, 214],
+    [197, 200, 211],
+    [236, 204, 207],
+    [219, 175, 179],
+    [202, 145, 150],
+    [185, 115, 121],
+    [169, 87, 93]
+  ],
+  "minimum_component_area": 500,
+  "maximum_components": 5,
+  "correspondence_gate_px": 30.0,
+  "notes": "The ArcGIS map fills differ slightly from the sidebar swatches. Exact map fills isolate thematic evidence from the basemap and interface."
+}

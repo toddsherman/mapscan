@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "deer-distribution",
+      "accepted_raster_sha256": "4ecabb5b021b4e12f3dedee10f2f1f2f86c937cc75ddee3e4b7c3916e22e7d9f",
+      "publication_raster": "../../viewer/public/data/staging/deer-autonomous-v2/publication-class-id.png",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state"
+    }
+  ]
+}

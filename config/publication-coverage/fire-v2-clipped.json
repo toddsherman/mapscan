@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "fire-hazard-severity",
+      "accepted_raster_sha256": "f544310c5c47fbc71557f2581c14edab5ec70ca7a6b75720b3f753185f93f30d",
+      "publication_raster": "../../viewer/public/data/staging/fire-autonomous-v2-clipped/rasters/fire-hazard-severity/clipped-class-id.png",
+      "semantic_kind": "mutually_exclusive_categorical",
+      "coverage_contract": "sparse_visible_evidence"
+    },
+    {
+      "layer_id": "local-responsibility-area",
+      "accepted_raster_sha256": "664974e205e216bb0e4f688c0ab352960b02b6afb157c06421ea50eb6145210c",
+      "publication_raster": "../../viewer/public/data/staging/fire-autonomous-v2-clipped/rasters/local-responsibility-area/clipped-class-id.png",
+      "semantic_kind": "independent_binary_dot_symbol",
+      "coverage_contract": "sparse_visible_evidence"
+    }
+  ]
+}

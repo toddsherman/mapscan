@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "reference": "reference/census-2025",
+  "county_reference": "runs/county-reference-v2/county-reference.json",
+  "working_height": 2400,
+  "max_iterations": 3,
+  "candidate_anchor_count": 16,
+  "fit_anchor_count": 8,
+  "search_radius_px": 48,
+  "tangent_radius_px": 16,
+  "cases": [
+    {
+      "id": "deer",
+      "image": "examples/deer.png",
+      "alignment": "runs/deer-auto-v1/alignment.json"
+    },
+    {
+      "id": "elevation",
+      "image": "examples/elevation.gif",
+      "alignment": "runs/elevation-full-v2/alignment.json"
+    },
+    {
+      "id": "farms",
+      "image": "examples/farms.png",
+      "alignment": "runs/farms-auto-v9/alignment.json"
+    },
+    {
+      "id": "fire",
+      "image": "examples/fire.webp",
+      "alignment": "runs/fire-auto-v1/alignment.json"
+    },
+    {
+      "id": "forest",
+      "image": "examples/forest.jpg",
+      "alignment": "runs/forest-auto-v4/alignment.json"
+    },
+    {
+      "id": "geologic",
+      "image": "tmp/pdfs/geologic/refinement-4500.png",
+      "alignment": "runs/geologic-pdf-graticule-v5/alignment.json",
+      "preserve_geographic_registration": true,
+      "max_iterations": 0
+    },
+    {
+      "id": "landslide",
+      "image": "examples/landslide.png",
+      "alignment": "runs/landslide-auto-v1/alignment.json"
+    },
+    {
+      "id": "plantzone",
+      "image": "examples/plantzone.avif",
+      "alignment": "runs/plantzone-auto-v2/alignment.json"
+    },
+    {
+      "id": "quake",
+      "image": "examples/quake.jpg",
+      "alignment": "runs/quake-reviewed-local-v2/alignment.json"
+    },
+    {
+      "id": "rainfall",
+      "image": "examples/rainfall.gif",
+      "alignment": "runs/rainfall-reviewed-alignment-v1/alignment.json"
+    },
+    {
+      "id": "rivers",
+      "image": "examples/rivers.jpg",
+      "alignment": "runs/rivers-auto-v1/alignment.json"
+    }
+  ]
+}

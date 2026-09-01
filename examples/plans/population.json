@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "status": "alignment_passed_pending_extraction",
+  "dataset_id": "california-population-density-2020",
+  "title": "California Population Density, 2020",
+  "source": "examples/population.png",
+  "source_sha256": "45bb66b29dfe1866829b6f04cb0cfc20bc2405821ceee3b9d4b31ea4a27a2098",
+  "alignment": "runs/population-perimeter-loop-v1/alignment.json",
+  "alignment_audit": "runs/population-canonical-audit-v4/canonical-alignment-audit.json",
+  "reference": "reference/census-2025",
+  "county_reference": "runs/county-reference-v2/county-reference.json",
+  "review_default_view": "source",
+  "comparison_regions": [
+    {
+      "id": "bay-area",
+      "label": "Bay Area",
+      "bounds_wgs84": [-123.3, 36.8, -121.3, 38.8]
+    },
+    {
+      "id": "delta",
+      "label": "Sacramento–San Joaquin Delta",
+      "bounds_wgs84": [-122.25, 37.55, -120.65, 39.15]
+    },
+    {
+      "id": "monterey-bay",
+      "label": "Monterey Bay",
+      "bounds_wgs84": [-122.35, 35.95, -120.95, 37.25]
+    },
+    {
+      "id": "lake-tahoe",
+      "label": "Lake Tahoe",
+      "bounds_wgs84": [-120.45, 38.55, -119.65, 39.35]
+    },
+    {
+      "id": "los-angeles",
+      "label": "Los Angeles",
+      "bounds_wgs84": [-119.15, 33.35, -117.15, 34.75]
+    },
+    {
+      "id": "san-diego",
+      "label": "San Diego",
+      "bounds_wgs84": [-117.75, 32.35, -116.4, 33.55]
+    },
+    {
+      "id": "north-coast",
+      "label": "North Coast",
+      "bounds_wgs84": [-124.65, 39.7, -123.05, 41.35]
+    }
+  ],
+  "source_context_exclusion": {
+    "blue_dominant_water": {
+      "minimum_blue": 160,
+      "minimum_blue_over_red": 80,
+      "minimum_blue_over_green": 40
+    }
+  },
+  "water_exclusion": {
+    "reference": "reference/census-2025-areawater",
+    "supersampling": 4,
+    "minimum_coverage_fraction": 1.0,
+    "include_only_feature_names": [
+      "Monterey Bay",
+      "San Francisco Bay",
+      "San Pablo Strait",
+      "San Pablo Bay",
+      "Carquinez Strait",
+      "Suisun Bay",
+      "Honker Bay",
+      "San Joaquin Riv",
+      "Sacramento Riv"
+    ],
+    "canonical_shoreline_snap": {
+      "feature_names": ["Monterey Bay", "San Francisco Bay"],
+      "maximum_distance_px": 40,
+      "mapbox_water_reference": "reference/mapbox-light-v11-water-sf-monterey-z9-v1",
+      "mapbox_supersampling": 4,
+      "mapbox_minimum_coverage_fraction": 1.0
+    }
+  },
+  "layers": [
+    {
+      "id": "population-density",
+      "kind": "categorical",
+      "coverage_expectation": "full_state",
+      "complete_target_state": true,
+      "preserve_observed_class_pixels_against_external_water": true,
+      "max_distance": 4.0,
+      "min_margin": 1.0,
+      "categories": [
+        {"id": "under-1", "label": "< 1", "legend_rgb": [255, 255, 255]},
+        {"id": "1-to-10", "label": "1–10", "legend_rgb": [255, 240, 240]},
+        {"id": "10-to-25", "label": "10–25", "legend_rgb": [255, 224, 224]},
+        {"id": "25-to-50", "label": "25–50", "legend_rgb": [255, 208, 208]},
+        {"id": "50-to-100", "label": "50–100", "legend_rgb": [255, 192, 192]},
+        {"id": "100-to-250", "label": "100–250", "legend_rgb": [255, 160, 160]},
+        {"id": "250-to-500", "label": "250–500", "legend_rgb": [255, 128, 128]},
+        {"id": "500-to-1000", "label": "500–1,000", "legend_rgb": [255, 64, 64]},
+        {"id": "1000-to-2500", "label": "1,000–2,500", "legend_rgb": [255, 0, 0]},
+        {"id": "2500-to-5000", "label": "2,500–5,000", "legend_rgb": [224, 0, 0]},
+        {"id": "5000-to-10000", "label": "5,000–10,000", "legend_rgb": [192, 0, 0]},
+        {"id": "over-10000", "label": "> 10,000", "legend_rgb": [160, 0, 0]}
+      ]
+    }
+  ],
+  "warnings": [
+    "This is a mutually exclusive 12-class population-density map in people per square mile, sourced from 2020 United States Census tracts.",
+    "The < 1 class is pure white and must be recognized only inside the canonical California land mask; page background, legend background, and exterior white are not data.",
+    "Blue hydrography, black county lines, text, scale bar, legend, and gray neighboring states are contextual ink and must not become population classes.",
+    "Alignment should prioritize the canonical coastline and state border, with the source county lines used as a secondary diagnostic after the perimeter fit."
+  ]
+}

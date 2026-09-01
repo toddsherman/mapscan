@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "policy": "every live viewer dataset must bind its newest accepted extraction authority",
+  "datasets": [
+    {
+      "public_directory": "quake-shaking-autonomous-v2",
+      "accepted_extraction": "runs/mapbox-native-alignment-validation-v1/quake-nonlinear-extraction/accepted-extraction.json",
+      "accepted_extraction_sha256": "8076069b4cecd134bf80915555ac595f1f2c8e84b5892db334ebfdc653df6a68"
+    },
+    {
+      "public_directory": "plant-hardiness-autonomous-v3",
+      "accepted_extraction": "runs/global-ranking-repair-v1/plantzone/extraction-run-02/accepted-extraction.json",
+      "accepted_extraction_sha256": "9abfbdfca9b893716cde88c0db9a7b959b63a2a845aa830135c75ddeeadc78a7"
+    },
+    {
+      "public_directory": "deer-distribution-autonomous-v2",
+      "accepted_extraction": "runs/mapbox-autonomous-restart-v1/deer/extraction-run-02/accepted-extraction.json",
+      "accepted_extraction_sha256": "ea0670d16ced13c1c42f0e5e0b98945515287a3202c8d78d5a150feb7932ec2a"
+    },
+    {
+      "public_directory": "forest-cover-autonomous-v5",
+      "accepted_extraction": "runs/perimeter-evidence-repair-v1/forest/extraction-run-03/accepted-extraction.json",
+      "accepted_extraction_sha256": "3cb738385f14764e87af7d894c0a71b05ffec3119393e5f0b7220eff156e32b9"
+    },
+    {
+      "public_directory": "agricultural-land-use-v2-highres",
+      "accepted_extraction": "runs/mapbox-autonomous-restart-v1/farms-v2-highres-3x/automatic-extraction/accepted-extraction.json",
+      "accepted_extraction_sha256": "dd45bc30742a83eeecdf9b0ef7cc6d19e4d030c08fd2ca149bffb64a9eb50179"
+    },
+    {
+      "public_directory": "population-density",
+      "accepted_extraction": "runs/population-native-fidelity-repair-v2/automatic-extraction/accepted-extraction.json",
+      "accepted_extraction_sha256": "734229d660af9a5474d8ff82cf3bfbabc60e11141853607eb33df97131bf425f"
+    },
+    {
+      "public_directory": "fire-hazard-responsibility",
+      "accepted_extraction": "runs/mapbox-autonomous-restart-v1/fire/automatic-extraction/accepted-extraction.json",
+      "accepted_extraction_sha256": "f0f7e36edb38e101f96a0eea754ad2fc6dc3600d287feaa8661798979dc4cd97"
+    },
+    {
+      "public_directory": "severe-weather-impacts",
+      "accepted_extraction": "runs/mapbox-autonomous-restart-v1/landslide/automatic-extraction/accepted-extraction.json",
+      "accepted_extraction_sha256": "fc9417994ee42291115b12355769ca216b6aecc0ff0748e360f2720c78beb154"
+    },
+    {
+      "public_directory": "geologic-units-highres",
+      "accepted_extraction": "runs/mapbox-autonomous-restart-v1/geologic-highres-3x/automatic-extraction/accepted-extraction.json",
+      "accepted_extraction_sha256": "52b6e392c90b5879a5d4b707d73e3bcb801eb661cea7674441e49537f8c081a9"
+    },
+    {
+      "public_directory": "rainfall-1981-2010-autonomous-v2",
+      "accepted_extraction": "runs/mapbox-autonomous-restart-v1/rainfall-1981-2010/extraction-run-02/accepted-extraction.json",
+      "accepted_extraction_sha256": "005fa2040899fae5a0c8c677e3f8959418a3b498a7056a664e35f3e3a3f6fa2c"
+    },
+    {
+      "public_directory": "elevation-bands-autonomous-v2",
+      "accepted_extraction": "runs/mapbox-autonomous-restart-v1/elevation/extraction-run-03/accepted-extraction.json",
+      "accepted_extraction_sha256": "d7c78616e656f5749e6daa291c80e65d603f58b205401febb9abd03ea9770fd8"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "examples/rivers.jpg",
+      "reason": "retired from the live viewer by author request"
+    },
+    {
+      "source": "examples/rainfall-1900-1960.png",
+      "reason": "not live because the legend semantics remain ambiguous"
+    }
+  ]
+}

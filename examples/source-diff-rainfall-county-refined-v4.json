@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "rainfall-county-refined-v4",
+      "kind": "extraction",
+      "run": "runs/rainfall-county-refined-extract-v1",
+      "repair_full_state": true,
+      "maximum_iterations": 4
+    }
+  ]
+}

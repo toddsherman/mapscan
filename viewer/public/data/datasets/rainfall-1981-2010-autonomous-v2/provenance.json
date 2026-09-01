@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_indexed_publication_provenance",
+  "producer": "mapscan.automatic_extraction_preview_export",
+  "status": "approved_publication",
+  "publication_approved": true,
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "author_statement": "Check that each map uses the newer version and fix it.",
+    "activated_at": "2026-08-31T23:32:23.709625+00:00"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "accepted_extraction": {
+    "sha256": "005fa2040899fae5a0c8c677e3f8959418a3b498a7056a664e35f3e3a3f6fa2c",
+    "schema_version": "mapscan.automatic-categorical-extraction.v1",
+    "automatic_iteration_count": 8,
+    "accepted_iteration": "extraction-04",
+    "accepted_iteration_local_count": 4,
+    "iteration_report_sha256": "15349161e1d3cb3e070a7e0a04da1ba136a1018838c17c249b429b0dfe143363"
+  },
+  "accepted_alignment": {
+    "sha256": "3281697cc6c532b00d7423634f17bad47a1f7d7dbcdb5f5e66bdd9b1ea8be760",
+    "automatic_iteration_count": 12
+  },
+  "source": {
+    "sha256": "df2a8802ef513bc6ec4aeead96a994fcf16efe2ad7f87381fcda682131dd6f84",
+    "copied_path": "source.png",
+    "copied_sha256": "df2a8802ef513bc6ec4aeead96a994fcf16efe2ad7f87381fcda682131dd6f84"
+  },
+  "accepted_working_source": {
+    "sha256": "ad30c92d2565b97d761221788098b6b313013302d9ffaabd7cb2b012cc40fae0"
+  },
+  "legend": {
+    "sha256": "6870ff3192e05028c24b97e3e22dba65acff65b2008c52c00f657d59e7361fdc"
+  },
+  "accepted_class_raster": {
+    "sha256": "a34849982f306655989de411dd20f72a93e1c3cf0e86098485a61e4b6415c966",
+    "width": 3398,
+    "height": 3920
+  },
+  "class_raster": {
+    "path": "publication-class-id.png",
+    "sha256": "4685d0442f493e22c8b097d0fff8b427b4506f29880b07a563e1ed8d3175b3ff",
+    "width": 3398,
+    "height": 3920,
+    "derivation": "accepted_class_raster_clipped_to_pinned_mapbox_state_interior"
+  },
+  "publication_clip": {
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "accepted_colored_pixel_count_outside_state": 3988,
+    "publication_colored_pixel_count_outside_state": 0,
+    "mutated_accepted_extraction": false
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 9,
+    "screen_pixel_span_at_maximum_zoom": [
+      3768.6083583999994,
+      4347.970602140895
+    ]
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 3398,
+    "height": 3920
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "processing_reference": {
+    "sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "raw_hashes": {
+      "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+      "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+      "tile_aggregate_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba"
+    },
+    "state_coast_overlay": {
+      "sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+      "width": 3398,
+      "height": 3920
+    }
+  },
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 7824299,
+    "partial_source_extent": false,
+    "missing_source_extent_pixel_count": 0,
+    "missing_source_extent_mask_sha256": null,
+    "policy": "preserve_as_transparent_nodata_never_infer"
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "state_interior_pixel_count": 5604934,
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "layers": [
+      {
+        "layer_id": "average-annual-precipitation",
+        "accepted_raster_sha256": "4685d0442f493e22c8b097d0fff8b427b4506f29880b07a563e1ed8d3175b3ff",
+        "publication_raster_sha256": "4685d0442f493e22c8b097d0fff8b427b4506f29880b07a563e1ed8d3175b3ff",
+        "semantic_kind": "full_state_land_categorical",
+        "coverage_contract": "full_state",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 109073,
+        "classified_pixel_count_inside_state": 5495861
+      }
+    ]
+  },
+  "staging": {
+    "artifact_dataset_id": "california-average-annual-precipitation-1981-2010",
+    "artifact_title": "California Average Annual Precipitation, 1981\u20132010",
+    "dataset_sha256": "e901a3228a113a3dbd42e1a7518fe1c34439253a1a7355a54b127946f0fbc39a",
+    "provenance_sha256": "cce1fd97056169eaea13fc23917252829d5b7c0a7f971412751bdb0387806872",
+    "package_sha256": "9f9d5886cc2ae29211ba1b8081e6d278ab9bbb6ac325e20e7643bce61d85f5c8"
+  },
+  "shared_assets": {
+    "asset_base": "/mapscan/data/staging/rainfall-1981-2010-autonomous-v2/",
+    "immutable_asset_count": 404,
+    "immutable_assets_sha256": "0b6e1a059c7d67e7abeeb224bde9fb7fd0e0313e21788b8529a5ed13fbb9d9cc"
+  }
+}

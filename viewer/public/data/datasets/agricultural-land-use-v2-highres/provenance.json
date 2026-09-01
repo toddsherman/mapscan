@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_indexed_publication_provenance",
+  "producer": "mapscan.automatic_extraction_preview_export",
+  "status": "approved_publication",
+  "publication_approved": true,
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "author_statement": "Proceed",
+    "activated_at": "2026-08-31T21:13:44.898810+00:00"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "267a83da36dc75f44bd6daa1f87ce5fffa26bb9cde68c3fa3524947df4d2e115",
+    "raster_width": 10192,
+    "raster_height": 11758,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "accepted_extraction": {
+    "sha256": "dd45bc30742a83eeecdf9b0ef7cc6d19e4d030c08fd2ca149bffb64a9eb50179",
+    "schema_version": "mapscan.automatic-categorical-extraction.v1",
+    "automatic_iteration_count": 4,
+    "accepted_iteration": "extraction-04",
+    "iteration_report_sha256": "21effec75a96c62456fbfb1b68216558802b9ce70ad669b36bba92b68b92f992"
+  },
+  "accepted_alignment": {
+    "sha256": "21ad14602078051c130942c701a570b59edcde1525d1ab7bbd282252a59dc7ed",
+    "automatic_iteration_count": 11
+  },
+  "source": {
+    "sha256": "ff58a54049c93475959e5308649a8bcba1728f1d15b97a72a106172edd9a3561",
+    "copied_path": "source.png",
+    "copied_sha256": "ff58a54049c93475959e5308649a8bcba1728f1d15b97a72a106172edd9a3561"
+  },
+  "legend": {
+    "sha256": "56cc273ffb9da9761136e6120c13d8b414214dc2a21fe513c2f94ce2094a6fff"
+  },
+  "class_raster": {
+    "sha256": "2c8e83a02f1f7cc1f3ae9ba806f35e11b049a2182854f4a38137477014aa79bc",
+    "width": 10192,
+    "height": 11758
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 11,
+    "screen_pixel_span_at_maximum_zoom": [
+      15074.433433599997,
+      17391.88240856358
+    ]
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 10192,
+    "height": 11758
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "processing_reference": {
+    "sha256": "c57c546e4b5fe5278a23a3e7a4499f4199bd0bd3910ad3b552e9662da9fba523",
+    "target_supersampling": 3,
+    "raw_hashes": {
+      "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+      "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+      "tile_aggregate_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba"
+    },
+    "state_coast_overlay": {
+      "sha256": "267a83da36dc75f44bd6daa1f87ce5fffa26bb9cde68c3fa3524947df4d2e115",
+      "width": 10192,
+      "height": 11758
+    }
+  },
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 116100469,
+    "partial_source_extent": true,
+    "missing_source_extent_pixel_count": 25479454,
+    "missing_source_extent_mask_sha256": "f6e818faa972cfc0088c120ec31338b61eeb185f243a7b19a02f5bba3962a303",
+    "policy": "preserve_as_transparent_nodata_never_infer"
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "073cd54215a4f8e93519eeee77ee7d7cfd5da8778617e0d82d7ee71d6b97ab7c",
+    "state_interior_pixel_count": 50462730,
+    "raster_width": 10192,
+    "raster_height": 11758,
+    "layers": [
+      {
+        "layer_id": "classes",
+        "accepted_raster_sha256": "2c8e83a02f1f7cc1f3ae9ba806f35e11b049a2182854f4a38137477014aa79bc",
+        "publication_raster_sha256": "2c8e83a02f1f7cc1f3ae9ba806f35e11b049a2182854f4a38137477014aa79bc",
+        "semantic_kind": "partial_sparse_categorical",
+        "coverage_contract": "sparse_visible_evidence",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 46725663,
+        "classified_pixel_count_inside_state": 3737067
+      }
+    ]
+  },
+  "staging": {
+    "artifact_dataset_id": "california-agricultural-land-use-autonomous-v2-highres",
+    "artifact_title": "California Agricultural Land Use \u2014 Autonomous High-Resolution Candidate",
+    "dataset_sha256": "a1818410d4d162e67897caa1ec6fe035a7ed4e05dad35d63b0ad59d5a2888e37",
+    "provenance_sha256": "ebc962f28d93f20ebee6d060be4952af9695a0f2fc0a2919f754161e91707f2e",
+    "package_sha256": "941c2b80f7de46f7f8ab5bb58eb057696225a227ed67d566e9e65ef4320cc57f"
+  },
+  "shared_assets": {
+    "asset_base": "/mapscan/data/staging/farms-v2-autonomous-v1/",
+    "immutable_asset_count": 5628,
+    "immutable_assets_sha256": "ce5cea045034397e51162f73548debc59dafc26b2326b1e1c2c29e98089b422a"
+  }
+}

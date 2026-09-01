@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "plan_kind": "named_feature_geometry_diagnostic",
+  "dataset_id": "major-rivers-of-california",
+  "title": "Major Rivers of California",
+  "source": "examples/rivers.jpg",
+  "alignment": "runs/perimeter-refinement-all-v4/rivers/alignment.json",
+  "semantic_evidence": {
+    "symbol_key_present": true,
+    "symbol_key_location": "lower_left_outside_california",
+    "feature_names_present_on_map": true,
+    "shared_ink_warning": "Hydrography geometry and hydrography labels use the same blue ink."
+  },
+  "observed_ink": {
+    "initial_hsv_gate_opencv": {
+      "hue_min": 88,
+      "hue_max": 118,
+      "saturation_min": 70,
+      "value_min": 70
+    },
+    "diagnostic_pixel_count": 125849,
+    "authoritative_artifact": "lossless observed blue-ink mask clipped to California"
+  },
+  "feature_classes": [
+    {
+      "id": "river",
+      "geometry": "line",
+      "symbol": "solid_blue_line",
+      "name_source": "nearby blue italic label"
+    },
+    {
+      "id": "dry-streambed",
+      "geometry": "line",
+      "symbol": "dotted_blue_line",
+      "name_source": "nearby blue italic label"
+    },
+    {
+      "id": "lake-reservoir",
+      "geometry": "polygon",
+      "symbol": "blue_outline_with_map_background_fill",
+      "name_source": "nearby or interior blue italic label"
+    },
+    {
+      "id": "dry-lake",
+      "geometry": "polygon",
+      "symbol": "blue_outline_with_pale_yellow_fill",
+      "name_source": "nearby or interior blue italic label"
+    }
+  ],
+  "derived_outputs": {
+    "observed_geometry": "source-derived line and polygon fragments with label pixels excluded",
+    "inferred_geometry": "separately masked reconnections beneath accepted text regions",
+    "named_features": "interpreted vectors with OCR or gazetteer-validated names",
+    "public_rendering": "Mapbox vector lines, polygons, and labels backed by the observed raster"
+  },
+  "acceptance_gates": [
+    "automatic alignment visual review",
+    "observed blue-ink precision review",
+    "text-versus-geometry separation review",
+    "solid-versus-dotted and open-versus-closed geometry review",
+    "name association review",
+    "inferred reconnection review"
+  ],
+  "warnings": [
+    "This is a diagnostic feature plan; the categorical extract-plan command does not consume it.",
+    "Ordinary horizontal OCR fragments rotated and curved river names, so names require rotation-aware OCR and controlled gazetteer validation.",
+    "External hydrography may validate a name or reconnection but must not silently replace the geometry depicted in the source map."
+  ]
+}

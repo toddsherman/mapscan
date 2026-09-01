@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "status": "approved_publication",
+  "id": "california-population-density-2020",
+  "title": "California Population Density, 2020",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.png",
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "author_statement": "Proceed",
+    "activated_at": "2026-08-31T21:13:46.259418+00:00"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "provenance.json",
+    "sha256": "f807a310c82e2d9d4feb4e23bb6afeabeaf68c2a726da0f54c73b903bfd280e2"
+  },
+  "layers": [
+    {
+      "id": "population-density",
+      "label": "California Population Density \u2014 Autonomous Native-Fidelity Candidate",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "1",
+          "class_id": 1,
+          "label": "<1",
+          "display_rgb": [
+            255,
+            255,
+            255
+          ],
+          "pixel_count": 1161540
+        },
+        {
+          "id": "1-10",
+          "class_id": 2,
+          "label": "1 - 10",
+          "display_rgb": [
+            255,
+            240,
+            240
+          ],
+          "pixel_count": 2343780
+        },
+        {
+          "id": "10-25",
+          "class_id": 3,
+          "label": "10 - 25",
+          "display_rgb": [
+            255,
+            224,
+            224
+          ],
+          "pixel_count": 772611
+        },
+        {
+          "id": "25-50",
+          "class_id": 4,
+          "label": "25 - 50",
+          "display_rgb": [
+            255,
+            208,
+            208
+          ],
+          "pixel_count": 327163
+        },
+        {
+          "id": "50-100",
+          "class_id": 5,
+          "label": "50 - 100",
+          "display_rgb": [
+            255,
+            192,
+            192
+          ],
+          "pixel_count": 285609
+        },
+        {
+          "id": "100-250",
+          "class_id": 6,
+          "label": "100 - 250",
+          "display_rgb": [
+            255,
+            160,
+            160
+          ],
+          "pixel_count": 207543
+        },
+        {
+          "id": "250-500",
+          "class_id": 7,
+          "label": "250 - 500",
+          "display_rgb": [
+            255,
+            128,
+            128
+          ],
+          "pixel_count": 101090
+        },
+        {
+          "id": "500-1000",
+          "class_id": 8,
+          "label": "500 - 1000",
+          "display_rgb": [
+            255,
+            64,
+            64
+          ],
+          "pixel_count": 76483
+        },
+        {
+          "id": "1000-2500",
+          "class_id": 9,
+          "label": "1000 - 2500",
+          "display_rgb": [
+            255,
+            0,
+            0
+          ],
+          "pixel_count": 70565
+        },
+        {
+          "id": "2500-5000",
+          "class_id": 10,
+          "label": "2500 - 5000",
+          "display_rgb": [
+            224,
+            0,
+            0
+          ],
+          "pixel_count": 64048
+        },
+        {
+          "id": "5000-10000",
+          "class_id": 11,
+          "label": "5000 - 10000",
+          "display_rgb": [
+            192,
+            0,
+            0
+          ],
+          "pixel_count": 59992
+        },
+        {
+          "id": "10000",
+          "class_id": 12,
+          "label": "> 10000",
+          "display_rgb": [
+            160,
+            0,
+            0
+          ],
+          "pixel_count": 23938
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          12
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/population-density/class-id/{z}/{x}/{y}.png?v=7d0193167956e83f",
+        "tilejson": "tiles/population-density/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 706385,
+        "mean_tile_image_byte_count": 1765.9625,
+        "tile_set_sha256": "7d0193167956e83ffb15e718e33b0e327ab40d1fb04d1a15919ecd89a2b6e528",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ],
+  "publication_approved": true,
+  "asset_base": "/mapscan/data/staging/population-native-fidelity-repair-v2/",
+  "shared_assets": {
+    "immutable_asset_count": 403,
+    "immutable_assets_sha256": "9a0841add7007f9027578abf46585d222c5c33af686dfc4147bccfd3c10aac15"
+  }
+}

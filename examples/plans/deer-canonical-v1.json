@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "dataset_id": "deer-distribution-california",
+  "title": "Deer Distribution in California",
+  "source": "examples/deer.png",
+  "alignment": "runs/perimeter-refinement-all-v4/deer/alignment.json",
+  "reference": "reference/census-2025",
+  "county_reference": "runs/county-reference-v2/county-reference.json",
+  "review_default_view": "classification",
+  "layers": [
+    {
+      "id": "deer-distribution",
+      "kind": "categorical",
+      "coverage_expectation": "full_state",
+      "complete_target_state": true,
+      "suppress_isolated_specks": true,
+      "maximum_speck_area": 16,
+      "minimum_speck_surrounding_purity": 0.5,
+      "preserve_near_white_specks": true,
+      "max_distance": 8.0,
+      "min_margin": 2.0,
+      "categories": [
+        {
+          "id": "rocky-mountain-mule-deer",
+          "label": "Rocky Mountain Mule Deer",
+          "legend_rgb": [143, 88, 152]
+        },
+        {
+          "id": "columbian-black-tailed-deer",
+          "label": "Columbian Black-tailed Deer",
+          "legend_rgb": [223, 79, 43]
+        },
+        {
+          "id": "california-mule-deer",
+          "label": "California Mule Deer",
+          "legend_rgb": [253, 234, 30]
+        },
+        {
+          "id": "inyo-mule-deer",
+          "label": "Inyo Mule Deer",
+          "legend_rgb": [227, 94, 109]
+        },
+        {
+          "id": "burro-deer",
+          "label": "Burro Deer",
+          "legend_rgb": [70, 179, 125]
+        },
+        {
+          "id": "southern-mule-deer",
+          "label": "Southern Mule Deer",
+          "legend_rgb": [48, 61, 139]
+        },
+        {
+          "id": "rocky-mountain-and-columbian",
+          "label": "Rocky Mountain & Columbian Black-tailed Deer",
+          "legend_rgb": [232, 114, 40]
+        },
+        {
+          "id": "columbian-and-california",
+          "label": "Columbian Black-tailed & California Mule Deer",
+          "legend_rgb": [137, 76, 33]
+        },
+        {
+          "id": "southern-and-burro",
+          "label": "Southern Mule & Burro Deer",
+          "legend_rgb": [106, 199, 209]
+        },
+        {
+          "id": "rare-or-absent",
+          "label": "Deer Rare or Absent",
+          "legend_rgb": [255, 255, 255]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Black county lines, labels, and other ambiguous interior pixels are reconstructed from the geographically nearest observed legend class. The reconstruction remains separately masked and is not represented as directly observed evidence."
+  ]
+}

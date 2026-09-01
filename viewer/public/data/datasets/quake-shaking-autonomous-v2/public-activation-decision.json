@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "earthquake-shaking-potential-california-2025-final-hybrid-v1",
+  "dataset_title": "Earthquake Shaking Potential for California",
+  "staging_artifact_dataset_id": "earthquake-shaking-potential-california-2025-final-hybrid-v1",
+  "staging_artifact_title": "Earthquake Shaking Potential for California",
+  "author_statement": "Check that each map uses the newer version and fix it.",
+  "activated_at": "2026-08-31T23:32:23.778541+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/quake-nonlinear-autonomous-v2/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "a7785f96ca74ed906773501c5d7b7b2159bae9853c69c2d9efc537d43fd5be42",
+  "staging_provenance_sha256": "c70aa05b682afb48e13b6b59e56f9e214a8a034c65011f0cc293e19d0ea218aa",
+  "staging_package_sha256": "fe8ee4b11a1f515a40462679a674a169353dafd237a9b9d568034f7ef44d94fe",
+  "public_dataset_sha256": "da4f687aa03794e3252a4c9c63eb9b1ad140eb8c8b7e7f8a5bfa3fe9fab8aa11",
+  "public_provenance_sha256": "38d9a3bab480066b3f179321f88680547a6adddd29df6c113bb837fb3f8da392",
+  "immutable_asset_count": 404,
+  "immutable_assets_sha256": "38e53cc229226edaad46f4d61f51bea1e2377e93e9be461d67b2b2894b036d15",
+  "source_image_sha256": "2297ccdf1193335bc4d57d660ffc3e9f52188c2043c101228a7a246629bab315",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "modified-mercalli-intensity",
+      "accepted_raster_sha256": "423fa745f9fd48173c728b90cf8e009835afaf743755e90162d0ba472a908ec4",
+      "semantic_kind": "full_state_land_ordered_shaking_intensity",
+      "coverage_contract": "full_state",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 110572
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "modified-mercalli-intensity",
+      "category_ids": [
+        "ix-violent-shaking",
+        "vi-strong-shaking",
+        "vii-very-strong-shaking",
+        "viii-severe-shaking",
+        "x-extreme-shaking",
+        "xi-devastating-shaking"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 1022787,
+      "tile_set_sha256": "349e1e5942f231ea4c81eabe6889aa976a0a17f5fc1d2813db6e6e6c90468020"
+    }
+  ]
+}

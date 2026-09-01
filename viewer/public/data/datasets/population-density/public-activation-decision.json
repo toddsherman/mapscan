@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "california-population-density-2020",
+  "dataset_title": "California Population Density, 2020",
+  "staging_artifact_dataset_id": "california-population-density-autonomous-v2-native-fidelity",
+  "staging_artifact_title": "California Population Density \u2014 Autonomous Native-Fidelity Candidate",
+  "author_statement": "Proceed",
+  "activated_at": "2026-08-31T21:13:46.259418+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/population-native-fidelity-repair-v2/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "48bdf72ffc4d0a3c213526e7d946c6d12a958071af6ce007623b8c9044b60d25",
+  "staging_provenance_sha256": "12954d1362cad86113e51f5cf7c75865ffc20d287533bbf75241992f516dcb8d",
+  "staging_package_sha256": "4c49445cf4186f0c82d65c85615743625589f6de57cdbbe3da6daebe4684212e",
+  "public_dataset_sha256": "843e6b8d3f44769836be3fb45544df1ae9268bce2b2a38ab1e2aeeed1978d385",
+  "public_provenance_sha256": "f807a310c82e2d9d4feb4e23bb6afeabeaf68c2a726da0f54c73b903bfd280e2",
+  "immutable_asset_count": 403,
+  "immutable_assets_sha256": "9a0841add7007f9027578abf46585d222c5c33af686dfc4147bccfd3c10aac15",
+  "source_image_sha256": "45bb66b29dfe1866829b6f04cb0cfc20bc2405821ceee3b9d4b31ea4a27a2098",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "population-density",
+      "accepted_raster_sha256": "f11f3f070bc639deafe0e6e56a434894bb318d7d65008ae2179b85b75d3ee055",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 110572
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "population-density",
+      "category_ids": [
+        "1",
+        "1-10",
+        "10-25",
+        "100-250",
+        "1000-2500",
+        "10000",
+        "25-50",
+        "250-500",
+        "2500-5000",
+        "50-100",
+        "500-1000",
+        "5000-10000"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 706385,
+      "tile_set_sha256": "7d0193167956e83ffb15e718e33b0e327ab40d1fb04d1a15919ecd89a2b6e528"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "california-average-annual-precipitation-1981-2010",
+  "dataset_title": "California Average Annual Precipitation, 1981\u20132010",
+  "staging_artifact_dataset_id": "california-average-annual-precipitation-1981-2010",
+  "staging_artifact_title": "California Average Annual Precipitation, 1981\u20132010",
+  "author_statement": "Check that each map uses the newer version and fix it.",
+  "activated_at": "2026-08-31T23:32:23.709625+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/rainfall-1981-2010-autonomous-v2/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "e901a3228a113a3dbd42e1a7518fe1c34439253a1a7355a54b127946f0fbc39a",
+  "staging_provenance_sha256": "cce1fd97056169eaea13fc23917252829d5b7c0a7f971412751bdb0387806872",
+  "staging_package_sha256": "9f9d5886cc2ae29211ba1b8081e6d278ab9bbb6ac325e20e7643bce61d85f5c8",
+  "public_dataset_sha256": "a744ea488cb63a964d1a966d21137493f0011bf0072121b2a30ba46cfc73a3c2",
+  "public_provenance_sha256": "c02ffe92c04947f4c00ca37ea619d1a3665a7d08be5f2f0e1cbeec02ec41764a",
+  "immutable_asset_count": 404,
+  "immutable_assets_sha256": "0b6e1a059c7d67e7abeeb224bde9fb7fd0e0313e21788b8529a5ed13fbb9d9cc",
+  "source_image_sha256": "df2a8802ef513bc6ec4aeead96a994fcf16efe2ad7f87381fcda682131dd6f84",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "average-annual-precipitation",
+      "accepted_raster_sha256": "4685d0442f493e22c8b097d0fff8b427b4506f29880b07a563e1ed8d3175b3ff",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 109073
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "average-annual-precipitation",
+      "category_ids": [
+        "0-5",
+        "10-20",
+        "100-125",
+        "125-150",
+        "150-171",
+        "20-30",
+        "30-50",
+        "5-10",
+        "50-75",
+        "75-100"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 591435,
+      "tile_set_sha256": "e780e81bb5862525950aba58cc4284941096b66d05a2cf0cddf2d8051463eac7"
+    }
+  ]
+}

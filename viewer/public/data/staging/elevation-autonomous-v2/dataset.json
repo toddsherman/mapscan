@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "status": "needs_visual_review",
+  "id": "california-topography-elevation",
+  "title": "California Topography and Elevation",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.gif",
+  "approval": {
+    "status": "not_approved"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "autonomous-preview-provenance.json",
+    "sha256": "86812e916a161761e9c1ccf173746cc94c00053ff3361369dbfa2dffc776bc3a"
+  },
+  "layers": [
+    {
+      "id": "elevation-bands",
+      "label": "Elevation bands",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "depression",
+          "class_id": 1,
+          "label": "Depression (depth not specified)",
+          "display_rgb": [
+            0,
+            70,
+            60
+          ],
+          "pixel_count": 81306
+        },
+        {
+          "id": "elevation-0-to-100-m",
+          "class_id": 2,
+          "label": "0\u2013<100 m",
+          "display_rgb": [
+            30,
+            116,
+            0
+          ],
+          "pixel_count": 684718
+        },
+        {
+          "id": "elevation-100-to-250-m",
+          "class_id": 3,
+          "label": "100\u2013<250 m",
+          "display_rgb": [
+            30,
+            171,
+            0
+          ],
+          "pixel_count": 541245
+        },
+        {
+          "id": "elevation-250-to-500-m",
+          "class_id": 4,
+          "label": "250\u2013<500 m",
+          "display_rgb": [
+            184,
+            189,
+            0
+          ],
+          "pixel_count": 717310
+        },
+        {
+          "id": "elevation-500-to-1000-m",
+          "class_id": 5,
+          "label": "500\u2013<1,000 m",
+          "display_rgb": [
+            230,
+            152,
+            0
+          ],
+          "pixel_count": 1607937
+        },
+        {
+          "id": "elevation-1000-to-2000-m",
+          "class_id": 6,
+          "label": "1,000\u2013<2,000 m",
+          "display_rgb": [
+            230,
+            83,
+            0
+          ],
+          "pixel_count": 1230992
+        },
+        {
+          "id": "elevation-2000-to-4000-m",
+          "class_id": 7,
+          "label": "2,000\u2013<4,000 m",
+          "display_rgb": [
+            136,
+            92,
+            72
+          ],
+          "pixel_count": 630286
+        },
+        {
+          "id": "elevation-4000-to-5000-m",
+          "class_id": 8,
+          "label": "4,000\u2013<5,000 m",
+          "display_rgb": [
+            255,
+            255,
+            255
+          ],
+          "pixel_count": 568
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          8
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/elevation-bands/class-id/{z}/{x}/{y}.png?v=95aea09d3d0bb08d",
+        "tilejson": "tiles/elevation-bands/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 674854,
+        "mean_tile_image_byte_count": 1687.135,
+        "tile_set_sha256": "95aea09d3d0bb08df8df2a5e8681a0817f25644506dd89bcfd357e3e4955e813",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ]
+}

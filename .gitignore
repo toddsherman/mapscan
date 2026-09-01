@@ -1,0 +1,46 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.DS_Store
+*.egg-info/
+*.tsbuildinfo
+
+# Downloaded authoritative reference data and generated run artifacts.
+reference/
+runs/
+runs-*.log
+publish/
+tmp/
+
+# Superseded viewer packages. The accepted manifests and assets that remain
+# unignored are the same packages included in production deployments.
+viewer/public/data/datasets/agricultural-land-use/
+viewer/public/data/datasets/deer-distribution/
+viewer/public/data/datasets/elevation/
+viewer/public/data/datasets/elevation-bands/
+viewer/public/data/datasets/forest-cover/
+viewer/public/data/datasets/forest-cover-autonomous-v2/
+viewer/public/data/datasets/forest-cover-autonomous-v3/
+viewer/public/data/datasets/named-hydrography/
+viewer/public/data/datasets/plant-hardiness/
+viewer/public/data/datasets/plant-hardiness-autonomous-v2/
+viewer/public/data/datasets/quake-shaking/
+viewer/public/data/datasets/rainfall/
+viewer/public/data/datasets/rainfall-1981-2010/
+
+viewer/public/data/staging/elevation-v4-approved/
+viewer/public/data/staging/fire-autonomous-v1/
+viewer/public/data/staging/forest-autonomous-v2/
+viewer/public/data/staging/forest-autonomous-v3/
+viewer/public/data/staging/forest-autonomous-v4/
+viewer/public/data/staging/landslide-autonomous-v1/
+viewer/public/data/staging/plant-hardiness-autonomous-v2/
+viewer/public/data/staging/rainfall-1981-2010-mapbox-water-v8-approved/
+viewer/public/data/staging/rainfall-1981-2010-mapbox-water-v8-preview/
+viewer/public/data/staging/rivers-autonomous-v1/
+
+# The article uses the rendered geology source; the original PDF remains in
+# examples/ for the processing pipeline and is not duplicated in the viewer.
+viewer/public/data/staging/geologic-highres-autonomous-v1/source.pdf

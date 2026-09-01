@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "status": "approved_publication",
+  "id": "deer-distribution-california",
+  "title": "Deer Distribution in California",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.png",
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "author_statement": "Check that each map uses the newer version and fix it.",
+    "activated_at": "2026-08-31T23:32:23.694897+00:00"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "provenance.json",
+    "sha256": "40a40c95e0d8d410bd02bfab7cb46c1b335ff7b9bd1e96c4cade73ef0ae9586a"
+  },
+  "layers": [
+    {
+      "id": "deer-distribution",
+      "label": "Deer Distribution in California",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "rocky-mountain-mule-deer",
+          "class_id": 1,
+          "label": "Rocky Mountain Mule Deer",
+          "display_rgb": [
+            143,
+            88,
+            152
+          ],
+          "pixel_count": 418895
+        },
+        {
+          "id": "columbian-black-tailed-deer",
+          "class_id": 2,
+          "label": "Columbian Black-tailed Deer",
+          "display_rgb": [
+            223,
+            80,
+            43
+          ],
+          "pixel_count": 1358167
+        },
+        {
+          "id": "california-mule-deer",
+          "class_id": 3,
+          "label": "California Mule Deer",
+          "display_rgb": [
+            253,
+            234,
+            30
+          ],
+          "pixel_count": 813725
+        },
+        {
+          "id": "inyo-mule-deer",
+          "class_id": 4,
+          "label": "Inyo Mule Deer",
+          "display_rgb": [
+            227,
+            94,
+            109
+          ],
+          "pixel_count": 272293
+        },
+        {
+          "id": "burro-deer",
+          "class_id": 5,
+          "label": "Burro Deer",
+          "display_rgb": [
+            70,
+            179,
+            125
+          ],
+          "pixel_count": 227413
+        },
+        {
+          "id": "southern-mule-deer",
+          "class_id": 6,
+          "label": "Southern Mule Deer",
+          "display_rgb": [
+            48,
+            61,
+            139
+          ],
+          "pixel_count": 174108
+        },
+        {
+          "id": "rocky-mountain-columbian-black-tailed-deer",
+          "class_id": 7,
+          "label": "Rocky Mountain & Columbian Black-tailed Deer",
+          "display_rgb": [
+            232,
+            114,
+            40
+          ],
+          "pixel_count": 270400
+        },
+        {
+          "id": "columbian-black-tailed-california-mule-deer",
+          "class_id": 8,
+          "label": "Columbian Black-tailed & California Mule Deer",
+          "display_rgb": [
+            137,
+            76,
+            33
+          ],
+          "pixel_count": 206413
+        },
+        {
+          "id": "southern-mule-burro-deer",
+          "class_id": 9,
+          "label": "Southern Mule & Burro Deer",
+          "display_rgb": [
+            106,
+            199,
+            209
+          ],
+          "pixel_count": 34754
+        },
+        {
+          "id": "deer-rare-or-absent",
+          "class_id": 10,
+          "label": "Deer Rare or Absent",
+          "display_rgb": [
+            255,
+            255,
+            255
+          ],
+          "pixel_count": 1719693
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          10
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/deer-distribution/class-id/{z}/{x}/{y}.png?v=61a8fdd5cb12e20b",
+        "tilejson": "tiles/deer-distribution/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 505879,
+        "mean_tile_image_byte_count": 1264.6975,
+        "tile_set_sha256": "61a8fdd5cb12e20bedf4ce9382c3e80c9d3209727d205c278d09c505add1b7f2",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ],
+  "publication_approved": true,
+  "asset_base": "/mapscan/data/staging/deer-autonomous-v2/",
+  "shared_assets": {
+    "immutable_asset_count": 404,
+    "immutable_assets_sha256": "4e5874e5c88cde1c80652931c0a73f2131f0ab3b0ab6cd5666a99d000e337b1b"
+  }
+}

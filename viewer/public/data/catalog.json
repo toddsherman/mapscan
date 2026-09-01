@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-01T02:17:29Z",
+  "datasets": [
+    {
+      "id": "earthquake-shaking-potential-california-2025-final-hybrid-v1",
+      "title": "Earthquake Shaking Potential for California",
+      "artifact_id": "quake-nonlinear-autonomous-v2",
+      "manifest": "datasets/quake-shaking-autonomous-v2/dataset.json",
+      "asset_base": "/mapscan/data/staging/quake-nonlinear-autonomous-v2/",
+      "bounds": [
+        -124.482003,
+        32.529508,
+        -114.131211,
+        42.009503
+      ],
+      "category_count": 6,
+      "source_image": "staging/quake-nonlinear-autonomous-v2/source.jpg"
+    },
+    {
+      "id": "california-plant-hardiness-zones-neighbor-v1",
+      "title": "California Plant Hardiness Zones",
+      "artifact_id": "plant-hardiness-autonomous-v3",
+      "manifest": "datasets/plant-hardiness-autonomous-v3/dataset.json",
+      "asset_base": "/mapscan/data/staging/plant-hardiness-autonomous-v3/",
+      "bounds": [
+        -124.482003,
+        32.529508,
+        -114.131211,
+        42.009503
+      ],
+      "category_count": 13,
+      "source_image": "staging/plant-hardiness-autonomous-v3/source.avif"
+    },
+    {
+      "id": "deer-distribution-california",
+      "title": "Deer Distribution in California",
+      "artifact_id": "deer-autonomous-v2",
+      "manifest": "datasets/deer-distribution-autonomous-v2/dataset.json",
+      "asset_base": "/mapscan/data/staging/deer-autonomous-v2/",
+      "bounds": [
+        -124.482003,
+        32.529508,
+        -114.131211,
+        42.009503
+      ],
+      "category_count": 10,
+      "source_image": "staging/deer-autonomous-v2/source.png"
+    },
+    {
+      "id": "california-forest-cover",
+      "title": "Forest Cover of California",
+      "artifact_id": "forest-autonomous-v5",
+      "manifest": "datasets/forest-cover-autonomous-v5/dataset.json",
+      "asset_base": "/mapscan/data/staging/forest-autonomous-v5/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 8,
+      "source_image": "staging/forest-autonomous-v5/source.jpg"
+    },
+    {
+      "id": "california-agricultural-land-use",
+      "title": "California Agricultural Land Use",
+      "artifact_id": "california-agricultural-land-use-autonomous-v2-highres",
+      "manifest": "datasets/agricultural-land-use-v2-highres/dataset.json",
+      "asset_base": "/mapscan/data/staging/farms-v2-autonomous-v1/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 45,
+      "source_image": "staging/farms-v2-autonomous-v1/source.png"
+    },
+    {
+      "id": "california-population-density-2020",
+      "title": "California Population Density, 2020",
+      "artifact_id": "california-population-density-autonomous-v2-native-fidelity",
+      "manifest": "datasets/population-density/dataset.json",
+      "asset_base": "/mapscan/data/staging/population-native-fidelity-repair-v2/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 12,
+      "source_image": "staging/population-native-fidelity-repair-v2/source.png"
+    },
+    {
+      "id": "california-fire-hazard-and-responsibility-areas",
+      "title": "California Fire Hazard and Responsibility Areas",
+      "artifact_id": "california-fire-hazard-and-responsibility-areas-autonomous-v2-clipped",
+      "manifest": "datasets/fire-hazard-responsibility/dataset.json",
+      "asset_base": "/mapscan/data/staging/fire-autonomous-v2-clipped/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 4,
+      "source_image": "staging/fire-autonomous-v2-clipped/source.webp"
+    },
+    {
+      "id": "california-severe-weather-impacts",
+      "title": "California Severe Weather Impacts",
+      "artifact_id": "california-severe-weather-impacts-autonomous-v2-clipped",
+      "manifest": "datasets/severe-weather-impacts/dataset.json",
+      "asset_base": "/mapscan/data/staging/landslide-autonomous-v2-clipped/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 6,
+      "source_image": "staging/landslide-autonomous-v2-clipped/source.png"
+    },
+    {
+      "id": "california-geologic-map-2010",
+      "title": "Geologic Map of California, 2010",
+      "artifact_id": "california-geologic-units-autonomous-highres-v1",
+      "manifest": "datasets/geologic-units-highres/dataset.json",
+      "asset_base": "/mapscan/data/staging/geologic-highres-autonomous-v1/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 53,
+      "source_image": "staging/geologic-highres-autonomous-v1/source.png"
+    },
+    {
+      "id": "california-average-annual-precipitation-1981-2010",
+      "title": "California Average Annual Precipitation, 1981–2010",
+      "artifact_id": "rainfall-1981-2010-autonomous-v2",
+      "manifest": "datasets/rainfall-1981-2010-autonomous-v2/dataset.json",
+      "asset_base": "/mapscan/data/staging/rainfall-1981-2010-autonomous-v2/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 10,
+      "source_image": "staging/rainfall-1981-2010-autonomous-v2/source.png"
+    },
+    {
+      "id": "california-topography-elevation",
+      "title": "California Topography and Elevation",
+      "artifact_id": "elevation-autonomous-v2",
+      "manifest": "datasets/elevation-bands-autonomous-v2/dataset.json",
+      "asset_base": "/mapscan/data/staging/elevation-autonomous-v2/",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "category_count": 8,
+      "source_image": "staging/elevation-autonomous-v2/source.gif"
+    }
+  ]
+}

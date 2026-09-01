@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "forest-type",
+      "accepted_raster_sha256": "c623be71f985bccf7d700896e77bae0c25bf343f979e844f1b779f81c54c4c97",
+      "publication_raster": "../../viewer/public/data/staging/forest-autonomous-v3/publication-class-id.png",
+      "semantic_kind": "sparse_visible_forest_categories",
+      "coverage_contract": "sparse_visible_evidence"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "dataset_id": "california-fire-hazard",
+  "title": "California Fire Hazard",
+  "source": "examples/fire.webp",
+  "alignment": "runs/fire-auto-v1/alignment.json",
+  "reference": "reference/census-2025",
+  "layers": [
+    {
+      "id": "local-responsibility-area",
+      "kind": "dot_pattern",
+      "coverage_expectation": "sparse_visible_evidence",
+      "max_distance": 18.0,
+      "maximum_component_area": 20,
+      "maximum_component_dimension": 12,
+      "pattern_radius": 18,
+      "minimum_quadrants": 3,
+      "minimum_quadrant_pixels": 2,
+      "density_window": 31,
+      "minimum_window_pixels": 40,
+      "categories": [
+        {"id": "local-responsibility-area", "label": "Local Responsibility Area", "legend_rgb": [6, 39, 60], "display_rgb": [6, 39, 60]}
+      ]
+    },
+    {
+      "id": "fire-hazard-level",
+      "kind": "categorical",
+      "coverage_expectation": "sparse_visible_evidence",
+      "max_distance": 18.0,
+      "min_margin": 3.0,
+      "exclude_visible_layers": ["local-responsibility-area"],
+      "categories": [
+        {"id": "moderate", "label": "Moderate", "legend_rgb": [235, 212, 102]},
+        {"id": "high", "label": "High", "legend_rgb": [246, 163, 94]},
+        {"id": "very-high", "label": "Very High", "legend_rgb": [241, 102, 101]}
+      ]
+    }
+  ],
+  "warnings": [
+    "The Local Responsibility Area dot pattern is a separate binary layer.",
+    "Only high-confidence dot-texture pixels are retained because the source reuses navy for county lines; sparse edge dots may be omitted.",
+    "Hazard pixels physically covered by navy dots are NoData in the hazard layer; the processor does not invent the hidden value."
+  ]
+}

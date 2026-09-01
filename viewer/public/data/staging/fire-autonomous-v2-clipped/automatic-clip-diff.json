@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "kind": "automatic_direct_mapbox_state_clip_diff",
+  "decision": "pass",
+  "source_staging_package": "fire-autonomous-v1",
+  "output_staging_package": "fire-autonomous-v2-clipped",
+  "state_interior": {
+    "authority": "accepted_alignment_pinned_raw_mapbox_reference_with_derived_state_topology_v2",
+    "reference_manifest_path": "reference/mapbox-reference-manifest.json",
+    "reference_manifest_sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "source_raw_manifest_sha256": "f8f8238b70ca0b329bb27945b5831fb8b2914d633ea7f81b09e5f394bc39b703",
+    "raw_bytes_preserved_exactly": true,
+    "mask_derivation": "pacific_side_detached_island_topology_v2",
+    "mask_path": "reference/direct-mapbox-state-interior-mask.png",
+    "mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "pixel_count": 5604934,
+    "target_grid": {
+      "crs": "EPSG:3857",
+      "bounds": [
+        -13857273.186886752,
+        3833019.2460767706,
+        -12705028.292139662,
+        5162403.053672604
+      ],
+      "width": 3398,
+      "height": 3920
+    }
+  },
+  "policy": "preserve every in-state class id exactly; replace every nonzero exterior class id with NoData zero",
+  "layers": [
+    {
+      "id": "fire-hazard-severity",
+      "schema_version": 1,
+      "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+      "semantic_kind": "mutually_exclusive_categorical",
+      "accepted_raster_sha256": "f544310c5c47fbc71557f2581c14edab5ec70ca7a6b75720b3f753185f93f30d",
+      "accepted_raster_packaged_path": "evidence/fire-hazard-severity/accepted-raster.png",
+      "clipped_class_raster_path": "rasters/fire-hazard-severity/clipped-class-id.png",
+      "clipped_class_raster_sha256": "758432006be6c6b7ddcd681b31e9e01bcef8be5d4437f0f3e0b21ba915626c0f",
+      "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+      "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+      "in_state_class_id_mismatch_pixel_count": 0,
+      "outside_state_classified_pixel_count": 0,
+      "exterior_removed_pixel_count": 583,
+      "exact_interior_nodata_pixel_count": 3109767,
+      "exact_interior_classified_pixel_count": 2495167,
+      "accepted_interior_classified_pixel_count": 2495167,
+      "only_exterior_removals": true,
+      "diff_mask_path": "diagnostics/fire-hazard-severity-exterior-removals.png",
+      "diff_mask_sha256": "b9a2e308769e6603c17794d14bdbe9a5696eb24eca65e4cdf9a04d21ed733796",
+      "decision": "pass"
+    },
+    {
+      "id": "local-responsibility-area",
+      "schema_version": 1,
+      "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+      "semantic_kind": "independent_binary_dot_symbol",
+      "accepted_raster_sha256": "664974e205e216bb0e4f688c0ab352960b02b6afb157c06421ea50eb6145210c",
+      "accepted_raster_packaged_path": "evidence/local-responsibility-area/accepted-raster.png",
+      "clipped_class_raster_path": "rasters/local-responsibility-area/clipped-class-id.png",
+      "clipped_class_raster_sha256": "2dacb2321869e994d471f89e40a0d6897e364033e21db03370877a675e97c633",
+      "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+      "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+      "in_state_class_id_mismatch_pixel_count": 0,
+      "outside_state_classified_pixel_count": 0,
+      "exterior_removed_pixel_count": 0,
+      "exact_interior_nodata_pixel_count": 5586476,
+      "exact_interior_classified_pixel_count": 18458,
+      "accepted_interior_classified_pixel_count": 18458,
+      "only_exterior_removals": true,
+      "diff_mask_path": "diagnostics/local-responsibility-area-exterior-removals.png",
+      "diff_mask_sha256": "a5864864e9aceedd4b3957122c09959a8e3164d0af181a817e6429836be4f050",
+      "decision": "pass"
+    }
+  ],
+  "totals": {
+    "in_state_class_id_mismatch_pixel_count": 0,
+    "outside_state_classified_pixel_count": 0,
+    "exterior_removed_pixel_count": 583
+  },
+  "gates": {
+    "all_in_state_class_ids_exact": true,
+    "all_exterior_class_ids_nodata": true,
+    "all_changes_are_exterior_removals": true,
+    "all_layer_contracts_pass": true
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-21",
+  "reference": {
+    "provider": "U.S. Census Bureau TIGER/Line",
+    "vintage": "2025",
+    "state_archive_sha256": "59a220888a8d9be8117c4fcd38f542bd02d81abf0d198c78113595ad540dd957",
+    "county_archive_sha256": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763"
+  },
+  "runs": [
+    {
+      "id": "forest-auto-v1",
+      "image": "examples/forest.jpg",
+      "alignment_mode": "automatic",
+      "working_max_dimension": 850,
+      "best_projection": "california_albers",
+      "metrics": {
+        "heldout_median_px": 1.0,
+        "heldout_p90_px": 3.0,
+        "heldout_within_5px_fraction": 0.9625
+      },
+      "visual_assessment": "correct_mainland_fit"
+    },
+    {
+      "id": "farms-auto-v1",
+      "image": "examples/farms.png",
+      "alignment_mode": "automatic",
+      "working_max_dimension": 900,
+      "best_projection": "conus_albers",
+      "metrics": {
+        "heldout_median_px": 1.0,
+        "heldout_p90_px": 4.5249,
+        "heldout_within_5px_fraction": 0.9125
+      },
+      "visual_assessment": "false_fit_wrong_scale_and_location"
+    },
+    {
+      "id": "farms-auto-v3",
+      "image": "examples/farms.png",
+      "alignment_mode": "automatic",
+      "working_max_dimension": 900,
+      "best_projection": "web_mercator",
+      "evidence_model": "outline_counties",
+      "metrics": {
+        "heldout_median_px": 3.0,
+        "heldout_p90_px": 9.8640,
+        "data_color_containment_fraction": 0.8718,
+        "county_within_5px_fraction": 0.7004
+      },
+      "visual_assessment": "false_fit_despite_added_global_evidence"
+    },
+    {
+      "id": "farms-auto-v5-partial",
+      "image": "examples/farms.png",
+      "alignment_mode": "automatic",
+      "coverage_model": "partial_state",
+      "working_max_dimension": 900,
+      "best_projection": "web_mercator",
+      "evidence_model": "outline",
+      "metrics": {
+        "heldout_median_px": 1.0,
+        "heldout_p90_px": 6.3560,
+        "heldout_within_5px_fraction": 0.8649,
+        "data_color_containment_fraction": 0.8546,
+        "visible_reference_fraction": 0.1542
+      },
+      "visual_assessment": "false_partial_fit_to_agricultural_data_edges"
+    },
+    {
+      "id": "farms-auto-v9-partial",
+      "image": "examples/farms.png",
+      "alignment_mode": "automatic",
+      "coverage_model": "partial_state",
+      "working_max_dimension": 900,
+      "best_projection": "conus_albers",
+      "evidence_model": "outline_counties_with_connected_eastern_border_hinge",
+      "metrics": {
+        "heldout_median_px": 1.0,
+        "heldout_p90_px": 5.3852,
+        "heldout_within_5px_fraction": 0.8636,
+        "data_color_containment_fraction": 0.9117,
+        "visible_reference_fraction": 0.2733,
+        "county_within_5px_fraction": 0.9005,
+        "eastern_border_hinge_residual_px": 0.8249
+      },
+      "visual_assessment": "strong_candidate_matches_eastern_hinge_and_visible_coast_pending_author_confirmation"
+    },
+    {
+      "id": "forest-auto-v4",
+      "image": "examples/forest.jpg",
+      "alignment_mode": "automatic",
+      "coverage_model": "full_or_most_state",
+      "working_max_dimension": 900,
+      "best_projection": "california_albers",
+      "evidence_model": "outline",
+      "metrics": {
+        "heldout_median_px": 1.0,
+        "heldout_p90_px": 2.0,
+        "heldout_within_5px_fraction": 0.9917,
+        "data_color_containment_fraction": 0.9436,
+        "visible_reference_fraction": 1.0
+      },
+      "visual_assessment": "correct_mainland_fit_regression_pass"
+    },
+    {
+      "id": "geologic-pdf-preview-v1",
+      "image": "tmp/pdfs/geologic/preview.png",
+      "canonical_source": "examples/geologic.pdf",
+      "alignment_mode": "automatic",
+      "coverage_model": "full_or_most_state",
+      "working_max_dimension": 900,
+      "best_projection": "conus_albers",
+      "evidence_model": "outline",
+      "metrics": {
+        "heldout_median_px": 1.0,
+        "heldout_p90_px": 5.0,
+        "heldout_within_5px_fraction": 0.9042,
+        "data_color_containment_fraction": 0.5852,
+        "visible_reference_fraction": 1.0,
+        "county_within_5px_fraction": 0.6942,
+        "eastern_border_hinge_residual_px": 1.2124
+      },
+      "visual_assessment": "rejected_low_resolution_edge_score_cannot_bound_zoom_level_drift"
+    },
+    {
+      "id": "geologic-pdf-graticule-v4",
+      "image": "tmp/pdfs/geologic/refinement-4500.png",
+      "canonical_source": "examples/geologic.pdf",
+      "alignment_mode": "automatic_native_pdf_graticule",
+      "projection": "EPSG:3310",
+      "working_max_dimension": 4500,
+      "evidence_model": "72_native_vector_graticule_intersections",
+      "metrics": {
+        "control_rms_page_point": 0.0436931497,
+        "control_p90_page_point": 0.0649021367,
+        "control_max_page_point": 0.0860602845,
+        "render_pixels_per_page_point": 1.0,
+        "affine_scale_anisotropy": 1.0001212162
+      },
+      "visual_assessment": "subpixel_distributed_registration_pass_boundary_overlay_retained_for_independent_review"
+    }
+  ],
+  "conclusion": "Generic edge distance is not sufficient for automatic acceptance, especially when a low-resolution score is applied to a high-resolution source. Geography-specific border topology remains the best raster-only evidence so far. For the geologic PDF, a declared CRS and 72 native vector graticule intersections superseded raster-edge fitting and produced a distributed subpixel registration. Corpus-wide thresholds remain diagnostic until evaluated across more examples.",
+  "assisted_ui": {
+    "implemented": true,
+    "minimum_pairs": 4,
+    "current_transform_model": "projective_homography",
+    "browser_flow_verified": true,
+    "geographic_farms_alignment_completed": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "rainfall-1981-2010-mapbox-water-v8",
+      "kind": "extraction",
+      "run": "runs/rainfall-1981-2010-mapbox-water-extract-v8",
+      "repair_full_state": true,
+      "maximum_iterations": 4
+    }
+  ]
+}

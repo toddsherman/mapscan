@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-21",
+  "status": "diagnostic_only",
+  "examples": [
+    {
+      "id": "deer",
+      "source": "examples/deer.png",
+      "case": "clean_categorical",
+      "alignment": {
+        "run": "runs/deer-auto-v1",
+        "projection": "california_albers",
+        "source_median_px": 0.0,
+        "source_p90_px": 4.8132,
+        "review": "strong_candidate"
+      },
+      "extraction": {
+        "run": "runs/deer-extract-v2",
+        "variables": 1,
+        "categories": 10,
+        "review": "ready_for_visual_review"
+      }
+    },
+    {
+      "id": "fire",
+      "source": "examples/fire.webp",
+      "case": "categorical_plus_dot_hatch",
+      "alignment": {
+        "run": "runs/fire-auto-v1",
+        "projection": "conus_albers",
+        "source_median_px": 0.0,
+        "source_p90_px": 1.8985,
+        "review": "strong_candidate"
+      },
+      "extraction": {
+        "run": "runs/fire-extract-v4",
+        "hazard_categories": 3,
+        "high_confidence_lra_dot_pixels": 1172,
+        "review": "hazard_ready_lra_provisional"
+      }
+    },
+    {
+      "id": "landslide",
+      "source": "examples/landslide.png",
+      "case": "multiple_independent_overlapping_variables",
+      "alignment": {
+        "run": "runs/landslide-auto-v1",
+        "projection": "web_mercator",
+        "source_median_px": 1.0,
+        "source_p90_px": 5.831,
+        "review": "strong_state_outline_candidate"
+      },
+      "extraction": {
+        "run": "runs/landslide-extract-v5",
+        "variables": 4,
+        "inferred_two_overlay_pixels": 5011,
+        "ambiguous_chromatic_pixels": 5911,
+        "literal_precipitation_legend_centers_light_to_dark": [171, 139, 91],
+        "precipitation_classified_pixels_light_to_dark": [36344, 15486, 452],
+        "review": "overlay_masks_promising_background_corrected_precipitation_provisional"
+      }
+    },
+    {
+      "id": "quake",
+      "source": "examples/quake.jpg",
+      "case": "ordinal_classes_with_within_class_gradients_and_hillshade",
+      "alignment": {
+        "run": "runs/quake-auto-v1",
+        "projection": "web_mercator",
+        "source_median_px": 12.2727,
+        "source_p90_px": 43.5443,
+        "local_refinement_run": "runs/quake-refine-local-v1",
+        "review": "rejected_pending_better_native_resolution_registration"
+      },
+      "assisted_alignment": {
+        "run": "runs/quake-assisted-boundary-v1",
+        "control_basis": "eight_coastline_and_state_border_points",
+        "control_median_source_px": 4.1582,
+        "control_rms_source_px": 6.5908,
+        "control_max_source_px": 12.2066,
+        "withheld_outline_p90_source_px": 11.3485,
+        "city_validation_median_source_px": 15.9931,
+        "city_controls_drive_warp": false,
+        "review": "stronger_boundary_baseline_still_needs_local_inspection"
+      },
+      "extraction": {
+        "run": "runs/quake-extract-v3",
+        "ordinal_categories": 6,
+        "classified_pixels": 3793119,
+        "ambiguous_pixels": 1294008,
+        "review": "classification_promising_but_not_publishable_until_alignment_passes"
+      },
+      "assisted_extraction": {
+        "run": "runs/quake-assisted-extract-v1",
+        "ordinal_categories": 6,
+        "classified_pixels": 3829579,
+        "ambiguous_pixels": 1171859,
+        "county_residual_samples": 40368,
+        "county_median_nearest_edge_px": 2.8284,
+        "county_p90_nearest_edge_px": 17.1172,
+        "county_within_3px_fraction": 0.5484,
+        "county_within_8px_fraction": 0.7279,
+        "review": "needs_revision_author_corrections_saved"
+      },
+      "review_refinement": {
+        "alignment_run": "runs/quake-reviewed-affine-v1",
+        "extraction_run": "runs/quake-reviewed-affine-extract-v1",
+        "author_correction_count": 21,
+        "correction_x_coverage_fraction": 0.7426,
+        "correction_y_coverage_fraction": 0.8508,
+        "selected_model": "affine",
+        "leave_one_out_median_px": 1.9107,
+        "leave_one_out_p90_px": 3.2088,
+        "leave_one_out_max_px": 5.7607,
+        "county_median_nearest_edge_px": 4.0,
+        "county_p90_nearest_edge_px": 27.4591,
+        "review": "failed_arrow_direction_reversed_needs_revision"
+      },
+      "corrected_review_refinement": {
+        "alignment_run": "runs/quake-reviewed-affine-v2",
+        "extraction_run": "runs/quake-reviewed-corrected-extract-v1",
+        "recovered_first_round_correction_count": 21,
+        "independent_second_round_validation_count": 16,
+        "selected_model": "affine",
+        "leave_one_out_median_px": 1.8763,
+        "leave_one_out_p90_px": 3.1937,
+        "leave_one_out_max_px": 5.7398,
+        "second_round_validation_median_px": 1.8117,
+        "second_round_validation_p90_px": 2.6289,
+        "second_round_validation_max_px": 3.0558,
+        "county_median_nearest_edge_px": 1.0,
+        "county_p90_nearest_edge_px": 3.0,
+        "county_within_3px_fraction": 0.9048,
+        "county_within_8px_fraction": 0.9258,
+        "review": "needs_revision_five_local_corrections_saved"
+      },
+      "fine_translation_refinement": {
+        "alignment_run": "runs/quake-reviewed-affine-v3",
+        "extraction_run": "runs/quake-reviewed-corrected-extract-v2",
+        "schema_v2_correction_count": 3,
+        "selected_model": "translation",
+        "composition_depth": 2,
+        "leave_one_out_median_px": 1.6041,
+        "leave_one_out_p90_px": 2.5581,
+        "leave_one_out_max_px": 2.7966,
+        "affine_and_projective_evaluated": false,
+        "county_median_nearest_edge_px": 2.0,
+        "county_p90_nearest_edge_px": 6.0,
+        "county_within_3px_fraction": 0.6390,
+        "county_within_8px_fraction": 0.9298,
+        "review": "rejected_author_says_worse_than_port_8769"
+      },
+      "local_fine_refinement": {
+        "alignment_run": "runs/quake-reviewed-local-v1",
+        "extraction_run": "runs/quake-reviewed-local-extract-v1",
+        "schema_v2_correction_count": 5,
+        "selected_model": "compact_wendland_c2",
+        "support_radius_px": 500.0,
+        "composition_depth": 2,
+        "control_convex_hull_fraction": 0.0459,
+        "control_residual_max_px": 0.0,
+        "sampled_jacobian_min": 0.9590,
+        "sampled_jacobian_max": 1.0321,
+        "county_median_nearest_edge_px": 1.0,
+        "county_p90_nearest_edge_px": 3.0,
+        "county_within_3px_fraction": 0.9031,
+        "county_within_8px_fraction": 0.9258,
+        "review": "needs_revision_four_more_local_corrections_saved"
+      },
+      "second_local_fine_refinement": {
+        "alignment_run": "runs/quake-reviewed-local-v2",
+        "extraction_run": "runs/quake-reviewed-local-extract-v2",
+        "schema_v2_correction_count": 4,
+        "selected_model": "compact_wendland_c2",
+        "support_radius_px": 350.0,
+        "composition_depth": 3,
+        "control_convex_hull_fraction": 0.1094,
+        "control_residual_max_px": 0.0,
+        "kernel_condition": 1.0,
+        "sampled_jacobian_min": 0.9448,
+        "sampled_jacobian_max": 1.0530,
+        "county_median_nearest_edge_px": 1.0,
+        "county_p90_nearest_edge_px": 3.0,
+        "county_within_3px_fraction": 0.9060,
+        "county_within_8px_fraction": 0.9258,
+        "alignment_review": "approved_by_author_on_port_8772",
+        "classification_review": "approved_by_author_on_port_8773",
+        "occlusion_inference": {
+          "run": "runs/quake-reviewed-local-extract-v2/inference",
+          "method": "single_class_morphological_closure_with_dominant_ring_gate",
+          "minimum_dominance": 0.98,
+          "inferred_pixel_count": 75553,
+          "inferred_fraction_of_observed_classified": 0.0196,
+          "cross_class_conflict_pixel_count": 0,
+          "review": "awaiting_author_review_on_port_8774"
+        }
+      }
+    },
+    {
+      "id": "rivers",
+      "source": "examples/rivers.jpg",
+      "case": "named_line_and_polygon_features_with_shared_label_ink",
+      "alignment": {
+        "run": "runs/rivers-auto-v1",
+        "projection": "california_albers",
+        "source_median_px": 0.0,
+        "source_p90_px": 2.1433,
+        "within_3px_working_fraction": 0.9833,
+        "visible_reference_fraction": 1.0,
+        "review": "strong_automatic_candidate_needs_visual_acceptance"
+      },
+      "feature_extraction": {
+        "plan": "examples/feature-plans/rivers.json",
+        "observed_ink_run": "runs/rivers-feature-ink-v1",
+        "semantic_classes": 4,
+        "diagnostic_blue_ink_pixels": 125849,
+        "diagnostic_blue_ink_fraction": 0.0408,
+        "california_clipped_blue_ink_pixels": 99526,
+        "california_clipped_connected_components": 904,
+        "baseline_ocr": "horizontal_labels_partial_rotated_and_curved_names_fragmented",
+        "review": "feature_geometry_pipeline_required"
+      }
+    }
+  ]
+}

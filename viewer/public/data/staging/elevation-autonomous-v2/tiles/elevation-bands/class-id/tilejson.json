@@ -1,0 +1,16 @@
+{
+  "tilejson": "3.0.0",
+  "name": "elevation-bands class ids",
+  "scheme": "xyz",
+  "tiles": [
+    "{z}/{x}/{y}.png"
+  ],
+  "minzoom": 4,
+  "maxzoom": 9,
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ]
+}

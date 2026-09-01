@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "quake-shaking-v4-candidate",
+      "kind": "extraction",
+      "run": "runs/quake-county-refined-extract-v1",
+      "candidate": "runs/quake-county-refined-extract-v1/materialized-v1",
+      "repair_full_state": true
+    }
+  ]
+}

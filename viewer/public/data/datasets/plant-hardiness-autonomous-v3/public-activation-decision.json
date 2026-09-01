@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "california-plant-hardiness-zones-neighbor-v1",
+  "dataset_title": "California Plant Hardiness Zones",
+  "staging_artifact_dataset_id": "california-plant-hardiness-zones-neighbor-v1",
+  "staging_artifact_title": "California Plant Hardiness Zones",
+  "author_statement": "No-human publication policy requested for the MapScan workflow; activate only with bound passing non-regression evidence",
+  "approval_mode": "autonomous_nonregression_activation",
+  "autonomous_evidence": {
+    "sha256": "e2bd3f67a0893ab2c9f48bac6e07ec637c3721d192ea73bb79a98afd1c3ff6f2",
+    "policy": "complete candidate ensemble, globally best passing Mapbox registration, fixed-point source extraction, rare-class spatial corroboration, and exact publication coverage",
+    "gates": {
+      "original_source_hash_unchanged": true,
+      "complete_alignment_ensemble_ranked": true,
+      "globally_best_passing_alignment_selected": true,
+      "state_semantic_score_nonregression": true,
+      "state_p90_nonregression": true,
+      "state_f1_nonregression": true,
+      "land_containment_nonregression": true,
+      "extraction_fixed_point": true,
+      "meaningful_source_diff_zero": true,
+      "all_legend_classes_preserved": true,
+      "rare_class_spatial_corroboration_passed": true,
+      "publication_exterior_pixel_count_zero": true,
+      "manual_alignment_or_extraction_input_absent": true
+    }
+  },
+  "activated_at": "2026-09-01T00:33:39.593720+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/plant-hardiness-autonomous-v3/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "fae6ef1b8f3500896d8e32f7a9906ea76f9613c4529f4d1086b928e1a1feb364",
+  "staging_provenance_sha256": "f2e974645dfe48da1c6c04e631a19ce16b0f17eb0450752fadf37af5c96f1c4d",
+  "staging_package_sha256": "67abdef7424f681d089b318c8f1379a8fc547416023683ae0a1adb14c66905fd",
+  "public_dataset_sha256": "a2033bce176c36c44f2877c79564ec9d51b2f86ac61693aa633026d61d2bce41",
+  "public_provenance_sha256": "51ce3cd0deb1caf04eec0bd069bc88b80a3c0884b2ed8640f9282f9ec82d330d",
+  "immutable_asset_count": 404,
+  "immutable_assets_sha256": "8acd6c75acbec04bc1129132ee02392e97fbe29b197e4dba02e15e95ddec1f23",
+  "source_image_sha256": "b55e65457d9ea02e1bf879b536b4342c67a9b65b9257a4841c5e9704b61b4d00",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "plant-hardiness-zone",
+      "accepted_raster_sha256": "14a19e982a90f4821c703fa3b151bc74783168a50ddbdc1103a1154ed07b130b",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 110572
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "plant-hardiness-zone",
+      "category_ids": [
+        "10a",
+        "10b",
+        "11a",
+        "5a",
+        "5b",
+        "6a",
+        "6b",
+        "7a",
+        "7b",
+        "8a",
+        "8b",
+        "9a",
+        "9b"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 697121,
+      "tile_set_sha256": "3d01b234b92a5a4c76a2edb8b7bba2d54044750fa241576b44d67e4dbc852f55"
+    }
+  ]
+}

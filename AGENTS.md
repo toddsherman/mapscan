@@ -1,0 +1,15 @@
+# MapMap repository instructions
+
+These rules apply to all MapScan processing, staging, and publication work.
+
+- Treat the pinned, hash-bound Mapbox state/coast and county geometry as the current geographic authority. Historical lime/cyan outlines and `county.png` are diagnostic history only.
+- Evaluate the complete bounded alignment-candidate ensemble before accepting a transform. Never stop at the first passing candidate. Select the globally best candidate among those passing the capability-aware gates, using the checked-in deterministic ranking key.
+- Before replacing a live alignment, run the live alignment non-regression audit. A replacement must not regress the authoritative state/coast metrics or choose a worse passing candidate from the same ensemble.
+- Do not use extraction agreement, clipping, or a boundary-only display overlay as evidence that registration is correct. Registration must be checked by comparing an independently source-derived boundary with Mapbox geometry on the same grid, statewide and in regional zooms.
+- Never promote a dataset merely because its run or directory is newer. “Proceed,” “use the newer version,” “fix it,” and similar work instructions authorize processing but are not visual-approval statements. Only an explicit approval of the exact staged bytes, or a documented autonomous non-regression policy explicitly selected for that workflow, may satisfy an approval gate.
+- Keep accepted runs and published packages immutable. Write corrected results to new versioned directories and update hash-bound pointers only after all applicable gates pass.
+- Preserve source-pixel fidelity: alignment and extraction are separate gates, and a zero extraction diff cannot compensate for a poor geographic transform.
+- Do not mistake discarded cartographic state-perimeter ink for absent thematic data. For sparse maps, audit neutral/dark source-derived coastline and land-border pixels after classification. Any completion must be supported by both the source-derived perimeter and the independently projected pinned Mapbox perimeter, stay inside the Mapbox land mask, copy only a nearby already-observed legend class, remain separately masked and logged as inferred, and prove that it removes or reclassifies no existing thematic pixels.
+- Preserve rare legend classes when the aligned source contains spatially independent, color-consistent evidence for them. A fixed global pixel-count threshold must not silently delete a legitimate class that occupies only a few source pixels.
+- Record algorithm changes, alignment/extraction iteration counts, audit outcomes, rejected alternatives, and activation decisions in `MAPSCAN_JOURNEY.md`.
+- Before declaring the live corpus ready, run both the live-alignment non-regression audit and the live-dataset readiness audit. The latter must bind every public package to its exact accepted source and alignment, require schema-specific extraction and fixed-point gates, verify catalog approval, and prove zero published color outside California.

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "title": "California plant hardiness neighbor completion v1",
+  "extraction_run": "runs/plantzone-hybrid-extract-v1",
+  "approved_materialization": "runs/plantzone-hybrid-extract-v1/materialized-v1",
+  "conservative_audit": "runs/plant-hardiness-conservative-completion-v2/conservative-completion.json",
+  "stability_audit": "runs/plant-hardiness-stability-ensemble-v3/stability-ensemble.json",
+  "canonical_boundary_audit": "runs/plantzone-canonical-boundary-v5/canonical-boundary-raster.json",
+  "active_canonical_boundary": "reference/canonical-california-boundary.json",
+  "neighbors": 16,
+  "manual_weight": 2.0,
+  "output_dir": "runs/plant-hardiness-neighbor-completion-v1"
+}

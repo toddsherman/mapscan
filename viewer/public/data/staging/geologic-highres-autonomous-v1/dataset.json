@@ -1,0 +1,683 @@
+{
+  "schema_version": 1,
+  "status": "needs_visual_review",
+  "id": "california-geologic-units-autonomous-highres-v1",
+  "title": "Geologic Map of California \u2014 Autonomous High-Resolution Extraction",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 11,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "exact_binary_zoom": 11
+  },
+  "source_image": "source.png",
+  "approval": {
+    "status": "not_approved"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "267a83da36dc75f44bd6daa1f87ce5fffa26bb9cde68c3fa3524947df4d2e115",
+    "raster_width": 10192,
+    "raster_height": 11758,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "autonomous-preview-provenance.json",
+    "sha256": "0ec8097f85577ba62ba97d8f1b32a30b21b4cc4c495e8f0661675cf1ac15ecf3"
+  },
+  "layers": [
+    {
+      "id": "geologic-units",
+      "label": "Geologic units",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "unit-01-qs",
+          "class_id": 1,
+          "label": "Qs",
+          "display_rgb": [
+            249,
+            248,
+            234
+          ],
+          "pixel_count": 436227
+        },
+        {
+          "id": "unit-02-qls",
+          "class_id": 2,
+          "label": "Qls",
+          "display_rgb": [
+            239,
+            229,
+            47
+          ],
+          "pixel_count": 20483
+        },
+        {
+          "id": "unit-03-qrv",
+          "class_id": 3,
+          "label": "Qrv",
+          "display_rgb": [
+            224,
+            154,
+            48
+          ],
+          "pixel_count": 407259
+        },
+        {
+          "id": "unit-04-pqrv",
+          "class_id": 4,
+          "label": "pQrv",
+          "display_rgb": [
+            222,
+            139,
+            51
+          ],
+          "pixel_count": 25776
+        },
+        {
+          "id": "unit-05-q",
+          "class_id": 5,
+          "label": "Q",
+          "display_rgb": [
+            249,
+            246,
+            192
+          ],
+          "pixel_count": 13507651
+        },
+        {
+          "id": "unit-06-qg",
+          "class_id": 6,
+          "label": "Qg",
+          "display_rgb": [
+            205,
+            204,
+            204
+          ],
+          "pixel_count": 214565
+        },
+        {
+          "id": "unit-07-qv",
+          "class_id": 7,
+          "label": "Qv",
+          "display_rgb": [
+            218,
+            105,
+            55
+          ],
+          "pixel_count": 1868516
+        },
+        {
+          "id": "unit-08-qvp",
+          "class_id": 8,
+          "label": "Qvp",
+          "display_rgb": [
+            188,
+            105,
+            62
+          ],
+          "pixel_count": 124053
+        },
+        {
+          "id": "unit-09-qoa",
+          "class_id": 9,
+          "label": "Qoa",
+          "display_rgb": [
+            244,
+            238,
+            129
+          ],
+          "pixel_count": 2377331
+        },
+        {
+          "id": "unit-10-qpc",
+          "class_id": 10,
+          "label": "QPc",
+          "display_rgb": [
+            222,
+            205,
+            106
+          ],
+          "pixel_count": 2483874
+        },
+        {
+          "id": "unit-11-p",
+          "class_id": 11,
+          "label": "P",
+          "display_rgb": [
+            248,
+            231,
+            187
+          ],
+          "pixel_count": 568582
+        },
+        {
+          "id": "unit-12-m",
+          "class_id": 12,
+          "label": "M",
+          "display_rgb": [
+            231,
+            202,
+            45
+          ],
+          "pixel_count": 1178148
+        },
+        {
+          "id": "unit-13-mc",
+          "class_id": 13,
+          "label": "Mc",
+          "display_rgb": [
+            204,
+            183,
+            51
+          ],
+          "pixel_count": 196842
+        },
+        {
+          "id": "unit-14-tc",
+          "class_id": 14,
+          "label": "Tc",
+          "display_rgb": [
+            232,
+            178,
+            100
+          ],
+          "pixel_count": 178255
+        },
+        {
+          "id": "unit-15-tv",
+          "class_id": 15,
+          "label": "Tv",
+          "display_rgb": [
+            226,
+            124,
+            108
+          ],
+          "pixel_count": 2811738
+        },
+        {
+          "id": "unit-16-ptv",
+          "class_id": 16,
+          "label": "pTv",
+          "display_rgb": [
+            188,
+            117,
+            106
+          ],
+          "pixel_count": 1412068
+        },
+        {
+          "id": "unit-17-to",
+          "class_id": 17,
+          "label": "To",
+          "display_rgb": [
+            227,
+            212,
+            146
+          ],
+          "pixel_count": 35705
+        },
+        {
+          "id": "unit-18-toc",
+          "class_id": 18,
+          "label": "Toc",
+          "display_rgb": [
+            202,
+            192,
+            143
+          ],
+          "pixel_count": 151375
+        },
+        {
+          "id": "unit-19-e",
+          "class_id": 19,
+          "label": "E",
+          "display_rgb": [
+            216,
+            173,
+            100
+          ],
+          "pixel_count": 532409
+        },
+        {
+          "id": "unit-20-ec",
+          "class_id": 20,
+          "label": "Ec",
+          "display_rgb": [
+            202,
+            152,
+            97
+          ],
+          "pixel_count": 113739
+        },
+        {
+          "id": "unit-21-ti",
+          "class_id": 21,
+          "label": "Ti",
+          "display_rgb": [
+            209,
+            53,
+            88
+          ],
+          "pixel_count": 71727
+        },
+        {
+          "id": "unit-22-grcz",
+          "class_id": 22,
+          "label": "grCz",
+          "display_rgb": [
+            246,
+            211,
+            232
+          ],
+          "pixel_count": 24294
+        },
+        {
+          "id": "unit-23-ep",
+          "class_id": 23,
+          "label": "Ep",
+          "display_rgb": [
+            190,
+            150,
+            98
+          ],
+          "pixel_count": 224548
+        },
+        {
+          "id": "unit-24-tk",
+          "class_id": 24,
+          "label": "TK",
+          "display_rgb": [
+            177,
+            190,
+            109
+          ],
+          "pixel_count": 805677
+        },
+        {
+          "id": "unit-25-ku",
+          "class_id": 25,
+          "label": "Ku",
+          "display_rgb": [
+            163,
+            210,
+            137
+          ],
+          "pixel_count": 915805
+        },
+        {
+          "id": "unit-26-k",
+          "class_id": 26,
+          "label": "K",
+          "display_rgb": [
+            174,
+            203,
+            57
+          ],
+          "pixel_count": 79881
+        },
+        {
+          "id": "unit-27-grmz",
+          "class_id": 27,
+          "label": "grMz",
+          "display_rgb": [
+            245,
+            192,
+            193
+          ],
+          "pixel_count": 7655556
+        },
+        {
+          "id": "unit-28-kl",
+          "class_id": 28,
+          "label": "Kl",
+          "display_rgb": [
+            137,
+            194,
+            71
+          ],
+          "pixel_count": 387845
+        },
+        {
+          "id": "unit-29-mzv",
+          "class_id": 29,
+          "label": "Mzv",
+          "display_rgb": [
+            98,
+            182,
+            82
+          ],
+          "pixel_count": 956341
+        },
+        {
+          "id": "unit-30-um",
+          "class_id": 30,
+          "label": "um",
+          "display_rgb": [
+            177,
+            118,
+            189
+          ],
+          "pixel_count": 730712
+        },
+        {
+          "id": "unit-31-kjf",
+          "class_id": 31,
+          "label": "KJf",
+          "display_rgb": [
+            136,
+            177,
+            113
+          ],
+          "pixel_count": 2038945
+        },
+        {
+          "id": "unit-32-kjfm",
+          "class_id": 32,
+          "label": "KJfm",
+          "display_rgb": [
+            119,
+            164,
+            127
+          ],
+          "pixel_count": 450067
+        },
+        {
+          "id": "unit-33-kjfs",
+          "class_id": 33,
+          "label": "KJfs",
+          "display_rgb": [
+            145,
+            195,
+            153
+          ],
+          "pixel_count": 406082
+        },
+        {
+          "id": "unit-34-j",
+          "class_id": 34,
+          "label": "J",
+          "display_rgb": [
+            106,
+            193,
+            160
+          ],
+          "pixel_count": 764385
+        },
+        {
+          "id": "unit-35-gb",
+          "class_id": 35,
+          "label": "gb",
+          "display_rgb": [
+            192,
+            165,
+            213
+          ],
+          "pixel_count": 234991
+        },
+        {
+          "id": "unit-36-gr-m",
+          "class_id": 36,
+          "label": "gr-m",
+          "display_rgb": [
+            229,
+            154,
+            180
+          ],
+          "pixel_count": 321675
+        },
+        {
+          "id": "unit-37-tr",
+          "class_id": 37,
+          "label": "Tr",
+          "display_rgb": [
+            134,
+            211,
+            212
+          ],
+          "pixel_count": 117338
+        },
+        {
+          "id": "unit-38-sch",
+          "class_id": 38,
+          "label": "sch",
+          "display_rgb": [
+            155,
+            189,
+            209
+          ],
+          "pixel_count": 317820
+        },
+        {
+          "id": "unit-39-gr",
+          "class_id": 39,
+          "label": "gr",
+          "display_rgb": [
+            243,
+            173,
+            185
+          ],
+          "pixel_count": 49787
+        },
+        {
+          "id": "unit-40-mv",
+          "class_id": 40,
+          "label": "mv",
+          "display_rgb": [
+            208,
+            118,
+            175
+          ],
+          "pixel_count": 308136
+        },
+        {
+          "id": "unit-41-pm",
+          "class_id": 41,
+          "label": "Pm",
+          "display_rgb": [
+            135,
+            213,
+            242
+          ],
+          "pixel_count": 53237
+        },
+        {
+          "id": "unit-42-m",
+          "class_id": 42,
+          "label": "m",
+          "display_rgb": [
+            209,
+            168,
+            196
+          ],
+          "pixel_count": 440770
+        },
+        {
+          "id": "unit-43-ls",
+          "class_id": 43,
+          "label": "ls",
+          "display_rgb": [
+            115,
+            149,
+            188
+          ],
+          "pixel_count": 26277
+        },
+        {
+          "id": "unit-44-c",
+          "class_id": 44,
+          "label": "C",
+          "display_rgb": [
+            173,
+            205,
+            234
+          ],
+          "pixel_count": 313152
+        },
+        {
+          "id": "unit-45-grpz",
+          "class_id": 45,
+          "label": "grPz",
+          "display_rgb": [
+            240,
+            136,
+            160
+          ],
+          "pixel_count": 40806
+        },
+        {
+          "id": "unit-46-pz",
+          "class_id": 46,
+          "label": "Pz",
+          "display_rgb": [
+            134,
+            192,
+            202
+          ],
+          "pixel_count": 1561621
+        },
+        {
+          "id": "unit-47-d",
+          "class_id": 47,
+          "label": "D",
+          "display_rgb": [
+            173,
+            178,
+            220
+          ],
+          "pixel_count": 61622
+        },
+        {
+          "id": "unit-48-pzv",
+          "class_id": 48,
+          "label": "Pzv",
+          "display_rgb": [
+            155,
+            200,
+            233
+          ],
+          "pixel_count": 232920
+        },
+        {
+          "id": "unit-49-so",
+          "class_id": 49,
+          "label": "SO",
+          "display_rgb": [
+            210,
+            186,
+            223
+          ],
+          "pixel_count": 126565
+        },
+        {
+          "id": "unit-50",
+          "class_id": 50,
+          "label": "\u0404",
+          "display_rgb": [
+            222,
+            147,
+            146
+          ],
+          "pixel_count": 302692
+        },
+        {
+          "id": "unit-51-p-c",
+          "class_id": 51,
+          "label": "p\u0404c",
+          "display_rgb": [
+            175,
+            133,
+            126
+          ],
+          "pixel_count": 332670
+        },
+        {
+          "id": "unit-52-grp",
+          "class_id": 52,
+          "label": "grp\u0404",
+          "display_rgb": [
+            240,
+            117,
+            181
+          ],
+          "pixel_count": 126284
+        },
+        {
+          "id": "unit-53-p",
+          "class_id": 53,
+          "label": "p\u0404",
+          "display_rgb": [
+            195,
+            138,
+            127
+          ],
+          "pixel_count": 609601
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          53
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/geologic-units/class-id/{z}/{x}/{y}.png?v=13d14f0c2279d23b",
+        "tilejson": "tiles/geologic-units/class-id/tilejson.json",
+        "tile_file_count": 5625,
+        "tile_image_byte_count": 6903383,
+        "mean_tile_image_byte_count": 1227.268088888889,
+        "tile_set_sha256": "13d14f0c2279d23b437c75842f78f805498c56832b12b1794e4234e3d5e633bf",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ]
+}

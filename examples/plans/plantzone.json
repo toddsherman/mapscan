@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "dataset_id": "california-plant-hardiness-zones",
+  "title": "California Plant Hardiness Zones",
+  "source": "examples/plantzone.avif",
+  "alignment": "runs/plantzone-auto-v2/alignment.json",
+  "reference": "reference/census-2025",
+  "layers": [
+    {
+      "id": "plant-hardiness-zone",
+      "kind": "categorical",
+      "coverage_expectation": "full_state",
+      "max_distance": 18.0,
+      "min_margin": 2.0,
+      "categories": [
+        {"id": "5a", "label": "Zone 5a", "legend_rgb": [113, 161, 253]},
+        {"id": "5b", "label": "Zone 5b", "legend_rgb": [93, 200, 224]},
+        {"id": "6a", "label": "Zone 6a", "legend_rgb": [71, 187, 72]},
+        {"id": "6b", "label": "Zone 6b", "legend_rgb": [119, 199, 85]},
+        {"id": "7a", "label": "Zone 7a", "legend_rgb": [170, 215, 103]},
+        {"id": "7b", "label": "Zone 7b", "legend_rgb": [254, 235, 166]},
+        {"id": "8a", "label": "Zone 8a", "legend_rgb": [237, 218, 134]},
+        {"id": "8b", "label": "Zone 8b", "legend_rgb": [236, 203, 90]},
+        {"id": "9a", "label": "Zone 9a", "legend_rgb": [219, 181, 79]},
+        {"id": "9b", "label": "Zone 9b", "legend_rgb": [245, 182, 120]},
+        {"id": "10a", "label": "Zone 10a", "legend_rgb": [234, 157, 54]},
+        {"id": "10b", "label": "Zone 10b", "legend_rgb": [229, 121, 32]},
+        {"id": "11a", "label": "Zone 11a", "legend_rgb": [230, 86, 31]}
+      ]
+    }
+  ],
+  "warnings": [
+    "Zone colors are keyed directly from the 13 legend swatches.",
+    "City names, city dots, coastline strokes, and compression-blended pixels remain NoData unless separately repaired after review.",
+    "The map is low resolution, so the source pixel grid is the maximum recoverable spatial fidelity."
+  ]
+}

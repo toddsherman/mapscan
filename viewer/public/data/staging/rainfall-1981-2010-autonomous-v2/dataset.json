@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "status": "needs_visual_review",
+  "id": "california-average-annual-precipitation-1981-2010",
+  "title": "California Average Annual Precipitation, 1981\u20132010",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.png",
+  "approval": {
+    "status": "not_approved"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "autonomous-preview-provenance.json",
+    "sha256": "cce1fd97056169eaea13fc23917252829d5b7c0a7f971412751bdb0387806872"
+  },
+  "layers": [
+    {
+      "id": "average-annual-precipitation",
+      "label": "California Average Annual Precipitation, 1981\u20132010",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "150-171",
+          "class_id": 1,
+          "label": "> 150 - 171",
+          "display_rgb": [
+            102,
+            130,
+            159
+          ],
+          "pixel_count": 8708
+        },
+        {
+          "id": "125-150",
+          "class_id": 2,
+          "label": "> 125 - 150",
+          "display_rgb": [
+            124,
+            151,
+            179
+          ],
+          "pixel_count": 3087
+        },
+        {
+          "id": "100-125",
+          "class_id": 3,
+          "label": "> 100 - 125",
+          "display_rgb": [
+            146,
+            171,
+            199
+          ],
+          "pixel_count": 30223
+        },
+        {
+          "id": "75-100",
+          "class_id": 4,
+          "label": "> 75 - 100",
+          "display_rgb": [
+            168,
+            192,
+            218
+          ],
+          "pixel_count": 122564
+        },
+        {
+          "id": "50-75",
+          "class_id": 5,
+          "label": ">50 - 75",
+          "display_rgb": [
+            203,
+            205,
+            215
+          ],
+          "pixel_count": 622365
+        },
+        {
+          "id": "30-50",
+          "class_id": 6,
+          "label": "> 30 - 50",
+          "display_rgb": [
+            238,
+            209,
+            212
+          ],
+          "pixel_count": 880732
+        },
+        {
+          "id": "20-30",
+          "class_id": 7,
+          "label": "> 20 - 30",
+          "display_rgb": [
+            222,
+            182,
+            186
+          ],
+          "pixel_count": 725655
+        },
+        {
+          "id": "10-20",
+          "class_id": 8,
+          "label": "> 10 - 20",
+          "display_rgb": [
+            207,
+            155,
+            159
+          ],
+          "pixel_count": 1377207
+        },
+        {
+          "id": "5-10",
+          "class_id": 9,
+          "label": ">5 - 10",
+          "display_rgb": [
+            191,
+            128,
+            133
+          ],
+          "pixel_count": 832949
+        },
+        {
+          "id": "0-5",
+          "class_id": 10,
+          "label": "0 - 5",
+          "display_rgb": [
+            177,
+            102,
+            108
+          ],
+          "pixel_count": 892371
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          10
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/average-annual-precipitation/class-id/{z}/{x}/{y}.png?v=e780e81bb5862525",
+        "tilejson": "tiles/average-annual-precipitation/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 591435,
+        "mean_tile_image_byte_count": 1478.5875,
+        "tile_set_sha256": "e780e81bb5862525950aba58cc4284941096b66d05a2cf0cddf2d8051463eac7",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ]
+}

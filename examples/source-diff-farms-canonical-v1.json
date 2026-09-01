@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "farms-canonical-v1",
+      "kind": "extraction",
+      "run": "runs/farms-canonical-extract-v1",
+      "repair_full_state": false
+    }
+  ]
+}

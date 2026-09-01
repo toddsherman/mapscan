@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "dataset_id": "california-topography-elevation",
+  "title": "California Topography and Elevation",
+  "source": "examples/elevation.gif",
+  "alignment": "runs/elevation-source-west-north-v34/fit/alignment.json",
+  "reference": "reference/census-2025",
+  "units": "meters above sea level",
+  "target_height": 1014,
+  "complete_target_state": true,
+  "complete_unsupported_canonical_land": true,
+  "canonical_interior_mode": "pinned_polygon",
+  "coastal_seam": {
+    "maximum_gap_px": 50,
+    "maximum_x_fraction": 0.72,
+    "start_y_fraction": 0.04,
+    "end_y_fraction": 0.95
+  },
+  "water_exclusion": {
+    "reference": "reference/census-2025-areawater",
+    "supersampling": 4,
+    "minimum_coverage_fraction": 1.0,
+    "exclude_feature_names": [
+      "Pacific Ocean"
+    ],
+    "include_only_feature_names": [
+      "Monterey Bay",
+      "San Francisco Bay",
+      "San Pablo Strait",
+      "San Pablo Bay",
+      "Carquinez Strait",
+      "Suisun Bay",
+      "Honker Bay",
+      "San Joaquin Riv",
+      "Sacramento Riv"
+    ],
+    "required_feature_names": [
+      "Monterey Bay",
+      "San Francisco Bay",
+      "San Pablo Strait",
+      "San Pablo Bay",
+      "Carquinez Strait",
+      "Suisun Bay",
+      "Honker Bay",
+      "San Joaquin Riv",
+      "Sacramento Riv"
+    ],
+    "force_any_coverage_feature_names": [
+      "San Pablo Strait",
+      "Carquinez Strait",
+      "Suisun Bay",
+      "Honker Bay",
+      "San Joaquin Riv",
+      "Sacramento Riv"
+    ],
+    "canonical_shoreline_snap": {
+      "feature_names": [
+        "Monterey Bay",
+        "San Francisco Bay"
+      ],
+      "maximum_distance_px": 40,
+      "mapbox_water_reference": "reference/mapbox-light-v11-water-sf-monterey-z9-v1",
+      "mapbox_supersampling": 4,
+      "mapbox_minimum_coverage_fraction": 1.0
+    }
+  },
+  "maximum_weighted_lab_residual": 28.0,
+  "luminance_weight": 0.35,
+  "neutral_ink_maximum": 115,
+  "neutral_ink_chroma_maximum": 42,
+  "completion_inpaint_radius_px": 5.0,
+  "dark_ink_blackhat_threshold": 30,
+  "dark_ink_blackhat_kernel_px": 9,
+  "small_special_value_nearest_fill": {
+    "maximum_component_pixel_count": 49,
+    "require_surrounded_by_data": true
+  },
+  "blue_nearest_legend_fill": {
+    "minimum_blue_over_red": 20,
+    "minimum_blue_over_green": 5
+  },
+  "label_occlusion_detection": {
+    "engine": "apple_vision",
+    "minimum_confidence": 0.5,
+    "minimum_letter_count": 3,
+    "padding_px": 3,
+    "maximum_word_dimension_px": 280,
+    "minimum_valid_overlap_pixels": 8,
+    "blackhat_kernel_px": 15,
+    "blackhat_threshold": 8,
+    "glyph_dilation_px": 3,
+    "glyph_component_minimum_area_px": 2,
+    "glyph_component_maximum_area_px": 240,
+    "glyph_component_maximum_dimension_px": 32,
+    "glyph_component_maximum_aspect": 8.0,
+    "glyph_component_minimum_extent": 0.05
+  },
+  "cartographic_ink_colors": [
+    {"label": "geomorphic boundary, international boundary, and brown label ink", "rgb": [81, 1, 0], "maximum_rgb_distance": 75},
+    {"label": "state boundary ink", "rgb": [100, 0, 100], "maximum_rgb_distance": 60},
+    {"label": "river and canal ink", "rgb": [81, 136, 176], "maximum_rgb_distance": 58}
+  ],
+  "encoding": {
+    "storage": "uint16_png",
+    "nodata": 0,
+    "offset": -500.0,
+    "scale": 1.0,
+    "decode": "value = offset + (code - 1) * scale"
+  },
+  "ramp_stops": [
+    {"value": 0, "label": "0 m", "legend_rgb": [29, 107, 0], "display_rgb": [29, 107, 0]},
+    {"value": 100, "label": "100 m", "legend_rgb": [30, 135, 0], "display_rgb": [30, 135, 0]},
+    {"value": 250, "label": "250 m", "legend_rgb": [87, 190, 0], "display_rgb": [87, 190, 0]},
+    {"value": 500, "label": "500 m", "legend_rgb": [230, 179, 0], "display_rgb": [230, 179, 0]},
+    {"value": 1000, "label": "1,000 m", "legend_rgb": [230, 115, 0], "display_rgb": [230, 115, 0]},
+    {"value": 2000, "label": "2,000 m", "legend_rgb": [172, 83, 45], "display_rgb": [172, 83, 45]},
+    {"value": 4000, "label": "4,000 m", "legend_rgb": [183, 183, 183], "display_rgb": [183, 183, 183]},
+    {"value": 5000, "label": "5,000 m", "legend_rgb": [255, 255, 255], "display_rgb": [255, 255, 255]}
+  ],
+  "special_values": [
+    {
+      "id": "depression",
+      "label": "Depression (depth not specified by legend)",
+      "value": -500,
+      "numeric_value_known": false,
+      "legend_rgb": [0, 70, 60],
+      "display_rgb": [0, 70, 60]
+    }
+  ],
+  "warnings": [
+    "The continuous value is interpolated along the printed legend ramp in Lab color space; it is an estimate limited by the source image and hillshade, not a replacement for the source DEM.",
+    "Luminance is down-weighted so relief shading does not become false elevation as readily; chromatic position on the ramp remains primary evidence.",
+    "The legend identifies depressions categorically but gives no depth. Code 1 is reserved for that category and must not be interpreted as a measured -500 m elevation.",
+    "Pixels obscured by labels, boundaries, or city marks are reconstructed from nearby directly observed values and are recorded in a separate completion mask.",
+    "Blue-dominant source pixels inside the map borrow the exact value of the nearest spatially observed legend-ramp pixel. Pinned Census and Mapbox water footprints are still made transparent afterward and remain recorded in a separate exclusion mask."
+  ]
+}

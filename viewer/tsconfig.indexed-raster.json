@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "components/mapscan-map.tsx",
+    "lib/indexed-raster.ts",
+    "lib/mapbox-style.ts",
+    "lib/types.ts"
+  ],
+  "exclude": ["node_modules", ".next"]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "river-or-stream-observed",
+      "accepted_raster_sha256": "d0a37ee54721902eb3b215d0f365d5bbe9c44cdc7327c649528546752ee4472d",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/rivers/extraction-run-02/extraction-04/mapbox-river-or-stream-observed.png",
+      "semantic_kind": "observed_sparse_binary_linework",
+      "coverage_contract": "sparse_visible_evidence"
+    },
+    {
+      "layer_id": "lake-or-reservoir-outline-observed",
+      "accepted_raster_sha256": "0846599770090c70c76d70fe84ae7780d5dc2ad141027f8fa8d494849d376494",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/rivers/extraction-run-02/extraction-04/mapbox-lake-or-reservoir-outline-observed.png",
+      "semantic_kind": "observed_sparse_binary_outline",
+      "coverage_contract": "sparse_visible_evidence"
+    },
+    {
+      "layer_id": "lake-or-reservoir-interior-inferred",
+      "accepted_raster_sha256": "340474bd394855d64e017fd4c264fd9d35666fe0f727a99f8398126868fc3d3a",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/rivers/extraction-run-02/extraction-04/mapbox-lake-or-reservoir-interior-inferred.png",
+      "semantic_kind": "inferred_sparse_binary_interior",
+      "coverage_contract": "sparse_visible_evidence"
+    },
+    {
+      "layer_id": "dry-streambed-observed",
+      "accepted_raster_sha256": "10487cc939d3511a7d918ad85d0969568e00fec671725970fa3a5d5ccd6a237a",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/rivers/extraction-run-02/extraction-04/mapbox-dry-streambed-observed.png",
+      "semantic_kind": "observed_sparse_binary_linework",
+      "coverage_contract": "sparse_visible_evidence"
+    },
+    {
+      "layer_id": "dry-lake-outline-observed",
+      "accepted_raster_sha256": "a28c41c955e244b0369a1a3f098615eea0667d03c8e0ade08a778913f1166db3",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/rivers/extraction-run-02/extraction-04/mapbox-dry-lake-outline-observed.png",
+      "semantic_kind": "observed_sparse_binary_outline",
+      "coverage_contract": "sparse_visible_evidence"
+    },
+    {
+      "layer_id": "dry-lake-interior-inferred",
+      "accepted_raster_sha256": "675696bfa4e72be6d54e528a15181916807e75c9e3a8ae5620079774799d0f62",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/rivers/extraction-run-02/extraction-04/mapbox-dry-lake-interior-inferred.png",
+      "semantic_kind": "inferred_sparse_binary_interior",
+      "coverage_contract": "sparse_visible_evidence"
+    }
+  ]
+}

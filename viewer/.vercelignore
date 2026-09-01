@@ -1,0 +1,34 @@
+# Processing history stays local. These are superseded or diagnostic packages;
+# the accepted manifests and assets not listed here are deployed.
+.next/
+node_modules/
+.vercel/
+.env*
+
+public/data/datasets/agricultural-land-use/
+public/data/datasets/deer-distribution/
+public/data/datasets/elevation/
+public/data/datasets/elevation-bands/
+public/data/datasets/forest-cover/
+public/data/datasets/forest-cover-autonomous-v2/
+public/data/datasets/forest-cover-autonomous-v3/
+public/data/datasets/named-hydrography/
+public/data/datasets/plant-hardiness/
+public/data/datasets/plant-hardiness-autonomous-v2/
+public/data/datasets/quake-shaking/
+public/data/datasets/rainfall/
+public/data/datasets/rainfall-1981-2010/
+
+public/data/staging/elevation-v4-approved/
+public/data/staging/fire-autonomous-v1/
+public/data/staging/forest-autonomous-v2/
+public/data/staging/forest-autonomous-v3/
+public/data/staging/forest-autonomous-v4/
+public/data/staging/landslide-autonomous-v1/
+public/data/staging/plant-hardiness-autonomous-v2/
+public/data/staging/rainfall-1981-2010-mapbox-water-v8-approved/
+public/data/staging/rainfall-1981-2010-mapbox-water-v8-preview/
+public/data/staging/rivers-autonomous-v1/
+
+# The article links the rendered high-resolution geology image, not its PDF.
+public/data/staging/geologic-highres-autonomous-v1/source.pdf

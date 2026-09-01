@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "status": "approved_publication",
+  "id": "california-severe-weather-impacts",
+  "title": "California Severe Weather Impacts",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.png",
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "author_statement": "Proceed",
+    "activated_at": "2026-08-31T21:14:59.203058+00:00"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "provenance.json",
+    "sha256": "6a0e897fc267845b063ac95991354a9e6c1e21f3100b2ca067034652d8be5fe7"
+  },
+  "layers": [
+    {
+      "id": "maximum-daily-precipitation",
+      "label": "Maximum Daily Precipitation",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "4-to-8-inches",
+          "class_id": 1,
+          "label": "4-8 in (102-204 mm)",
+          "display_rgb": [
+            169,
+            169,
+            168
+          ],
+          "pixel_count": 674404
+        },
+        {
+          "id": "8-to-16-inches",
+          "class_id": 2,
+          "label": "8-16 in (204-408 mm)",
+          "display_rgb": [
+            137,
+            136,
+            135
+          ],
+          "pixel_count": 276678
+        },
+        {
+          "id": "16-to-25-7-inches",
+          "class_id": 3,
+          "label": "16-25.7 in (408-652 mm)",
+          "display_rgb": [
+            88,
+            88,
+            88
+          ],
+          "pixel_count": 7686
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          3
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/maximum-daily-precipitation-v2-clipped/class-id/{z}/{x}/{y}.png?v=6783e99a24f06626",
+        "tilejson": "tiles/maximum-daily-precipitation-v2-clipped/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 323214,
+        "mean_tile_image_byte_count": 808.035,
+        "tile_set_sha256": "6783e99a24f066263762d3db4f1d30f0fce2fb783b9a260e11b10042bd2a53cd",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      },
+      "coverage_contract": {
+        "schema_version": 1,
+        "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+        "semantic_kind": "mutually_exclusive_categorical",
+        "accepted_raster_sha256": "bd4bb5e529f95a88938ac47305bfb0f82c0412b10cae308606e855b564049178",
+        "accepted_raster_packaged_path": "evidence/maximum-daily-precipitation/accepted-raster.png",
+        "clipped_class_raster_path": "rasters/maximum-daily-precipitation/clipped-class-id.png",
+        "clipped_class_raster_sha256": "402690c6a937eff3421f485aa5d1fec3fb667a0e7d9fe799ea5950ed01a4efb4",
+        "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+        "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+        "in_state_class_id_mismatch_pixel_count": 0,
+        "outside_state_classified_pixel_count": 0,
+        "exterior_removed_pixel_count": 37,
+        "exact_interior_nodata_pixel_count": 4646166,
+        "exact_interior_classified_pixel_count": 958768,
+        "accepted_interior_classified_pixel_count": 958768,
+        "only_exterior_removals": true,
+        "diff_mask_path": "diagnostics/maximum-daily-precipitation-exterior-removals.png",
+        "diff_mask_sha256": "abd10d99ac6fcf36d3cb5d3f8e1f4f58240322f35b431fff12a8994d6ffa38a5",
+        "decision": "pass"
+      }
+    },
+    {
+      "id": "landslide-susceptibility",
+      "label": "Landslide Susceptibility",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "landslide-susceptibility",
+          "class_id": 1,
+          "label": "Landslide susceptibility > 9",
+          "display_rgb": [
+            198,
+            134,
+            135
+          ],
+          "pixel_count": 887738
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          1
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/landslide-susceptibility-v2-clipped/class-id/{z}/{x}/{y}.png?v=b103e481d636cf46",
+        "tilejson": "tiles/landslide-susceptibility-v2-clipped/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 334363,
+        "mean_tile_image_byte_count": 835.9075,
+        "tile_set_sha256": "b103e481d636cf46a31f8daa695e341e259954e698dc271ea089ad2636cb4ade",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      },
+      "coverage_contract": {
+        "schema_version": 1,
+        "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+        "semantic_kind": "independent_binary_overlay",
+        "accepted_raster_sha256": "1ee8f24412336c48b4ba2c78962a8ae103ba2ea8a7360748192651f28381760f",
+        "accepted_raster_packaged_path": "evidence/landslide-susceptibility/accepted-raster.png",
+        "clipped_class_raster_path": "rasters/landslide-susceptibility/clipped-class-id.png",
+        "clipped_class_raster_sha256": "6aac86883240b9ebde377c347023ebafc4a6a1c8a3eb6911c8183fe960ec665c",
+        "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+        "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+        "in_state_class_id_mismatch_pixel_count": 0,
+        "outside_state_classified_pixel_count": 0,
+        "exterior_removed_pixel_count": 49,
+        "exact_interior_nodata_pixel_count": 4717196,
+        "exact_interior_classified_pixel_count": 887738,
+        "accepted_interior_classified_pixel_count": 887738,
+        "only_exterior_removals": true,
+        "diff_mask_path": "diagnostics/landslide-susceptibility-exterior-removals.png",
+        "diff_mask_sha256": "d33c7dce37d5b1aba312ae4389640ac238ad73aec0ab5803bf34ff162b4f9c10",
+        "decision": "pass"
+      }
+    },
+    {
+      "id": "maximum-wind-speed",
+      "label": "Maximum Wind Speed",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "maximum-wind-speed",
+          "class_id": 1,
+          "label": "Maximum wind speed > 60 mile/h (96.6 km/h)",
+          "display_rgb": [
+            218,
+            140,
+            185
+          ],
+          "pixel_count": 521206
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          1
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/maximum-wind-speed-v2-clipped/class-id/{z}/{x}/{y}.png?v=444548fdf6689f76",
+        "tilejson": "tiles/maximum-wind-speed-v2-clipped/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 193569,
+        "mean_tile_image_byte_count": 483.9225,
+        "tile_set_sha256": "444548fdf6689f764f5afbd70867829fccc2ee1532929f415751f7593542a6db",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      },
+      "coverage_contract": {
+        "schema_version": 1,
+        "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+        "semantic_kind": "independent_binary_overlay",
+        "accepted_raster_sha256": "f88686c98c15dc53fa81bbd4ca4734b0e7fd47d1c15fba0a0e0f623b118f789e",
+        "accepted_raster_packaged_path": "evidence/maximum-wind-speed/accepted-raster.png",
+        "clipped_class_raster_path": "rasters/maximum-wind-speed/clipped-class-id.png",
+        "clipped_class_raster_sha256": "7f68a525cbb39b158c18f8ad9aa7880ea947a4cfc9a1ed947bd46653a0208427",
+        "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+        "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+        "in_state_class_id_mismatch_pixel_count": 0,
+        "outside_state_classified_pixel_count": 0,
+        "exterior_removed_pixel_count": 0,
+        "exact_interior_nodata_pixel_count": 5083728,
+        "exact_interior_classified_pixel_count": 521206,
+        "accepted_interior_classified_pixel_count": 521206,
+        "only_exterior_removals": true,
+        "diff_mask_path": "diagnostics/maximum-wind-speed-exterior-removals.png",
+        "diff_mask_sha256": "a5864864e9aceedd4b3957122c09959a8e3164d0af181a817e6429836be4f050",
+        "decision": "pass"
+      }
+    },
+    {
+      "id": "predicted-flooding",
+      "label": "Predicted Flooding",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "predicted-flooding",
+          "class_id": 1,
+          "label": "Predicted flooding",
+          "display_rgb": [
+            138,
+            213,
+            242
+          ],
+          "pixel_count": 281175
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          1
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/predicted-flooding-v2-clipped/class-id/{z}/{x}/{y}.png?v=2b015e610ac2aa51",
+        "tilejson": "tiles/predicted-flooding-v2-clipped/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 240256,
+        "mean_tile_image_byte_count": 600.64,
+        "tile_set_sha256": "2b015e610ac2aa51f48e7574c93db90df93b027e2f6c4b701de95fa775fd7e10",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      },
+      "coverage_contract": {
+        "schema_version": 1,
+        "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+        "semantic_kind": "independent_binary_overlay",
+        "accepted_raster_sha256": "83eaba11da4217800fe9425f38f9d5effa2a4ded5f742eb0a5a0fe9dda3cd548",
+        "accepted_raster_packaged_path": "evidence/predicted-flooding/accepted-raster.png",
+        "clipped_class_raster_path": "rasters/predicted-flooding/clipped-class-id.png",
+        "clipped_class_raster_sha256": "e7b977a26b51d87a91ceca6aacbaa3a576d7d68f3e6bd68e5bfb9544192b2835",
+        "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+        "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+        "in_state_class_id_mismatch_pixel_count": 0,
+        "outside_state_classified_pixel_count": 0,
+        "exterior_removed_pixel_count": 2047,
+        "exact_interior_nodata_pixel_count": 5323759,
+        "exact_interior_classified_pixel_count": 281175,
+        "accepted_interior_classified_pixel_count": 281175,
+        "only_exterior_removals": true,
+        "diff_mask_path": "diagnostics/predicted-flooding-exterior-removals.png",
+        "diff_mask_sha256": "369b2573b2c56388877935e18d0e9e484f5d21471a46ffd0a186b8f16db2e676",
+        "decision": "pass"
+      }
+    }
+  ],
+  "state_clip": {
+    "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "automatic_diff_manifest": "automatic-clip-diff.json",
+    "automatic_diff_sha256": "b1f5321bb209caca488e6d95415f95bd7b81f48b1f1224825b3b60692b954367",
+    "decision": "pass"
+  },
+  "publication_approved": true,
+  "asset_base": "/mapscan/data/staging/landslide-autonomous-v2-clipped/",
+  "shared_assets": {
+    "immutable_asset_count": 1631,
+    "immutable_assets_sha256": "cb79967b5f5201a695464c56f1481b6858f7a43579ad6307c83ec3393bba167d"
+  }
+}

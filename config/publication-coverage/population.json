@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "population-density",
+      "accepted_raster_sha256": "f11f3f070bc639deafe0e6e56a434894bb318d7d65008ae2179b85b75d3ee055",
+      "publication_raster": "../../runs/population-native-fidelity-repair-v2/automatic-extraction/extraction-04/web-mercator-class-id.png",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state"
+    }
+  ]
+}

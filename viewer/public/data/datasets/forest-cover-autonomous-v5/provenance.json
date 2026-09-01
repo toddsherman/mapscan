@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_indexed_publication_provenance",
+  "producer": "mapscan.automatic_extraction_preview_export",
+  "status": "approved_publication",
+  "publication_approved": true,
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "authorization_statement": "Todd visually approved the exact forest-autonomous-v5 staging bytes in the active MapScan thread: \"lgtm\" on 2026-08-31.",
+    "activated_at": "2026-09-01T02:17:23.696823+00:00",
+    "author_statement": "Todd visually approved the exact forest-autonomous-v5 staging bytes in the active MapScan thread: \"lgtm\" on 2026-08-31."
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "accepted_extraction": {
+    "sha256": "3cb738385f14764e87af7d894c0a71b05ffec3119393e5f0b7220eff156e32b9",
+    "schema_version": "mapscan.automatic-categorical-extraction.v1",
+    "automatic_iteration_count": 5,
+    "accepted_iteration": "extraction-05",
+    "accepted_iteration_local_count": 5,
+    "iteration_report_sha256": "9b069bb65eb4ef766d5fcf92357f21731a7222ed9006c1c939f4c0814fc58432"
+  },
+  "accepted_alignment": {
+    "sha256": "f5797ef038eeccaf4751ce93982af485d37751cff7740ec6c3d916c9b2f990f1",
+    "automatic_iteration_count": 30
+  },
+  "source": {
+    "sha256": "94859cb11dc8fc54e9f8da05be2e1aaeb30f97eb61d7fddfd78282f960809097",
+    "copied_path": "source.jpg",
+    "copied_sha256": "94859cb11dc8fc54e9f8da05be2e1aaeb30f97eb61d7fddfd78282f960809097"
+  },
+  "accepted_working_source": {
+    "sha256": "0a377cac416bb12c0c30a8cca11524f9d202aefd93e26925aef36febad6c7b34"
+  },
+  "legend": {
+    "sha256": "b217ab68563b91b6f6294970920030241fd82503c423b2b20e52385c9deeae7b"
+  },
+  "accepted_class_raster": {
+    "sha256": "8d625b65f81b354dc9de530c8d69b4604d199da4a450e37238424663c1106013",
+    "width": 3398,
+    "height": 3920
+  },
+  "class_raster": {
+    "path": "publication-class-id.png",
+    "sha256": "8d625b65f81b354dc9de530c8d69b4604d199da4a450e37238424663c1106013",
+    "width": 3398,
+    "height": 3920,
+    "derivation": "accepted_class_raster_clipped_to_pinned_mapbox_state_interior"
+  },
+  "publication_clip": {
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "accepted_colored_pixel_count_outside_state": 0,
+    "publication_colored_pixel_count_outside_state": 0,
+    "mutated_accepted_extraction": false
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 9,
+    "screen_pixel_span_at_maximum_zoom": [
+      3768.6083583999994,
+      4347.970602140895
+    ]
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 3398,
+    "height": 3920
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "processing_reference": {
+    "sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "raw_hashes": {
+      "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+      "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+      "tile_aggregate_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba"
+    },
+    "state_coast_overlay": {
+      "sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+      "width": 3398,
+      "height": 3920
+    }
+  },
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 11114581,
+    "partial_source_extent": false,
+    "missing_source_extent_pixel_count": 0,
+    "missing_source_extent_mask_sha256": null,
+    "policy": "preserve_as_transparent_nodata_never_infer"
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "state_interior_pixel_count": 5604934,
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "layers": [
+      {
+        "layer_id": "forest-type",
+        "accepted_raster_sha256": "8d625b65f81b354dc9de530c8d69b4604d199da4a450e37238424663c1106013",
+        "publication_raster_sha256": "8d625b65f81b354dc9de530c8d69b4604d199da4a450e37238424663c1106013",
+        "semantic_kind": "sparse_visible_forest_categories_with_state_perimeter_occlusion_completion",
+        "coverage_contract": "sparse_visible_evidence",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 3399355,
+        "classified_pixel_count_inside_state": 2205579
+      }
+    ]
+  },
+  "staging": {
+    "artifact_dataset_id": "california-forest-cover",
+    "artifact_title": "Forest Cover of California",
+    "dataset_sha256": "69823884b7aae0228de8f36999f0500875a22fca02acd347f8f373df4ed382e9",
+    "provenance_sha256": "3e75649d71e07c5efe8254c4aa0177384ae56b7ce4969dce78b027b4e9835334",
+    "package_sha256": "ab23f566d4500de8fb9c8413b47f59197444d8e0212fbb086aab5dab5456ec96"
+  },
+  "shared_assets": {
+    "asset_base": "/mapscan/data/staging/forest-autonomous-v5/",
+    "immutable_asset_count": 404,
+    "immutable_assets_sha256": "db4994ca9b3266f666fbb7ff50e11961f39f7f0a0607d015f47bf09e539930d7"
+  }
+}

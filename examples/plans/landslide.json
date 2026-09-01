@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "dataset_id": "arkstorm-higher-risk-areas",
+  "title": "Areas at Higher Risk for ARkStorm Impacts",
+  "source": "examples/landslide.png",
+  "alignment": "runs/landslide-auto-v1/alignment.json",
+  "reference": "reference/census-2025",
+  "layers": [
+    {
+      "id": "impact-overlays",
+      "kind": "sparse_chroma_overlays",
+      "coverage_expectation": "sparse_visible_evidence",
+      "min_chroma": 10.0,
+      "coefficient_threshold": 0.32,
+      "max_residual": 6.0,
+      "complexity_penalty": 1.4,
+      "categories": [
+        {"id": "landslide-susceptibility", "label": "Landslide susceptibility > 9", "legend_rgb": [200, 135, 136]},
+        {"id": "maximum-wind-speed", "label": "Maximum wind speed > 60 mile/h (96.6 km/h)", "legend_rgb": [220, 141, 187]},
+        {"id": "predicted-flooding", "label": "Predicted flooding", "legend_rgb": [142, 215, 246]}
+      ]
+    },
+    {
+      "id": "maximum-daily-precipitation",
+      "kind": "grayscale_categorical",
+      "coverage_expectation": "sparse_visible_evidence",
+      "smoothing_radius": 5,
+      "max_distance": 20.0,
+      "max_chroma": 13.0,
+      "adaptive_centers": false,
+      "background_cutoff": 245,
+      "exclude_visible_layers": ["impact-overlays"],
+      "categories": [
+        {"id": "4-to-8-inches", "label": "4–8 in (102–204 mm)", "legend_gray": 171, "display_rgb": [190, 190, 190]},
+        {"id": "8-to-16-inches", "label": "8–16 in (204–408 mm)", "legend_gray": 139, "display_rgb": [135, 135, 135]},
+        {"id": "16-to-25-7-inches", "label": "16–25.7 in (408–652 mm)", "legend_gray": 91, "display_rgb": [80, 80, 80]}
+      ]
+    }
+  ],
+  "warnings": [
+    "This source contains multiple independent variables, so it is represented as one precipitation layer and three binary impact masks.",
+    "Two-way transparent color mixtures are separated by sparse chroma unmixing. Three-way mixtures and opaque occlusions remain NoData or ambiguous.",
+    "Precipitation beneath visible colored overlays is not reconstructed.",
+    "The grayscale precipitation extraction uses the three literal legend swatches; the much lighter unfilled hillshade basemap remains NoData.",
+    "The precipitation result remains provisional because darker hillshade and precipitation are both encoded in luminance."
+  ]
+}

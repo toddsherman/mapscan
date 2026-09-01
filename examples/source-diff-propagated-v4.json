@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "quake-shaking-v4-candidate",
+      "kind": "extraction",
+      "run": "runs/quake-county-refined-extract-v1",
+      "candidate": "runs/quake-county-refined-extract-v1/materialized-v1",
+      "repair_full_state": true
+    },
+    {
+      "id": "rainfall-v4-candidate",
+      "kind": "extraction",
+      "run": "runs/rainfall-county-refined-extract-v1",
+      "repair_full_state": true
+    },
+    {
+      "id": "rivers-v4-candidate",
+      "kind": "feature",
+      "run": "runs/rivers-county-refined-feature-v1"
+    }
+  ],
+  "pending_semantic_validation": [
+    {
+      "source": "examples/quake.jpg",
+      "status": "migrated_manual_corrections_need_new_author_visual_approval"
+    },
+    {
+      "source": "examples/rainfall.gif",
+      "status": "palette_identical_classes_need_topology_validation"
+    },
+    {
+      "source": "examples/rivers.jpg",
+      "status": "shared_blue_labels_and_geometry_need_semantic_separation"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "dataset_id": "earthquake-shaking-potential-california-2025-reviewed-corrected-v2",
+  "title": "Earthquake Shaking Potential for California — Fine Translation Refinement",
+  "source": "examples/quake.jpg",
+  "alignment": "runs/quake-reviewed-affine-v3/alignment.json",
+  "reference": "reference/census-2025",
+  "layers": [
+    {
+      "id": "modified-mercalli-intensity",
+      "kind": "categorical",
+      "max_distance": 23.0,
+      "min_margin": 2.0,
+      "categories": [
+        {"id": "xi-devastating", "label": "XI — Devastating Shaking", "sample_rect": [1920, 850, 2400, 945], "prototype_count": 16, "prototype_axis": "y", "display_rgb": [126, 0, 37]},
+        {"id": "x-extreme", "label": "X — Extreme Shaking", "sample_rect": [1920, 1000, 2400, 1090], "prototype_count": 16, "prototype_axis": "y", "display_rgb": [185, 24, 39]},
+        {"id": "ix-violent", "label": "IX — Violent Shaking", "sample_rect": [1920, 1150, 2400, 1240], "prototype_count": 16, "prototype_axis": "y", "display_rgb": [226, 67, 42]},
+        {"id": "viii-severe", "label": "VIII — Severe Shaking", "sample_rect": [1920, 1300, 2400, 1390], "prototype_count": 16, "prototype_axis": "y", "display_rgb": [247, 132, 63]},
+        {"id": "vii-very-strong", "label": "VII — Very Strong Shaking", "sample_rect": [1920, 1450, 2400, 1540], "prototype_count": 16, "prototype_axis": "y", "display_rgb": [251, 181, 92]},
+        {"id": "vi-strong", "label": "VI — Strong Shaking", "sample_rect": [1920, 1600, 2400, 1690], "prototype_count": 16, "prototype_axis": "y", "display_rgb": [254, 226, 151]}
+      ]
+    }
+  ],
+  "warnings": [
+    "This run composes the corrected 21-point affine alignment with a second-order translation fitted to three geographically separated schema-v2 reference-to-source arrows.",
+    "The three-point correction is insufficient for a held-out affine or projective fit; those models were explicitly not evaluated.",
+    "The selected translation has 1.60-pixel leave-one-out median and 2.80-pixel maximum residual.",
+    "Each Modified Mercalli legend row is sampled as a range of color prototypes so hillshade/gradient variation is not mistaken for a new semantic class.",
+    "Pixels too close to two adjacent intensity ranges remain NoData.",
+    "This is an ordinal six-class interpretation of the legend, not a claim that a continuous physical measurement was recovered."
+  ]
+}

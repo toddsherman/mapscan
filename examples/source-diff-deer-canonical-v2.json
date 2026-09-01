@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "deer-canonical-v2",
+      "kind": "extraction",
+      "run": "runs/deer-canonical-extract-v2",
+      "repair_full_state": true
+    }
+  ]
+}

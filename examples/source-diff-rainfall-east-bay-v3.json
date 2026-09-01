@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "rainfall-east-bay-v3",
+      "kind": "extraction",
+      "run": "runs/rainfall-east-bay-majority-extract-v3",
+      "repair_full_state": true,
+      "maximum_iterations": 4
+    }
+  ]
+}

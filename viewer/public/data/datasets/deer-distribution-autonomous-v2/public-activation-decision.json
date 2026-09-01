@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "deer-distribution-california",
+  "dataset_title": "Deer Distribution in California",
+  "staging_artifact_dataset_id": "deer-distribution-california",
+  "staging_artifact_title": "Deer Distribution in California",
+  "author_statement": "Check that each map uses the newer version and fix it.",
+  "activated_at": "2026-08-31T23:32:23.694897+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/deer-autonomous-v2/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "f4e01b1a2fe028824f8262b4f2430dd610f5ac9cfd7d8f7fd6aedb16a7822583",
+  "staging_provenance_sha256": "61c377579a05a4587b31ce552076ab8f75d2d8f5e5e04b03ad033b32e065eac6",
+  "staging_package_sha256": "e63836fdd3d1ab25db9cd9caa2a3daa026e058fd099e0a0ebce91be57a6652b3",
+  "public_dataset_sha256": "c795721e06e5f313f9902da61c8240224cd3dde0977ef4c43861b0fde3749db9",
+  "public_provenance_sha256": "40a40c95e0d8d410bd02bfab7cb46c1b335ff7b9bd1e96c4cade73ef0ae9586a",
+  "immutable_asset_count": 404,
+  "immutable_assets_sha256": "4e5874e5c88cde1c80652931c0a73f2131f0ab3b0ab6cd5666a99d000e337b1b",
+  "source_image_sha256": "2a17cd2a28b8cf63d1c9bca9bbe252e29b6e33a64fdca5b2a64bc632c47b05c1",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "deer-distribution",
+      "accepted_raster_sha256": "4ecabb5b021b4e12f3dedee10f2f1f2f86c937cc75ddee3e4b7c3916e22e7d9f",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 109073
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "deer-distribution",
+      "category_ids": [
+        "burro-deer",
+        "california-mule-deer",
+        "columbian-black-tailed-california-mule-deer",
+        "columbian-black-tailed-deer",
+        "deer-rare-or-absent",
+        "inyo-mule-deer",
+        "rocky-mountain-columbian-black-tailed-deer",
+        "rocky-mountain-mule-deer",
+        "southern-mule-burro-deer",
+        "southern-mule-deer"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 505879,
+      "tile_set_sha256": "61a8fdd5cb12e20bedf4ce9382c3e80c9d3209727d205c278d09c505add1b7f2"
+    }
+  ]
+}

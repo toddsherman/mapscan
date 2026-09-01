@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "rainfall-1981-2010-lime-water-v7",
+      "kind": "extraction",
+      "run": "runs/rainfall-1981-2010-lime-water-extract-v7",
+      "repair_full_state": true,
+      "maximum_iterations": 4
+    }
+  ]
+}

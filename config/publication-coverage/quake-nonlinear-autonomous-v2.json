@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "modified-mercalli-intensity",
+      "accepted_raster_sha256": "423fa745f9fd48173c728b90cf8e009835afaf743755e90162d0ba472a908ec4",
+      "publication_raster": "../../viewer/public/data/staging/quake-nonlinear-autonomous-v2/accepted-class-id.png",
+      "semantic_kind": "full_state_land_ordered_shaking_intensity",
+      "coverage_contract": "full_state"
+    }
+  ]
+}

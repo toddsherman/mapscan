@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "dataset_id": "california-forest-cover",
+  "title": "Forest Cover of California",
+  "source": "examples/forest.jpg",
+  "alignment": "runs/forest-auto-v4/alignment.json",
+  "reference": "reference/census-2025",
+  "layers": [
+    {
+      "id": "forest-type",
+      "kind": "categorical",
+      "coverage_expectation": "sparse_visible_evidence",
+      "max_distance": 24.0,
+      "min_margin": 3.0,
+      "categories": [
+        {"id": "redwood", "label": "Redwood", "legend_rgb": [49, 154, 49]},
+        {"id": "western-hardwoods", "label": "Western hardwoods", "legend_rgb": [206, 154, 156]},
+        {"id": "douglas-fir", "label": "Douglas fir", "legend_rgb": [206, 255, 207]},
+        {"id": "ponderosa-pine", "label": "Ponderosa pine", "legend_rgb": [155, 207, 99]},
+        {"id": "fir-spruce", "label": "Fir - Spruce", "legend_rgb": [255, 207, 49]},
+        {"id": "pinyon-juniper", "label": "Pinyon - Juniper", "legend_rgb": [156, 255, 100]},
+        {"id": "lodgepole-pine", "label": "Lodgepole pine", "legend_rgb": [205, 154, 99]},
+        {"id": "chaparral", "label": "Chaparral", "legend_rgb": [155, 154, 98]}
+      ]
+    }
+  ],
+  "warnings": [
+    "The eight classes and labels are read from the source legend; uncolored land remains transparent.",
+    "JPEG antialiasing and labels can obscure individual source pixels, so source-diff QA must retain all pixels that remain distinguishable from the legend colors."
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_indexed_publication_provenance",
+  "producer": "mapscan.direct_mapbox_state_interior_clip_packaging",
+  "status": "approved_publication",
+  "publication_approved": true,
+  "approval": {
+    "status": "approved",
+    "mode": "author_public_activation",
+    "author_statement": "Proceed",
+    "activated_at": "2026-08-31T21:14:57.858213+00:00"
+  },
+  "accepted_extraction": {
+    "sha256": "f0f7e36edb38e101f96a0eea754ad2fc6dc3600d287feaa8661798979dc4cd97",
+    "schema_version": "mapscan.fire-overlapping-layer-extraction.v1",
+    "automatic_iteration_count": 2,
+    "accepted_iteration": "extraction-02",
+    "iteration_report_sha256": "8704a17d875959bc6bf4d4e1ff202e58b2009e38f89a0ce3029a94e02ff7750a"
+  },
+  "accepted_alignment": {
+    "sha256": "da701571df63ae69c8cf56e5704b32cb7496b2ce0093ddc5d4d9bf7e0db5c2d1",
+    "automatic_iteration_count": 1,
+    "mapbox_reference": {
+      "id": "mapbox/light-v11@z9",
+      "style_sha256": "275dab973483aa2a5f4198e42ac328dc2e6bcabc99292954799e4b54c58b32c9",
+      "tilejson_sha256": "2666f50848db04f4a5e197f1649cec2ebedd745725a83cc1f3e85f83127124e2",
+      "tile_aggregate_sha256": "1916916c4bfc6f72a6dc9dba604badbf79871b745f2a3068a06de1693346bfba",
+      "manifest_sha256": "f8f8238b70ca0b329bb27945b5831fb8b2914d633ea7f81b09e5f394bc39b703"
+    }
+  },
+  "source": {
+    "sha256": "617989960866fc6d728b3b1a1cbe3a6d5e1c9edacce6bf6856637ede8b919b51",
+    "copied_path": "source.webp",
+    "copied_sha256": "617989960866fc6d728b3b1a1cbe3a6d5e1c9edacce6bf6856637ede8b919b51",
+    "retained_runtime_path": "source.webp",
+    "retention": "hard_link_to_immutable_v1_source"
+  },
+  "legend": {
+    "sha256": "ed68446d1ac982d0f4bee4c260b7b16fcfca05f2fe07e4f545842adf62438fc2"
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 3398,
+    "height": 3920
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 9,
+    "screen_pixel_span_at_maximum_zoom": [
+      3768.6083583999994,
+      4347.970602140895
+    ],
+    "native_tile_sampling": "nearest_neighbor_exact_class_or_binary_id_at_z9"
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "layers": [
+    {
+      "id": "fire-hazard-severity",
+      "semantic_kind": "mutually_exclusive_categorical",
+      "accepted_raster": {
+        "sha256": "f544310c5c47fbc71557f2581c14edab5ec70ca7a6b75720b3f753185f93f30d",
+        "byte_count": 480474,
+        "packaged_path": "evidence/fire-hazard-severity/accepted-raster.png",
+        "retention": "hard_link_to_immutable_accepted_raster"
+      },
+      "evidence": {
+        "observed_mask": {
+          "sha256": "de286fc96ccb9d8d1cb55690736176d67ee0763f324ddf5c280c5fd09d37dafc",
+          "byte_count": 296481,
+          "pixel_count": 2424750,
+          "packaged_path": "evidence/fire-hazard-severity/observed_mask.png",
+          "retention": "hard_link_to_immutable_accepted_evidence"
+        },
+        "inferred_mask": {
+          "sha256": "ecc33d3c57506d9e643568e39f886c2d7ba159734c54a931261c490cbb4b3148",
+          "byte_count": 58360,
+          "pixel_count": 71000,
+          "packaged_path": "evidence/fire-hazard-severity/inferred_mask.png",
+          "retention": "hard_link_to_immutable_accepted_evidence"
+        }
+      },
+      "coverage_contract": {
+        "schema_version": 1,
+        "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+        "semantic_kind": "mutually_exclusive_categorical",
+        "accepted_raster_sha256": "f544310c5c47fbc71557f2581c14edab5ec70ca7a6b75720b3f753185f93f30d",
+        "accepted_raster_packaged_path": "evidence/fire-hazard-severity/accepted-raster.png",
+        "clipped_class_raster_path": "rasters/fire-hazard-severity/clipped-class-id.png",
+        "clipped_class_raster_sha256": "758432006be6c6b7ddcd681b31e9e01bcef8be5d4437f0f3e0b21ba915626c0f",
+        "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+        "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+        "in_state_class_id_mismatch_pixel_count": 0,
+        "outside_state_classified_pixel_count": 0,
+        "exterior_removed_pixel_count": 583,
+        "exact_interior_nodata_pixel_count": 3109767,
+        "exact_interior_classified_pixel_count": 2495167,
+        "accepted_interior_classified_pixel_count": 2495167,
+        "only_exterior_removals": true,
+        "diff_mask_path": "diagnostics/fire-hazard-severity-exterior-removals.png",
+        "diff_mask_sha256": "b9a2e308769e6603c17794d14bdbe9a5696eb24eca65e4cdf9a04d21ed733796",
+        "decision": "pass"
+      }
+    },
+    {
+      "id": "local-responsibility-area",
+      "semantic_kind": "independent_binary_dot_symbol",
+      "accepted_raster": {
+        "sha256": "664974e205e216bb0e4f688c0ab352960b02b6afb157c06421ea50eb6145210c",
+        "byte_count": 29215,
+        "packaged_path": "evidence/local-responsibility-area/accepted-raster.png",
+        "retention": "hard_link_to_immutable_accepted_raster"
+      },
+      "evidence": {},
+      "coverage_contract": {
+        "schema_version": 1,
+        "method": "direct_mapbox_state_interior_mask_zero_exterior_v2",
+        "semantic_kind": "independent_binary_dot_symbol",
+        "accepted_raster_sha256": "664974e205e216bb0e4f688c0ab352960b02b6afb157c06421ea50eb6145210c",
+        "accepted_raster_packaged_path": "evidence/local-responsibility-area/accepted-raster.png",
+        "clipped_class_raster_path": "rasters/local-responsibility-area/clipped-class-id.png",
+        "clipped_class_raster_sha256": "2dacb2321869e994d471f89e40a0d6897e364033e21db03370877a675e97c633",
+        "clipped_raster_retention": "new_lossless_uint8_class_id_raster",
+        "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+        "in_state_class_id_mismatch_pixel_count": 0,
+        "outside_state_classified_pixel_count": 0,
+        "exterior_removed_pixel_count": 0,
+        "exact_interior_nodata_pixel_count": 5586476,
+        "exact_interior_classified_pixel_count": 18458,
+        "accepted_interior_classified_pixel_count": 18458,
+        "only_exterior_removals": true,
+        "diff_mask_path": "diagnostics/local-responsibility-area-exterior-removals.png",
+        "diff_mask_sha256": "a5864864e9aceedd4b3957122c09959a8e3164d0af181a817e6429836be4f050",
+        "decision": "pass"
+      }
+    }
+  ],
+  "unresolved_chromatic_evidence": null,
+  "native_validation": {
+    "alignment": {
+      "sha256": "2d2bd5fc356fce5be672b8503a9a31732eefd472606aaa16fd497b45c0405175",
+      "decision": "pass"
+    },
+    "source_extraction_diff": {
+      "sha256": "16f0f12736822099b539e2262a92e5274334cbc3d0b8f64473a9af5a1d3283f0",
+      "decision": "pass"
+    }
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ],
+    "retention": "hard_link_to_immutable_v1_diagnostic"
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "supersedes_staging_package": {
+    "directory": "fire-autonomous-v1",
+    "dataset_sha256": "6835c26e16196ea0dd861f33135cf0f8f9cf7c571eb16cc6c3547b3e0ae4e3da",
+    "provenance_sha256": "455c95315511bed433b6f09ecd740b6637b33b0ffa59ebe90f101eb6e31783b4",
+    "mutated": false
+  },
+  "state_clip": {
+    "authority": "accepted_alignment_pinned_raw_mapbox_reference_with_derived_state_topology_v2",
+    "reference_manifest_path": "reference/mapbox-reference-manifest.json",
+    "reference_manifest_sha256": "5f3b5269ce40193037084383c06f3b9f7e74abdf80ab3c4bdac643a024141f05",
+    "source_raw_manifest_sha256": "f8f8238b70ca0b329bb27945b5831fb8b2914d633ea7f81b09e5f394bc39b703",
+    "raw_bytes_preserved_exactly": true,
+    "mask_derivation": "pacific_side_detached_island_topology_v2",
+    "mask_path": "reference/direct-mapbox-state-interior-mask.png",
+    "mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "pixel_count": 5604934,
+    "target_grid": {
+      "crs": "EPSG:3857",
+      "bounds": [
+        -13857273.186886752,
+        3833019.2460767706,
+        -12705028.292139662,
+        5162403.053672604
+      ],
+      "width": 3398,
+      "height": 3920
+    },
+    "automatic_diff_path": "automatic-clip-diff.json",
+    "automatic_diff_sha256": "668c55d0eafe60a0fc3940d9f22c7bc0f89e761b3f283c832f5030e1efd61235",
+    "decision": "pass"
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "state_interior_pixel_count": 5604934,
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "layers": [
+      {
+        "layer_id": "fire-hazard-severity",
+        "accepted_raster_sha256": "f544310c5c47fbc71557f2581c14edab5ec70ca7a6b75720b3f753185f93f30d",
+        "publication_raster_sha256": "758432006be6c6b7ddcd681b31e9e01bcef8be5d4437f0f3e0b21ba915626c0f",
+        "semantic_kind": "mutually_exclusive_categorical",
+        "coverage_contract": "sparse_visible_evidence",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 3109767,
+        "classified_pixel_count_inside_state": 2495167
+      },
+      {
+        "layer_id": "local-responsibility-area",
+        "accepted_raster_sha256": "664974e205e216bb0e4f688c0ab352960b02b6afb157c06421ea50eb6145210c",
+        "publication_raster_sha256": "2dacb2321869e994d471f89e40a0d6897e364033e21db03370877a675e97c633",
+        "semantic_kind": "independent_binary_dot_symbol",
+        "coverage_contract": "sparse_visible_evidence",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 5586476,
+        "classified_pixel_count_inside_state": 18458
+      }
+    ]
+  },
+  "staging": {
+    "artifact_dataset_id": "california-fire-hazard-and-responsibility-areas-autonomous-v2-clipped",
+    "artifact_title": "California Fire Hazard and Responsibility Areas \u2014 Autonomous State-Clipped Candidate",
+    "dataset_sha256": "f00e7f1190031c55521b702e5858f36486d1ee4d61f5288f29b8be21a78076f2",
+    "provenance_sha256": "e6578d6492deb754e3664e0c757cac66742e9b64d3335a6429d388abfb6fa37a",
+    "package_sha256": "24b8a55c1c43941a6b41c4367c60201773417a596a0a127bc6c572b587110c28"
+  },
+  "shared_assets": {
+    "asset_base": "/mapscan/data/staging/fire-autonomous-v2-clipped/",
+    "immutable_asset_count": 815,
+    "immutable_assets_sha256": "0fa8f7818524135525938d1ed7c08a4d9315b43116bb02fcd031b7439fcf3443"
+  }
+}

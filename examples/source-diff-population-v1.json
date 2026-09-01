@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "population-density-2020",
+      "kind": "extraction",
+      "run": "runs/population-extract-v8",
+      "repair_full_state": true,
+      "maximum_iterations": 4
+    }
+  ]
+}

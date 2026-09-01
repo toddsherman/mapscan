@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "rainfall-peninsula-marin-v4",
+      "kind": "extraction",
+      "run": "runs/rainfall-peninsula-marin-coastal-cell-extract-v4",
+      "repair_full_state": true,
+      "maximum_iterations": 4
+    }
+  ]
+}

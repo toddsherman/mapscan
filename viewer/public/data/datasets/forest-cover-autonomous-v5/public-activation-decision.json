@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "california-forest-cover",
+  "dataset_title": "Forest Cover of California",
+  "staging_artifact_dataset_id": "california-forest-cover",
+  "staging_artifact_title": "Forest Cover of California",
+  "author_statement": "Todd visually approved the exact forest-autonomous-v5 staging bytes in the active MapScan thread: \"lgtm\" on 2026-08-31.",
+  "approval_mode": "author_public_activation",
+  "autonomous_evidence": null,
+  "activated_at": "2026-09-01T02:17:23.696823+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/forest-autonomous-v5/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "69823884b7aae0228de8f36999f0500875a22fca02acd347f8f373df4ed382e9",
+  "staging_provenance_sha256": "3e75649d71e07c5efe8254c4aa0177384ae56b7ce4969dce78b027b4e9835334",
+  "staging_package_sha256": "ab23f566d4500de8fb9c8413b47f59197444d8e0212fbb086aab5dab5456ec96",
+  "public_dataset_sha256": "62db83a78cafbfdeed5207a72d4766c41c5e209b4fc6f72d2b4c3616a04b6871",
+  "public_provenance_sha256": "80d67985d1f292e326b01eea46dac0da2a89240629b1711ebd0a7e01a916054c",
+  "immutable_asset_count": 404,
+  "immutable_assets_sha256": "db4994ca9b3266f666fbb7ff50e11961f39f7f0a0607d015f47bf09e539930d7",
+  "source_image_sha256": "94859cb11dc8fc54e9f8da05be2e1aaeb30f97eb61d7fddfd78282f960809097",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "forest-type",
+      "accepted_raster_sha256": "8d625b65f81b354dc9de530c8d69b4604d199da4a450e37238424663c1106013",
+      "semantic_kind": "sparse_visible_forest_categories_with_state_perimeter_occlusion_completion",
+      "coverage_contract": "sparse_visible_evidence",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 3399355
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "forest-type",
+      "category_ids": [
+        "chaparral",
+        "douglas-fir",
+        "fir-spruce",
+        "lodgepole-pine",
+        "pinyon-juniper",
+        "ponderosa-pine",
+        "redwood",
+        "western-hardwoods"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 835030,
+      "tile_set_sha256": "57b6ff5960b8bf970ad8d9c910bf1c0e2c08875a27942dff9665a8dc577e0c87"
+    }
+  ]
+}

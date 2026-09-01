@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "elevation-bands",
+      "accepted_raster_sha256": "d343bb9fc8e97ca4e73a34221ecd398ae7e642dc210d3aead325d64f308902bc",
+      "publication_raster": "../../viewer/public/data/staging/elevation-autonomous-v2/accepted-class-id.png",
+      "semantic_kind": "full_state_selectable_numeric_intervals_and_depression",
+      "coverage_contract": "full_state"
+    }
+  ]
+}

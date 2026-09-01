@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "status": "approved_publication",
+  "id": "california-plant-hardiness-zones-neighbor-v1",
+  "title": "California Plant Hardiness Zones",
+  "bounds": [
+    -124.48200299999998,
+    32.52950800000001,
+    -114.131211,
+    42.009502999999995
+  ],
+  "center": [
+    -119.30660699999999,
+    37.2695055
+  ],
+  "minimum_zoom": 4,
+  "maximum_native_zoom": 9,
+  "overscaling": "nearest",
+  "categorical_tile_encoding": "indexed_class_id",
+  "overview": {
+    "mode": "dominant_class_with_fractional_coverage",
+    "supersampling": 4,
+    "overview_zooms": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exact_binary_zoom": 9
+  },
+  "source_image": "source.avif",
+  "approval": {
+    "status": "approved",
+    "mode": "autonomous_nonregression_activation",
+    "authorization_statement": "No-human publication policy requested for the MapScan workflow; activate only with bound passing non-regression evidence",
+    "activated_at": "2026-09-01T00:33:39.593720+00:00",
+    "autonomous_evidence": {
+      "sha256": "e2bd3f67a0893ab2c9f48bac6e07ec637c3721d192ea73bb79a98afd1c3ff6f2",
+      "policy": "complete candidate ensemble, globally best passing Mapbox registration, fixed-point source extraction, rare-class spatial corroboration, and exact publication coverage",
+      "gates": {
+        "original_source_hash_unchanged": true,
+        "complete_alignment_ensemble_ranked": true,
+        "globally_best_passing_alignment_selected": true,
+        "state_semantic_score_nonregression": true,
+        "state_p90_nonregression": true,
+        "state_f1_nonregression": true,
+        "land_containment_nonregression": true,
+        "extraction_fixed_point": true,
+        "meaningful_source_diff_zero": true,
+        "all_legend_classes_preserved": true,
+        "rare_class_spatial_corroboration_passed": true,
+        "publication_exterior_pixel_count_zero": true,
+        "manual_alignment_or_extraction_input_absent": true
+      }
+    }
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "provenance": {
+    "manifest": "provenance.json",
+    "sha256": "51ce3cd0deb1caf04eec0bd069bc88b80a3c0884b2ed8640f9282f9ec82d330d"
+  },
+  "layers": [
+    {
+      "id": "plant-hardiness-zone",
+      "label": "California Plant Hardiness Zones",
+      "kind": "categorical",
+      "bounds": [
+        -124.48200299999998,
+        32.52950800000001,
+        -114.131211,
+        42.009502999999995
+      ],
+      "nodata_class_id": 0,
+      "categories": [
+        {
+          "id": "5a",
+          "class_id": 1,
+          "label": "5a",
+          "display_rgb": [
+            113,
+            162,
+            253
+          ],
+          "pixel_count": 1280
+        },
+        {
+          "id": "5b",
+          "class_id": 2,
+          "label": "5b",
+          "display_rgb": [
+            93,
+            201,
+            223
+          ],
+          "pixel_count": 66208
+        },
+        {
+          "id": "6a",
+          "class_id": 3,
+          "label": "6a",
+          "display_rgb": [
+            71,
+            187,
+            72
+          ],
+          "pixel_count": 215036
+        },
+        {
+          "id": "6b",
+          "class_id": 4,
+          "label": "6b",
+          "display_rgb": [
+            119,
+            200,
+            85
+          ],
+          "pixel_count": 326007
+        },
+        {
+          "id": "7a",
+          "class_id": 5,
+          "label": "7a",
+          "display_rgb": [
+            170,
+            215,
+            103
+          ],
+          "pixel_count": 231919
+        },
+        {
+          "id": "7b",
+          "class_id": 6,
+          "label": "7b",
+          "display_rgb": [
+            253,
+            234,
+            167
+          ],
+          "pixel_count": 269845
+        },
+        {
+          "id": "8a",
+          "class_id": 7,
+          "label": "8a",
+          "display_rgb": [
+            237,
+            218,
+            133
+          ],
+          "pixel_count": 404680
+        },
+        {
+          "id": "8b",
+          "class_id": 8,
+          "label": "8b",
+          "display_rgb": [
+            234,
+            204,
+            87
+          ],
+          "pixel_count": 840696
+        },
+        {
+          "id": "9a",
+          "class_id": 9,
+          "label": "9a",
+          "display_rgb": [
+            219,
+            182,
+            78
+          ],
+          "pixel_count": 1423390
+        },
+        {
+          "id": "9b",
+          "class_id": 10,
+          "label": "9b",
+          "display_rgb": [
+            245,
+            182,
+            119
+          ],
+          "pixel_count": 1275598
+        },
+        {
+          "id": "10a",
+          "class_id": 11,
+          "label": "10a",
+          "display_rgb": [
+            234,
+            156,
+            55
+          ],
+          "pixel_count": 362993
+        },
+        {
+          "id": "10b",
+          "class_id": 12,
+          "label": "10b",
+          "display_rgb": [
+            229,
+            120,
+            31
+          ],
+          "pixel_count": 70200
+        },
+        {
+          "id": "11a",
+          "class_id": 13,
+          "label": "11a",
+          "display_rgb": [
+            229,
+            85,
+            30
+          ],
+          "pixel_count": 6510
+        }
+      ],
+      "indexed_raster": {
+        "encoding": "png_luma_alpha_uint8_class_id_v1",
+        "class_id_channel": "red_after_browser_png_decode",
+        "coverage_channel": "alpha",
+        "nodata_class_id": 0,
+        "class_id_range": [
+          1,
+          13
+        ],
+        "raster_color_mix": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "raster_color_range": [
+          0,
+          1
+        ],
+        "tile_template": "tiles/plant-hardiness-zone/class-id/{z}/{x}/{y}.png?v=3d01b234b92a5a4c",
+        "tilejson": "tiles/plant-hardiness-zone/class-id/tilejson.json",
+        "tile_file_count": 400,
+        "tile_image_byte_count": 697121,
+        "mean_tile_image_byte_count": 1742.8025,
+        "tile_set_sha256": "3d01b234b92a5a4c76a2edb8b7bba2d54044750fa241576b44d67e4dbc852f55",
+        "mapbox_rendering": "single_raster_source_dynamic_raster_color_step_expression"
+      }
+    }
+  ],
+  "publication_approved": true,
+  "asset_base": "/mapscan/data/staging/plant-hardiness-autonomous-v3/",
+  "shared_assets": {
+    "immutable_asset_count": 404,
+    "immutable_assets_sha256": "8acd6c75acbec04bc1129132ee02392e97fbe29b197e4dba02e15e95ddec1f23"
+  }
+}

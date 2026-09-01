@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_high_resolution_geologic_staging_provenance",
+  "status": "needs_visual_review",
+  "publication_approved": false,
+  "approval": {
+    "status": "not_approved"
+  },
+  "accepted_extraction": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/geologic-highres-3x/automatic-extraction/accepted-extraction.json",
+    "sha256": "52b6e392c90b5879a5d4b707d73e3bcb801eb661cea7674441e49537f8c081a9",
+    "schema_version": "mapscan.geologic-pdf-highres-extraction.v1",
+    "automatic_alignment_iteration_count": 1,
+    "automatic_extraction_iteration_count": 2
+  },
+  "accepted_alignment": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/geologic/automatic-alignment/accepted-alignment.json",
+    "sha256": "0a77d29717f661014f64c1836ef9eb952e7637c45086e0ca939eea4b59e914f6",
+    "automatic_iteration_count": 1,
+    "reused_without_refit": true
+  },
+  "source": {
+    "pdf_path": "/Users/toddsherman/Projects/MapMap/examples/geologic.pdf",
+    "pdf_sha256": "a9afc3c7cf50773ac5c436e0ed935c503f26211d2df35f3c131ac1199846b91f",
+    "copied_pdf": "source.pdf",
+    "render_path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/geologic/source-clean/working-raster.png",
+    "render_sha256": "b2d5dfb7238aae2b868f49789fd26e40fe1bfada5a2d57bf2674dd1d839efc5e",
+    "copied_render": "source.png",
+    "render_width": 7088,
+    "render_height": 9375
+  },
+  "legend": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/geologic-highres-3x/automatic-extraction/legend/legend.json",
+    "sha256": "a916c56ebb9b51e3e8234e9e7c53029d1f90a0ed9ad46c3882b049fc868a1e64",
+    "semantic_contract": "Each class is keyed by the unique native PDF text object printed inside its unique CMYK legend swatch. Legacy GeoageFullAlpha glyph codes are decoded only by the pinned embedded-font symbol map; unmapped symbols reject the run.",
+    "class_count": 53
+  },
+  "class_raster": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/geologic-highres-3x/automatic-extraction/accepted/mapbox-class-id.png",
+    "sha256": "8601c1bbd5e0b8b2253eae6675177953bf59026b33ca1ab5678373b585836709",
+    "width": 10192,
+    "height": 11758,
+    "class_count": 53
+  },
+  "processing_reference": {
+    "path": "/Users/toddsherman/Projects/MapMap/reference/mapbox-light-v11-california-z9-v2-3x/manifest.json",
+    "sha256": "c57c546e4b5fe5278a23a3e7a4499f4199bd0bd3910ad3b552e9662da9fba523",
+    "raw_vector_bytes_preserved_exactly": true
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 11,
+    "screen_pixel_span_at_maximum_zoom": [
+      15074.433433599997,
+      17391.88240856358
+    ]
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 10192,
+    "height": 11758
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 70103111,
+    "policy": "preserve accepted Mapbox water and exterior as transparent NoData"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "267a83da36dc75f44bd6daa1f87ce5fffa26bb9cde68c3fa3524947df4d2e115",
+    "raster_width": 10192,
+    "raster_height": 11758,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "public_artifacts_mutated": false,
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "073cd54215a4f8e93519eeee77ee7d7cfd5da8778617e0d82d7ee71d6b97ab7c",
+    "state_interior_pixel_count": 50462730,
+    "raster_width": 10192,
+    "raster_height": 11758,
+    "layers": [
+      {
+        "layer_id": "geologic-units",
+        "accepted_raster_sha256": "8601c1bbd5e0b8b2253eae6675177953bf59026b33ca1ab5678373b585836709",
+        "publication_raster_sha256": "8601c1bbd5e0b8b2253eae6675177953bf59026b33ca1ab5678373b585836709",
+        "semantic_kind": "full_state_land_categorical",
+        "coverage_contract": "full_state",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 728305,
+        "classified_pixel_count_inside_state": 49734425
+      }
+    ]
+  }
+}

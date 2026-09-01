@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "state_interior_mask": "../../reference/mapbox-light-v11-california-z9-v2-3x/california-state-interior-mask.png",
+  "layers": [
+    {
+      "layer_id": "geologic-units",
+      "accepted_raster_sha256": "8601c1bbd5e0b8b2253eae6675177953bf59026b33ca1ab5678373b585836709",
+      "publication_raster": "../../runs/mapbox-autonomous-restart-v1/geologic-highres-3x/automatic-extraction/accepted/mapbox-class-id.png",
+      "semantic_kind": "full_state_land_categorical",
+      "coverage_contract": "full_state"
+    }
+  ]
+}

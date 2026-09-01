@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "kind": "autonomous_automatic_categorical_staging_preview_provenance",
+  "producer": "mapscan.automatic_extraction_preview_export",
+  "status": "needs_visual_review",
+  "publication_approved": false,
+  "approval": {
+    "status": "not_approved"
+  },
+  "boundary": {
+    "kind": "pinned_mapbox_state_coast_diagnostic",
+    "authority": "accepted_alignment_mapbox_reference",
+    "diagnostic_only": true,
+    "raster": "mapbox-state-coast-overlay.png",
+    "raster_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "raster_bounds": [
+      -124.48200299999998,
+      32.52950800000001,
+      -114.131211,
+      42.009502999999995
+    ]
+  },
+  "accepted_extraction": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/population-native-fidelity-repair-v2/automatic-extraction/accepted-extraction.json",
+    "sha256": "734229d660af9a5474d8ff82cf3bfbabc60e11141853607eb33df97131bf425f",
+    "schema_version": "mapscan.automatic-categorical-extraction.v1",
+    "automatic_iteration_count": 4,
+    "accepted_iteration": "extraction-04",
+    "iteration_report_sha256": "341624c6ca4e76df4d7fa43cad95f6aa5511c2ab8d50434a8393bf8536e2f49c"
+  },
+  "accepted_alignment": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/mapbox-autonomous-restart-v1/population/automatic-alignment/accepted-alignment.json",
+    "sha256": "73c503383bcd705bbc7bc8ca9d07ae563996ba89e39cff40ed65a3c593630dd3",
+    "automatic_iteration_count": 2
+  },
+  "source": {
+    "path": "/Users/toddsherman/Projects/MapMap/examples/population.png",
+    "sha256": "45bb66b29dfe1866829b6f04cb0cfc20bc2405821ceee3b9d4b31ea4a27a2098",
+    "copied_path": "source.png",
+    "copied_sha256": "45bb66b29dfe1866829b6f04cb0cfc20bc2405821ceee3b9d4b31ea4a27a2098"
+  },
+  "legend": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/population-native-fidelity-repair-v2/automatic-extraction/legend/legend.json",
+    "sha256": "04804250f086f4b2e731fc18e985eefa856f30d83b3b1ec93fb236b16e2cffc6"
+  },
+  "class_raster": {
+    "path": "/Users/toddsherman/Projects/MapMap/runs/population-native-fidelity-repair-v2/automatic-extraction/extraction-04/web-mercator-class-id.png",
+    "sha256": "f11f3f070bc639deafe0e6e56a434894bb318d7d65008ae2179b85b75d3ee055",
+    "width": 3398,
+    "height": 3920
+  },
+  "native_resolution": {
+    "minimum_nonundersampling_zoom": 9,
+    "screen_pixel_span_at_maximum_zoom": [
+      3768.6083583999994,
+      4347.970602140895
+    ]
+  },
+  "target_grid": {
+    "crs": "EPSG:3857",
+    "bounds": [
+      -13857273.186886752,
+      3833019.2460767706,
+      -12705028.292139662,
+      5162403.053672604
+    ],
+    "width": 3398,
+    "height": 3920
+  },
+  "categorical_tile_encoding": "indexed_class_id",
+  "processing_reference": null,
+  "nodata": {
+    "class_id": 0,
+    "transparent": true,
+    "pixel_count": 7825798,
+    "partial_source_extent": false,
+    "missing_source_extent_pixel_count": 0,
+    "missing_source_extent_mask_sha256": null,
+    "policy": "preserve_as_transparent_nodata_never_infer"
+  },
+  "manual_inputs": {
+    "manual_arrows": false,
+    "manual_stamps": false,
+    "human_approval": false
+  },
+  "publication_coverage": {
+    "schema_version": 1,
+    "method": "direct_mapbox_state_interior_mask_v1",
+    "state_interior_mask_sha256": "6ccfd8ce51805423e7eb929112ab08904b48dd0988c3003336c6b87b43abc8da",
+    "state_interior_pixel_count": 5604934,
+    "raster_width": 3398,
+    "raster_height": 3920,
+    "layers": [
+      {
+        "layer_id": "population-density",
+        "accepted_raster_sha256": "f11f3f070bc639deafe0e6e56a434894bb318d7d65008ae2179b85b75d3ee055",
+        "publication_raster_sha256": "f11f3f070bc639deafe0e6e56a434894bb318d7d65008ae2179b85b75d3ee055",
+        "semantic_kind": "full_state_land_categorical",
+        "coverage_contract": "full_state",
+        "colored_pixel_count_outside_state": 0,
+        "nodata_pixel_count_inside_state": 110572,
+        "classified_pixel_count_inside_state": 5494362
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "kind": "indexed_public_activation_decision",
+  "status": "approved_public_activation",
+  "dataset_id": "california-topography-elevation",
+  "dataset_title": "California Topography and Elevation",
+  "staging_artifact_dataset_id": "california-topography-elevation",
+  "staging_artifact_title": "California Topography and Elevation",
+  "author_statement": "Check that each map uses the newer version and fix it.",
+  "activated_at": "2026-08-31T23:32:23.807253+00:00",
+  "staging_assets_copied_byte_identically": false,
+  "staging_assets_shared_byte_identically": true,
+  "asset_base": "/mapscan/data/staging/elevation-autonomous-v2/",
+  "metadata_transition_only": true,
+  "staging_dataset_sha256": "b45c02d9fac54fb3ca1858e3c9c870c3ef413a8044b10bf8645cc1dd1dbfe1d1",
+  "staging_provenance_sha256": "86812e916a161761e9c1ccf173746cc94c00053ff3361369dbfa2dffc776bc3a",
+  "staging_package_sha256": "9e5980a5dbdcd8da41c9117639f90e259386692d77fa6a63e7222a20025feee9",
+  "public_dataset_sha256": "9c7a2f0d91aa10a9f7bfe8bbec82041511c87e4a707bf77e1d366348f9832f61",
+  "public_provenance_sha256": "cf57cfdf06883f6d0e4fde66a4b5fa6e2fc9eebed6d4cacd7523b028f833e878",
+  "immutable_asset_count": 404,
+  "immutable_assets_sha256": "4600c473c648c1bcb3f66a2d103c3c4187207133bc340ab08cd9785b26f8237c",
+  "source_image_sha256": "6ee9ed7a7341260caa0f6c3c9e7b63eb2d7d747056eb23caba5e3b4ffd196db5",
+  "boundary_sha256": "d9d3c21d6f096d3c1439e1c813c83f29edba459dde999638b775d9f10b5462c0",
+  "coverage": [
+    {
+      "layer_id": "elevation-bands",
+      "accepted_raster_sha256": "d343bb9fc8e97ca4e73a34221ecd398ae7e642dc210d3aead325d64f308902bc",
+      "semantic_kind": "full_state_selectable_numeric_intervals_and_depression",
+      "coverage_contract": "full_state",
+      "colored_pixel_count_outside_state": 0,
+      "nodata_pixel_count_inside_state": 110572
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "elevation-bands",
+      "category_ids": [
+        "depression",
+        "elevation-0-to-100-m",
+        "elevation-100-to-250-m",
+        "elevation-1000-to-2000-m",
+        "elevation-2000-to-4000-m",
+        "elevation-250-to-500-m",
+        "elevation-4000-to-5000-m",
+        "elevation-500-to-1000-m"
+      ],
+      "class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "tile_file_count": 400,
+      "tile_image_byte_count": 674854,
+      "tile_set_sha256": "95aea09d3d0bb08df8df2a5e8681a0817f25644506dd89bcfd357e3e4955e813"
+    }
+  ]
+}
