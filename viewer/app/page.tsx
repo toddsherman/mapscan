@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProcessLoopAnimation } from "@/components/process-loop-animation";
 import { SourceMapGallery, type SourceMap } from "@/components/source-map-gallery";
 
 export const metadata: Metadata = {
@@ -261,6 +262,8 @@ export default function MapScanStoryPage() {
               <strong>Extract → compare to source → diff → repair ↻</strong>
             </div>
           </div>
+
+          <ProcessLoopAnimation />
 
           <div className="story-prose story-process-copy">
             <p>

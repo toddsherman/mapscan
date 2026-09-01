@@ -1894,3 +1894,24 @@ The authoritative output must include the original-resolution classified raster 
   and decision log were prepared as the initial public `toddsherman/mapscan`
   repository. Local credentials, caches, generated runs, duplicate source
   packages, and superseded staging outputs remain excluded.
+
+### 2026-09-01 — Story animation for the two comparison loops
+
+- The story's process section now includes a restrained, high-level schematic
+  of the two loops used throughout MapScan. It deliberately illustrates the
+  method rather than presenting any one dataset's measured iteration history.
+- The geometry panel keeps the Mapbox California perimeter fixed while a
+  source-derived perimeter moves through offset, rotation, skew, and scale
+  candidates until the alignment gate passes.
+- The extraction panel begins with already-aligned geography, then compares an
+  illustrative classified map to its source. Missing blocks, cartographic ink,
+  and outside-boundary spill are exposed and repaired before the extraction
+  gate passes. This preserves the project's required separation between
+  alignment and extraction evidence.
+- Motion uses the existing warm paper, ink, muted red, Georgia, Arial, and
+  hairline visual system. The looping figure includes a pause control and a
+  complete reduced-motion end state; it adds no runtime dependency and changes
+  no accepted dataset, alignment, tile, or catalog pointer.
+- Site verification passed **49 viewer tests**, TypeScript, the Next.js 16.3.2
+  production build, a zero-horizontal-overflow browser check, pause/resume
+  state inspection, and a clean browser console.

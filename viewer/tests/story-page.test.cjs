@@ -13,6 +13,10 @@ const gallery = fs.readFileSync(
   path.join(viewerRoot, "components", "source-map-gallery.tsx"),
   "utf8",
 );
+const processLoopAnimation = fs.readFileSync(
+  path.join(viewerRoot, "components", "process-loop-animation.tsx"),
+  "utf8",
+);
 const styles = fs.readFileSync(
   path.join(viewerRoot, "app", "globals.css"),
   "utf8",
@@ -74,5 +78,20 @@ test("opens the problem story with Todd's interest in maps and data", () => {
   assert.match(
     storyPage,
     /I’ve always loved maps, data, and playing with the union of the/,
+  );
+});
+
+test("illustrates both gated comparison loops with controllable motion", () => {
+  assert.match(storyPage, /<ProcessLoopAnimation \/>/);
+  assert.match(processLoopAnimation, /Loop 01 · Geometry/);
+  assert.match(processLoopAnimation, /Bring the source to Mapbox/);
+  assert.match(processLoopAnimation, /Loop 02 · Data/);
+  assert.match(processLoopAnimation, /Make the extraction match the source/);
+  assert.match(processLoopAnimation, /aria-pressed=\{paused\}/);
+  assert.match(styles, /@keyframes story-geometry-converge/);
+  assert.match(styles, /@keyframes story-data-cleanup/);
+  assert.match(
+    styles,
+    /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.story-loop-animation \* \{ animation: none !important; \}/,
   );
 });
