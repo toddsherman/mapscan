@@ -58,9 +58,26 @@ test("hides MapScan story links entirely on mobile without an emoji arrow", () =
   assert.doesNotMatch(styles, /\.story-map-link-mobile/);
 });
 
-test("labels the upcoming examples clearly", () => {
-  assert.match(storyPage, /Examples coming soon/);
-  assert.doesNotMatch(storyPage, /Examples in progress/);
+test("publishes the population, farms, and elevation composition as a saved example", () => {
+  assert.match(storyPage, /Population and farms follow low ground/);
+  assert.match(storyPage, /53 layers · 3 datasets/);
+  assert.match(storyPage, /population-farms-elevation\.jpg/);
+  assert.match(storyPage, /populationFarmsElevationExampleHref/);
+  assert.match(storyPage, /config=3&state=/);
+  assert.doesNotMatch(storyPage, /Examples coming soon/);
+  assert.equal(
+    fs.existsSync(
+      path.join(
+        viewerRoot,
+        "public",
+        "editorial",
+        "mapscan",
+        "examples",
+        "population-farms-elevation.jpg",
+      ),
+    ),
+    true,
+  );
 });
 
 test("shows all nine source maps with lightweight editorial previews", () => {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ProcessLoopAnimation } from "@/components/process-loop-animation";
 import { SourceMapGallery, type SourceMap } from "@/components/source-map-gallery";
@@ -92,6 +93,8 @@ const sourceMaps: SourceMap[] = [
     alt: "A map of average annual precipitation across California.",
   },
 ];
+
+const populationFarmsElevationExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWgBc8AHPAcwLWoAsBPMgUww7DQqzxEQ8DFADaY1JlyES5NAywoArhgrLGGMhjREEZZQGcOwkAHdmHPsICM8HBxw4A7NGEAOAEwBdWJPTY%2BMSkZAoESqrqmtq6%2BkYm8AC2WIYoXDpEHHhGZAxoWEShemTMaKy28BzOHABsAAx1Hj5%2BUoGyIWERahqYMcXxpuFpFSA1AKwoCGhoTb7%2B0kFyoYoq3dEZccamZlgY%2BkMJdiAALGPuAJzOjbBec60ywfIrkT1aGwZbSVgAHhz61GhDFFDpVzgAjJw4WYtAIPJadVZRXrvAZfVLpXRZHJ5QzGQwjc51Y41MHnaHzNqPZZDF7rWIfBIgTA4ZnyYqsjAssjJb7A-GwI7HBANZzHcn3RYdZ5rZH01EgVjZIh0MjUDgEDhEOQYflHWoNabi2GSp40mVvOWfVB4ChUIQC%2BAQhA2JxGhbtU1dJEW-pWsFWIiGMgIAjlB0gdws84cTxuynw6XevqbRmGZREHAYPBmdW6%2BA1TzuaAoGpxuFSs1JlFW5LojAZLFBnBYLj6FAEGh5k6eGrHNBgssm6le17JhmmQxoJxZnMEEaeMbHZyRwce4eI0fVxkoWRkQyEOjMZSJIr6NNTe1HOoxlxim7NCnlz0bum%2BxlURJ8PAcLtWBwQ1cqQRWlZTfUwd24Mh207EYEBQHBPDBGxAITStN0tRluFtZQ0m0P92AYDhNS7NIOHONBS3vO5jTXYDzTHeV0AIDsKBIuoEDI9wUIrEdXxTUxaAoL8f1PPccw4ChVRtYSuzBIVjncAcqJhd0gMTdCwKSLhBCDQwAEdlEBZhRJUFREn9AguzQdwUHOLxuOfECfX4%2BwZ1zMgiA0YxQxM5hwiBT8gwoDUODIFkCESLtznBBBnDGBz1ychi-SMYyLPCH8RkUsFoBqFAEroqsMNMQQBEDUS6DQAhsHy8N3DqayamQ5THyHQqNJckAgUYMx0pbLs4vOHAxmcAr1L48d4DVag1UskYami44hTGtCJvlWs0nrTFsiCggcIAaygjtqC7MYEHcNBThW3jQM6lAsGCowRicWzxmul9bsmxA%2BEy8McEUpaoRaiVaPGz75TwbAwF%2Bo4cAamxoBmYGaLU1bwatfasB2X93Bshd3qSrdTA2jFMh2vdlDBYKaCUXocD2h7fzqZxzhsWNkdU1Cbucr60DAPB0AQPAuwQMEanqa5bhU%2BMeI%2Bnn5UwRJBAQLsnD%2BACOZlxz6KJ%2BAmGobhVfcc60FGzWn0SnXiqmjBjyDag9syIN6SYIYbVVzwUGOQkCatzTUEsZj%2BpGDgwTQFBnEoqXWtBtH5atagUiElBmAEX8FugMYgejkHUe55LGTVKqRaqUVapzlGublguBKsFORMyFAhPCJ3YLQCZct9or-doRIODyIgfpFzxoBjO8K852XCetkASa2smcg4%2B6EGUHaRhQFAXRsZqJ61y3u86sxME81j16uBpJYfXOq%2Bn-28jVLsLmOXL4vNtqwfjxlCM1ZgdpBEAxhZzhpfaik9tYHy%2BlgBA3B15TAolHK%2BlcQi0GoKoPgZVgzEQeuwTwdRcGmBsBfMgC4GjPWAaQt%2Ba4UFoP4IITBgZsHELwdcEAJC6hkDGBfEOF8KG7wttQnQtDCgcQYRQHBzDTCcIaGQQhXDwwoB4SA6W-CaA0IwSIwwjDcH4PgLIihRw0CKISlQWg982CcG4LwIRpguA8HQXQkhlA8AcOkYkEYpsGhgiQJQqkJj6CMBYOwWxViyo2MsfYwoUinEyKIW4uq0AGjnHHogsBTjTEBPMcEiJYS7FCJidIqgTDXEjGgMcBoy0fFLD8WYoJ4TrGVDqRg3BBTnFlOKeGGwbSKm3F8CAPA4hr7IIyJJUoBAEAFB-EGAAXoIBuHAsCHjBIQMgYBmogCsAQCgzADJoH2qFQwpRMbKikhQTU-BehIPINosYYUCi9DYGCcI%2BhVmmA4uqYMSdwhgmUHky54FUlBB-JJHc0M5zwEubcjUJQ0BTKqvoekGpDC0AYWCXYjCqpWH5IM8gxhQWhRzHwQOZAsCJABE3LFEK6BZCzHQJQ3ImBMMIf8vefN1QKFCroTyvQHYcHuonISeSbB2RsIylhELqkZNqbk0J4LUntTWlaCFAiIn0M0WIph%2BDenfHEL0txkAxAyJsO4AAdGMBaNheywGgM4Y1Ngxjb2gHAGotqzU1FgHUd13gAC%2BQA";
 
 const processSteps = [
   {
@@ -332,13 +335,54 @@ export default function MapScanStoryPage() {
           <div className="story-section-heading">
             <h2>The interesting part starts when the layers meet.</h2>
             <p>
-              I’m assembling a set of combinations that make relationships in
-              the data easier to see. Those examples will appear here next.
+              Saved compositions make relationships across the recovered
+              datasets easier to see.
             </p>
           </div>
-          <div className="story-insight-placeholder">
-            <span>Examples coming soon</span>
-            <p>Layer combinations, observations, and saved map views coming next.</p>
+          <div className="story-insight-example">
+            <figure className="story-insight-figure">
+              <Image
+                src="/mapscan/editorial/mapscan/examples/population-farms-elevation.jpg"
+                alt="A MapScan composition showing purple elevation bands, red population density, and multicolored agricultural land across California."
+                width={658}
+                height={662}
+                sizes="(max-width: 767px) 100vw, 55vw"
+              />
+              <figcaption>53 layers · 3 datasets</figcaption>
+            </figure>
+            <div className="story-insight-copy">
+              <p className="story-kicker">Example 01</p>
+              <h3>Population and farms follow low ground.</h3>
+              <p>
+                This makes visible something we already know intuitively:
+                California’s most densely populated areas—above 1,000 in the
+                population-density layer—and its farms sit largely on
+                lower-elevation land. Purple shows elevation, red shows
+                population density, and the remaining colors distinguish the
+                many types of agriculture.
+              </p>
+              <div className="story-insight-key" aria-label="Map color key">
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-elevation" />
+                  Elevation
+                </span>
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-population" />
+                  Population
+                </span>
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-farms" />
+                  Farms
+                </span>
+              </div>
+              <Link
+                className="story-map-link story-map-link-desktop story-insight-link"
+                href={populationFarmsElevationExampleHref}
+              >
+                <span>Open this composition</span>
+                <ArrowIcon />
+              </Link>
+            </div>
           </div>
         </section>
       </article>
