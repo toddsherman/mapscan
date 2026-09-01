@@ -231,12 +231,11 @@ export function ProcessLoopAnimation() {
   const [paused, setPaused] = useState(false);
 
   return (
-    <figure className={`story-loop-animation${paused ? " is-paused" : ""}`}>
-      <figcaption>
-        <div>
-          <span>Process schematic · repeated visual comparison</span>
-          <h3>Each loop had to settle before the next one could begin.</h3>
-        </div>
+    <figure
+      className={`story-loop-animation${paused ? " is-paused" : ""}`}
+      aria-label="Animated geometry and data comparison loops"
+    >
+      <div className="story-loop-toolbar">
         <button
           className="story-loop-motion-control"
           type="button"
@@ -246,7 +245,7 @@ export function ProcessLoopAnimation() {
           <span aria-hidden="true">{paused ? "▶" : "Ⅱ"}</span>
           {paused ? "Resume motion" : "Pause motion"}
         </button>
-      </figcaption>
+      </div>
       <div className="story-loop-animation-grid">
         <GeometryLoop />
         <DataLoop />

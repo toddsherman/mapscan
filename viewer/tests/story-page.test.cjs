@@ -109,6 +109,9 @@ test("illustrates both gated comparison loops with controllable motion", () => {
   assert.match(processLoopAnimation, /Loop 02 · Data/);
   assert.match(processLoopAnimation, /Make the extraction match the source/);
   assert.match(processLoopAnimation, /aria-pressed=\{paused\}/);
+  assert.doesNotMatch(processLoopAnimation, /Process schematic/);
+  assert.doesNotMatch(processLoopAnimation, /Each loop had to settle/);
+  assert.match(styles, /\.story-loop-animation \{ margin: 24px 0 0; \}/);
   assert.match(styles, /@keyframes story-geometry-converge/);
   assert.match(styles, /@keyframes story-data-cleanup/);
   assert.match(
