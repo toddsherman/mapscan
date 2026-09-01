@@ -41,6 +41,11 @@ type SharedCompositionStateV3 = {
 
 const CALIFORNIA_MIN_ZOOM = 5;
 const DEFAULT_LAYER_OPACITY = 0.82;
+const DEFAULT_ACTIVE_DATASET_IDS = new Set([
+  "california-forest-cover",
+  "california-agricultural-land-use",
+]);
+const DEFAULT_FOCUSED_DATASET_ID = "california-forest-cover";
 
 function sharedStateV3FromUrl() {
   if (typeof window === "undefined") return null;
@@ -337,6 +342,14 @@ function datasetShortLabel(dataset: ViewerDataset) {
 }
 
 function initialStyles(datasets: ViewerDataset[], focusedDatasetId: string) {
+  const explicitDatasetId =
+    typeof window === "undefined"
+      ? null
+      : new URL(window.location.href).searchParams.get("dataset");
+  const enabledDatasetIds = explicitDatasetId
+    ? new Set([focusedDatasetId])
+    : DEFAULT_ACTIVE_DATASET_IDS;
+
   return Object.fromEntries(
     datasets.map((dataset) => [
       dataset.id,
@@ -345,7 +358,7 @@ function initialStyles(datasets: ViewerDataset[], focusedDatasetId: string) {
           category.id,
           {
             enabled:
-              dataset.id === focusedDatasetId
+              enabledDatasetIds.has(dataset.id)
                 ? (category.default_enabled ?? true)
                 : false,
             color: rgbToHex(category.display_rgb),
@@ -463,12 +476,15 @@ function stylesFromUrl(datasets: ViewerDataset[], focusedDatasetId: string) {
 }
 
 function selectedDatasetFromUrl(datasets: ViewerDataset[]) {
-  if (typeof window === "undefined") return datasets[0].id;
+  const defaultDatasetId =
+    datasets.find((dataset) => dataset.id === DEFAULT_FOCUSED_DATASET_ID)?.id ??
+    datasets[0].id;
+  if (typeof window === "undefined") return defaultDatasetId;
   const shared = sharedStateV3FromUrl();
   const sharedDataset = typeof shared?.d === "string" ? shared.d : null;
   if (datasets.some((dataset) => dataset.id === sharedDataset)) return sharedDataset!;
   const requested = new URL(window.location.href).searchParams.get("dataset");
-  return datasets.some((dataset) => dataset.id === requested) ? requested! : datasets[0].id;
+  return datasets.some((dataset) => dataset.id === requested) ? requested! : defaultDatasetId;
 }
 
 function viewFromUrl(minimumZoom: number) {

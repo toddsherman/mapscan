@@ -22,6 +22,18 @@ test("keeps one persistent composition state across every dataset", () => {
   assert.doesNotMatch(mapSource, /searchParams\.delete\("layers"\)/);
 });
 
+test("defaults a clean map to Forest and Farms while preserving explicit dataset links", () => {
+  assert.match(
+    mapSource,
+    /const DEFAULT_ACTIVE_DATASET_IDS = new Set\(\[\s*"california-forest-cover",\s*"california-agricultural-land-use",\s*\]\)/,
+  );
+  assert.match(mapSource, /const DEFAULT_FOCUSED_DATASET_ID = "california-forest-cover"/);
+  assert.match(mapSource, /enabledDatasetIds\.has\(dataset\.id\)/);
+  assert.match(mapSource, /searchParams\.get\("dataset"\)/);
+  assert.match(mapSource, /explicitDatasetId\s*\? new Set\(\[focusedDatasetId\]\)\s*: DEFAULT_ACTIVE_DATASET_IDS/);
+  assert.match(mapSource, /return datasets\.some\(\(dataset\) => dataset\.id === requested\) \? requested! : defaultDatasetId/);
+});
+
 test("can publish approval metadata without duplicating immutable raster assets", () => {
   assert.match(mapSource, /dataset\.asset_base \?\? dataset\.public_path/);
   assert.match(mapSource, /const assetBase = datasetAssetBase\(candidateDataset\)/);
