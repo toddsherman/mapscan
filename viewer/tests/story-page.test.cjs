@@ -120,3 +120,18 @@ test("illustrates both gated comparison loops with controllable motion", () => {
     /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.story-loop-animation \* \{ animation: none !important; \}/,
   );
 });
+
+test("keeps the process conclusion in one prose column", () => {
+  assert.match(
+    storyPage,
+    /This was not a single prompt[\s\S]*canvas underneath\./,
+  );
+  assert.match(
+    storyPage,
+    /<div className="story-prose story-process-copy">\s*<p>[\s\S]*<\/p>\s*<\/div>/,
+  );
+  assert.doesNotMatch(
+    styles,
+    /\.story-process-copy\s*\{[^}]*grid-template-columns/s,
+  );
+});

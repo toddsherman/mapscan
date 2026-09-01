@@ -298,10 +298,8 @@ export default function MapScanStoryPage() {
               system made a candidate, rendered evidence, measured what was
               wrong, changed its assumptions, and tried again. Fine coastline
               details, partial source extents, gradient colors, city labels,
-              water, and overlapping legends all required different tests.
-            </p>
-            <p>
-              The final product keeps each recovered legend item independently
+              water, and overlapping legends all required different tests. The
+              final product keeps each recovered legend item independently
               selectable. Datasets can be combined, reordered, recolored, and
               given their own opacity while Mapbox remains the live geographic
               canvas underneath.
