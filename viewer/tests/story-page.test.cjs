@@ -101,6 +101,21 @@ test("publishes the forest and elevation composition as a saved example", () => 
   );
 });
 
+test("presents saved examples as compact thumbnails", () => {
+  assert.match(
+    styles,
+    /\.story-insight-example\s*\{[^}]*grid-template-columns:\s*clamp\(160px, 15vw, 190px\)/s,
+  );
+  assert.match(
+    styles,
+    /\.story-insight-example\s*\{[^}]*max-width:\s*960px/s,
+  );
+  assert.match(
+    styles,
+    /\.story-insight-figure\s*\{[^}]*margin:\s*28px 0 28px 28px/s,
+  );
+});
+
 test("shows all nine source maps with lightweight editorial previews", () => {
   for (const sourceMap of sourceMaps) {
     assert.match(storyPage, new RegExp(`/mapscan/editorial/mapscan/${sourceMap}\\.jpg`));

@@ -1265,7 +1265,11 @@ export function MapScanMap({ datasets }: { datasets: ViewerDataset[] }) {
   return (
     <main className="app-shell">
       <header className="topbar">
-        <div className="wordmark">Todd Sherman <span>/</span> MapScan</div>
+        <nav className="wordmark" aria-label="MapScan breadcrumb">
+          <a href="https://www.todd.sh/">← todd.sh</a>
+          <span>/</span>
+          <a href="/mapscan">Map Scan</a>
+        </nav>
         <div className="experiment-tag"><i /> Multi-map composition lab</div>
       </header>
 

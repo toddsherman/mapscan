@@ -22,6 +22,13 @@ test("keeps one persistent composition state across every dataset", () => {
   assert.doesNotMatch(mapSource, /searchParams\.delete\("layers"\)/);
 });
 
+test("uses the project story as a second breadcrumb level on the map", () => {
+  assert.match(mapSource, /aria-label="MapScan breadcrumb"/);
+  assert.match(mapSource, /href="https:\/\/www\.todd\.sh\/">← todd\.sh<\/a>/);
+  assert.match(mapSource, /href="\/mapscan">Map Scan<\/a>/);
+  assert.doesNotMatch(mapSource, /Todd Sherman <span>\/</);
+});
+
 test("defaults a clean map to Forest and Farms while preserving explicit dataset links", () => {
   assert.match(
     mapSource,
