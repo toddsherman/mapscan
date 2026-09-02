@@ -164,12 +164,15 @@ test("illustrates both gated comparison loops with controllable motion", () => {
   assert.match(storyPage, /<ProcessLoopAnimation \/>/);
   assert.match(processLoopAnimation, /Loop 01 · Geometry/);
   assert.match(processLoopAnimation, /Bring the source to Mapbox/);
+  assert.match(processLoopAnimation, /Warp → compare to Mapbox → score → adjust ↻/);
   assert.match(processLoopAnimation, /Loop 02 · Data/);
   assert.match(processLoopAnimation, /Make the extraction match the source/);
+  assert.match(processLoopAnimation, /Extract → compare to source → diff → repair ↻/);
+  assert.doesNotMatch(storyPage, /className="story-loops"/);
   assert.match(processLoopAnimation, /aria-pressed=\{paused\}/);
   assert.doesNotMatch(processLoopAnimation, /Process schematic/);
   assert.doesNotMatch(processLoopAnimation, /Each loop had to settle/);
-  assert.match(styles, /\.story-loop-animation \{ margin: 24px 0 0; \}/);
+  assert.match(styles, /\.story-loop-animation \{ margin: 34px 0 0; \}/);
   assert.match(styles, /@keyframes story-geometry-converge/);
   assert.match(styles, /@keyframes story-data-cleanup/);
   assert.match(

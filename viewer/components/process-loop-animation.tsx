@@ -34,6 +34,9 @@ function GeometryLoop() {
       <header>
         <span>Loop 01 · Geometry</span>
         <h4 id="geometry-loop-title">Bring the source to Mapbox.</h4>
+        <strong className="story-loop-formula">
+          Warp → compare to Mapbox → score → adjust ↻
+        </strong>
         <p>Transform, render, measure the perimeter, then try again.</p>
       </header>
       <div className="story-loop-canvas">
@@ -161,6 +164,9 @@ function DataLoop() {
       <header>
         <span>Loop 02 · Data</span>
         <h4 id="data-loop-title">Make the extraction match the source.</h4>
+        <strong className="story-loop-formula">
+          Extract → compare to source → diff → repair ↻
+        </strong>
         <p>Classify, flip, diff, repair—and preserve the aligned geography.</p>
       </header>
       <div className="story-loop-canvas">

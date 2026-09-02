@@ -265,11 +265,7 @@ button { color: inherit; }
 .story-process-number { display: block; margin-bottom: 46px; color: var(--story-accent); font: 10px ui-monospace, SFMono-Regular, monospace; }
 .story-process h3 { margin: 0 0 13px; font-size: 19px; font-weight: 700; line-height: 1.15; }
 .story-process p { margin: 0; color: var(--story-muted); font-size: 14px; line-height: 1.5; }
-.story-loops { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 34px; border: 1px solid var(--story-line); background: var(--story-line); }
-.story-loops > div { padding: 26px; background: var(--story-paper-deep); }
-.story-loops span { display: block; margin-bottom: 10px; color: var(--story-faint); font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.story-loops strong { font-size: clamp(16px, 1.8vw, 23px); font-weight: 400; line-height: 1.35; }
-.story-loop-animation { margin: 24px 0 0; }
+.story-loop-animation { margin: 34px 0 0; }
 .story-loop-toolbar { display: flex; justify-content: flex-end; margin-bottom: 12px; }
 .story-loop-motion-control { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 9px; min-height: 38px; border: 1px solid var(--story-line); padding: 0 13px; color: var(--story-muted); background: transparent; font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
 .story-loop-motion-control:hover,
@@ -280,6 +276,7 @@ button { color: inherit; }
 .story-loop-card > header { min-height: 154px; padding: 25px 28px 24px; border-bottom: 1px solid var(--story-line); }
 .story-loop-card > header > span { color: var(--story-accent); font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .story-loop-card h4 { margin: 12px 0 8px; font-size: clamp(23px, 2.2vw, 31px); font-weight: 400; letter-spacing: -.032em; line-height: 1.06; }
+.story-loop-formula { display: block; margin-bottom: 10px; color: var(--story-ink); font-size: clamp(14px, 1.35vw, 18px); font-weight: 400; line-height: 1.35; }
 .story-loop-card header p { max-width: 430px; margin: 0; color: var(--story-muted); font-size: 13px; line-height: 1.48; }
 .story-loop-canvas { position: relative; overflow: hidden; padding: 8px 12px 47px; background: rgba(255, 255, 255, .14); }
 .story-loop-canvas svg { display: block; width: 100%; height: auto; }
@@ -448,7 +445,6 @@ button { color: inherit; }
   .story-process li:nth-child(2n) { border-right: 0; border-bottom: 1px solid var(--story-line); padding: 22px 0 30px; }
   .story-process li:last-child { border-bottom: 0; }
   .story-process-number { margin-bottom: 26px; }
-  .story-loops { grid-template-columns: 1fr; }
   .story-loop-card > header { min-height: 0; padding: 22px 20px 20px; }
   .story-loop-canvas { padding: 4px 4px 45px; }
   .story-loop-stage { right: 18px; left: 18px; }

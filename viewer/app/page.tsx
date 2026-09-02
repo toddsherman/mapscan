@@ -284,17 +284,6 @@ export default function MapScanStoryPage() {
             ))}
           </ol>
 
-          <div className="story-loops" aria-label="The two iterative comparison loops">
-            <div>
-              <span>Geometry loop</span>
-              <strong>Warp → compare to Mapbox → score → adjust ↻</strong>
-            </div>
-            <div>
-              <span>Data loop</span>
-              <strong>Extract → compare to source → diff → repair ↻</strong>
-            </div>
-          </div>
-
           <ProcessLoopAnimation />
 
           <div className="story-prose story-process-copy">
