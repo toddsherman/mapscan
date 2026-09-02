@@ -112,6 +112,13 @@ button { color: inherit; }
 .dataset-meta span { padding: 4px 7px; border: 1px solid #d8deda; color: #747c78; font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }
 .dataset-opacity-control { padding: 14px 22px 10px; border-bottom: 1px solid var(--line); }
 .dataset-opacity-control input[type="range"] { width: 100%; height: 2px; margin: 11px 0 2px; accent-color: #343a3c; }
+.dataset-palette-control { padding: 13px 22px 14px; border-bottom: 1px solid var(--line); }
+.dataset-palette-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 10px; }
+.dataset-palette-button { min-width: 0; display: grid; gap: 5px; border: 1px solid #cfd4d1; border-radius: 2px; padding: 6px; color: #69716d; background: transparent; font-size: 8px; font-weight: 650; line-height: 1.1; text-align: left; cursor: pointer; }
+.dataset-palette-button:hover, .dataset-palette-button:focus-visible { border-color: #858d89; outline: 0; }
+.dataset-palette-button[aria-pressed="true"] { border-color: #252a2c; color: #252a2c; background: #f0f1ed; box-shadow: inset 0 0 0 1px #252a2c; }
+.dataset-palette-swatch { width: 100%; height: 11px; border: 1px solid rgba(40, 46, 43, .14); border-radius: 1px; }
+.dataset-palette-control > p { margin: 9px 0 0; color: #8a918e; font-size: 9px; line-height: 1.4; }
 .layer-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px 22px 4px; }
 .layer-actions button { padding: 8px 10px; border: 1px solid #cad1cd; background: transparent; color: #5e6663; font-size: 10px; font-weight: 650; cursor: pointer; }
 .layer-actions button:first-child { color: white; border-color: #343a3c; background: #343a3c; }

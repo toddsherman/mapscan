@@ -161,6 +161,33 @@ test("supports per-layer color editing and a default-color reset", () => {
   assert.match(mapSource, /type="color"/);
 });
 
+test("offers dataset palettes directly below dataset opacity", () => {
+  assert.match(mapSource, /const DATASET_PALETTES = \[/);
+  assert.match(mapSource, /kind: "single"/);
+  assert.match(mapSource, /kind: "dual"/);
+  assert.match(mapSource, /function mixHexColors\(/);
+  assert.match(mapSource, /function applyDatasetPalette\(palette: DatasetPalette\)/);
+  assert.match(mapSource, /categories\.map\(\(category, index\) => \[/);
+  assert.match(mapSource, /color: colors\[index\]/);
+  assert.match(mapSource, /activeDatasetPalette\?\.label \?\? "Custom"/);
+  assert.match(mapSource, /aria-pressed=\{activeDatasetPalette\?\.id === palette\.id\}/);
+  assert.match(mapSource, />Color palette</);
+  assert.ok(
+    mapSource.indexOf('className="dataset-opacity-control"') <
+      mapSource.indexOf('className="dataset-palette-control"'),
+  );
+  assert.ok(
+    mapSource.indexOf('className="dataset-palette-control"') <
+      mapSource.indexOf('className="layer-actions"'),
+  );
+});
+
+test("keeps palette choices in the existing color-aware share state", () => {
+  assert.match(mapSource, /datasetPaletteColors\(palette, categories\)/);
+  assert.match(mapSource, /style\.color\.slice\(1\)\.toLowerCase\(\)/);
+  assert.match(mapSource, /fallback\[datasetId\]\[categoryId\] = \{\s*enabled: enabled === 1,\s*color: `#\$\{hex\}`/);
+});
+
 test("keeps the California-wide zoom floor above every raster cutoff", () => {
   assert.match(mapSource, /const CALIFORNIA_MIN_ZOOM = 5/);
   assert.match(mapSource, /Math\.max\(\s*CALIFORNIA_MIN_ZOOM,\s*\.\.\.datasets\.map/);

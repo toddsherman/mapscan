@@ -39,6 +39,13 @@ type SharedCompositionStateV3 = {
   m: [number, number, number, number, number];
 };
 
+type DatasetPalette = {
+  id: string;
+  label: string;
+  kind: "source" | "single" | "dual";
+  colors?: readonly [string, string];
+};
+
 const CALIFORNIA_MIN_ZOOM = 5;
 const DEFAULT_LAYER_OPACITY = 0.82;
 const DEFAULT_ACTIVE_DATASET_IDS = new Set([
@@ -46,6 +53,99 @@ const DEFAULT_ACTIVE_DATASET_IDS = new Set([
   "california-agricultural-land-use",
 ]);
 const DEFAULT_FOCUSED_DATASET_ID = "california-forest-cover";
+const DATASET_PALETTES = [
+  { id: "source", label: "Source", kind: "source" },
+  {
+    id: "blue",
+    label: "Blue",
+    kind: "single",
+    colors: ["#d9e9f7", "#164d78"],
+  },
+  {
+    id: "green",
+    label: "Green",
+    kind: "single",
+    colors: ["#dcebd5", "#245f3b"],
+  },
+  {
+    id: "purple",
+    label: "Purple",
+    kind: "single",
+    colors: ["#eadcf2", "#5c2d73"],
+  },
+  {
+    id: "orange",
+    label: "Orange",
+    kind: "single",
+    colors: ["#f7e1c9", "#a84b1d"],
+  },
+  {
+    id: "blue-gold",
+    label: "Blue / gold",
+    kind: "dual",
+    colors: ["#246b91", "#e1a43a"],
+  },
+  {
+    id: "teal-coral",
+    label: "Teal / coral",
+    kind: "dual",
+    colors: ["#247f7d", "#df7056"],
+  },
+] as const satisfies readonly DatasetPalette[];
+
+function mixHexColors(start: string, end: string, amount: number) {
+  const startValue = Number.parseInt(start.slice(1), 16);
+  const endValue = Number.parseInt(end.slice(1), 16);
+  const mixChannel = (shift: number) => {
+    const startChannel = (startValue >> shift) & 0xff;
+    const endChannel = (endValue >> shift) & 0xff;
+    return Math.round(startChannel + (endChannel - startChannel) * amount);
+  };
+  return `#${[mixChannel(16), mixChannel(8), mixChannel(0)]
+    .map((channel) => channel.toString(16).padStart(2, "0"))
+    .join("")}`;
+}
+
+function datasetPaletteColors(
+  palette: DatasetPalette,
+  categories: CategoryManifest[],
+) {
+  const endpoints = palette.colors;
+  if (palette.kind === "source" || !endpoints) {
+    return categories.map((category) => rgbToHex(category.display_rgb));
+  }
+  const denominator = Math.max(1, categories.length - 1);
+  return categories.map((_, index) =>
+    mixHexColors(
+      endpoints[0],
+      endpoints[1],
+      categories.length === 1 ? 0.5 : index / denominator,
+    ),
+  );
+}
+
+function matchingDatasetPalette(
+  datasetStyles: Record<string, CategoryStyle>,
+  categories: CategoryManifest[],
+) {
+  return DATASET_PALETTES.find((palette) => {
+    const paletteColors = datasetPaletteColors(palette, categories);
+    return categories.every(
+      (category, index) =>
+        datasetStyles[category.id]?.color.toLowerCase() === paletteColors[index],
+    );
+  });
+}
+
+function datasetPalettePreview(
+  palette: DatasetPalette,
+  categories: CategoryManifest[],
+) {
+  const colors = datasetPaletteColors(palette, categories);
+  if (colors.length === 0) return "transparent";
+  if (colors.length === 1) return colors[0];
+  return `linear-gradient(to right, ${colors.join(", ")})`;
+}
 
 function sharedStateV3FromUrl() {
   if (typeof window === "undefined") return null;
@@ -634,6 +734,10 @@ export function MapScanMap({ datasets }: { datasets: ViewerDataset[] }) {
     (count) => count > 0,
   ).length;
   const selectedDatasetLayerCount = selectionCounts[dataset.id] ?? 0;
+  const activeDatasetPalette = useMemo(
+    () => matchingDatasetPalette(styles[dataset.id], categories),
+    [categories, dataset.id, styles],
+  );
   const orderedDatasets = useMemo(
     () =>
       datasetOrder.flatMap((datasetId) => {
@@ -1045,6 +1149,22 @@ export function MapScanMap({ datasets }: { datasets: ViewerDataset[] }) {
     updateCategory(category.id, { color: rgbToHex(category.display_rgb) });
   }
 
+  function applyDatasetPalette(palette: DatasetPalette) {
+    const colors = datasetPaletteColors(palette, categories);
+    setStyles((current) => ({
+      ...current,
+      [dataset.id]: Object.fromEntries(
+        categories.map((category, index) => [
+          category.id,
+          {
+            ...current[dataset.id][category.id],
+            color: colors[index],
+          },
+        ]),
+      ),
+    }));
+  }
+
   function moveDataset(datasetId: string, direction: "up" | "down") {
     const list = datasetListRef.current;
     if (list) {
@@ -1289,6 +1409,31 @@ export function MapScanMap({ datasets }: { datasets: ViewerDataset[] }) {
               }))
             }
           />
+        </div>
+        <div className="dataset-palette-control">
+          <div className="control-heading">
+            <span>Color palette</span>
+            <output>{activeDatasetPalette?.label ?? "Custom"}</output>
+          </div>
+          <div className="dataset-palette-grid" aria-label={`${datasetShortLabel(dataset)} color palette`}>
+            {DATASET_PALETTES.map((palette) => (
+              <button
+                className="dataset-palette-button"
+                type="button"
+                key={palette.id}
+                aria-label={`Apply ${palette.label} palette to ${datasetShortLabel(dataset)}`}
+                aria-pressed={activeDatasetPalette?.id === palette.id}
+                onClick={() => applyDatasetPalette(palette)}
+              >
+                <span
+                  className="dataset-palette-swatch"
+                  style={{ background: datasetPalettePreview(palette, categories) }}
+                />
+                <span>{palette.label}</span>
+              </button>
+            ))}
+          </div>
+          <p>Applies a coordinated range across every layer in this dataset.</p>
         </div>
         <div className="layer-actions" aria-label={`${dataset.menu_title} selection actions`}>
           <button type="button" onClick={selectAllInDataset}>Select all</button>
