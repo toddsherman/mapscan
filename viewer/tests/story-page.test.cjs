@@ -80,6 +80,27 @@ test("publishes the population, farms, and elevation composition as a saved exam
   );
 });
 
+test("publishes the forest and elevation composition as a saved example", () => {
+  assert.match(storyPage, /Tree types roughly follow elevation/);
+  assert.match(storyPage, /6 layers · 2 datasets/);
+  assert.match(storyPage, /forest-elevation\.jpg/);
+  assert.match(storyPage, /forestElevationExampleHref/);
+  assert.match(storyPage, /Fir-spruce, pinyon-juniper, and lodgepole pine/);
+  assert.equal(
+    fs.existsSync(
+      path.join(
+        viewerRoot,
+        "public",
+        "editorial",
+        "mapscan",
+        "examples",
+        "forest-elevation.jpg",
+      ),
+    ),
+    true,
+  );
+});
+
 test("shows all nine source maps with lightweight editorial previews", () => {
   for (const sourceMap of sourceMaps) {
     assert.match(storyPage, new RegExp(`/mapscan/editorial/mapscan/${sourceMap}\\.jpg`));

@@ -96,6 +96,8 @@ const sourceMaps: SourceMap[] = [
 
 const populationFarmsElevationExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWgBc8AHPAcwLWoAsBPMgUww7DQqzxEQ8DFADaY1JlyES5NAywoArhgrLGGMhjREEZZQGcOwkAHdmHPsICM8HBxw4A7NGEAOAEwBdWJPTY%2BMSkZAoESqrqmtq6%2BkYm8AC2WIYoXDpEHHhGZAxoWEShemTMaKy28BzOHABsAAx1Hj5%2BUoGyIWERahqYMcXxpuFpFSA1AKwoCGhoTb7%2B0kFyoYoq3dEZccamZlgY%2BkMJdiAALGPuAJzOjbBec60ywfIrkT1aGwZbSVgAHhz61GhDFFDpVzgAjJw4WYtAIPJadVZRXrvAZfVLpXRZHJ5QzGQwjc51Y41MHnaHzNqPZZDF7rWIfBIgTA4ZnyYqsjAssjJb7A-GwI7HBANZzHcn3RYdZ5rZH01EgVjZIh0MjUDgEDhEOQYflHWoNabi2GSp40mVvOWfVB4ChUIQC%2BAQhA2JxGhbtU1dJEW-pWsFWIiGMgIAjlB0gdws84cTxuynw6XevqbRmGZREHAYPBmdW6%2BA1TzuaAoGpxuFSs1JlFW5LojAZLFBnBYLj6FAEGh5k6eGrHNBgssm6le17JhmmQxoJxZnMEEaeMbHZyRwce4eI0fVxkoWRkQyEOjMZSJIr6NNTe1HOoxlxim7NCnlz0bum%2BxlURJ8PAcLtWBwQ1cqQRWlZTfUwd24Mh207EYEBQHBPDBGxAITStN0tRluFtZQ0m0P92AYDhNS7NIOHONBS3vO5jTXYDzTHeV0AIDsKBIuoEDI9wUIrEdXxTUxaAoL8f1PPccw4ChVRtYSuzBIVjncAcqJhd0gMTdCwKSLhBCDQwAEdlEBZhRJUFREn9AguzQdwUHOLxuOfECfX4%2BwZ1zMgiA0YxQxM5hwiBT8gwoDUODIFkCESLtznBBBnDGBz1ychi-SMYyLPCH8RkUsFoBqFAEroqsMNMQQBEDUS6DQAhsHy8N3DqayamQ5THyHQqNJckAgUYMx0pbLs4vOHAxmcAr1L48d4DVag1UskYami44hTGtCJvlWs0nrTFsiCggcIAaygjtqC7MYEHcNBThW3jQM6lAsGCowRicWzxmul9bsmxA%2BEy8McEUpaoRaiVaPGz75TwbAwF%2Bo4cAamxoBmYGaLU1bwatfasB2X93Bshd3qSrdTA2jFMh2vdlDBYKaCUXocD2h7fzqZxzhsWNkdU1Cbucr60DAPB0AQPAuwQMEanqa5bhU%2BMeI%2Bnn5UwRJBAQLsnD%2BACOZlxz6KJ%2BAmGobhVfcc60FGzWn0SnXiqmjBjyDag9syIN6SYIYbVVzwUGOQkCatzTUEsZj%2BpGDgwTQFBnEoqXWtBtH5atagUiElBmAEX8FugMYgejkHUe55LGTVKqRaqUVapzlGublguBKsFORMyFAhPCJ3YLQCZct9or-doRIODyIgfpFzxoBjO8K852XCetkASa2smcg4%2B6EGUHaRhQFAXRsZqJ61y3u86sxME81j16uBpJYfXOq%2Bn-28jVLsLmOXL4vNtqwfjxlCM1ZgdpBEAxhZzhpfaik9tYHy%2BlgBA3B15TAolHK%2BlcQi0GoKoPgZVgzEQeuwTwdRcGmBsBfMgC4GjPWAaQt%2Ba4UFoP4IITBgZsHELwdcEAJC6hkDGBfEOF8KG7wttQnQtDCgcQYRQHBzDTCcIaGQQhXDwwoB4SA6W-CaA0IwSIwwjDcH4PgLIihRw0CKISlQWg982CcG4LwIRpguA8HQXQkhlA8AcOkYkEYpsGhgiQJQqkJj6CMBYOwWxViyo2MsfYwoUinEyKIW4uq0AGjnHHogsBTjTEBPMcEiJYS7FCJidIqgTDXEjGgMcBoy0fFLD8WYoJ4TrGVDqRg3BBTnFlOKeGGwbSKm3F8CAPA4hr7IIyJJUoBAEAFB-EGAAXoIBuHAsCHjBIQMgYBmogCsAQCgzADJoH2qFQwpRMbKikhQTU-BehIPINosYYUCi9DYGCcI%2BhVmmA4uqYMSdwhgmUHky54FUlBB-JJHc0M5zwEubcjUJQ0BTKqvoekGpDC0AYWCXYjCqpWH5IM8gxhQWhRzHwQOZAsCJABE3LFEK6BZCzHQJQ3ImBMMIf8vefN1QKFCroTyvQHYcHuonISeSbB2RsIylhELqkZNqbk0J4LUntTWlaCFAiIn0M0WIph%2BDenfHEL0txkAxAyJsO4AAdGMBaNheywGgM4Y1Ngxjb2gHAGotqzU1FgHUd13gAC%2BQA";
 
+const forestElevationExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWnwIFMBnAFzJTzCoJHgygG0vVNdCJcpVoMmLNvGoIA7njxJYABngIUVAEYIArOwAcAJgC6sXumyUhFQqMbNW7EDNGsiZABZoCs%2BQhrsVVAMEAHYNHH1jUz4LQVJrano7CUcEPABXAHMMNBoKLElAtBCUaDQATkiTM35LeJEk8Qd4AAc8IgRWPBpyFqwiKgD4PQQ0HHLoKujzAWJ6m0b7SRAcArIaFoJ09XYARngQ6HKNEMVDapjZqwaxJcc%2BogBPdrIAK3SSFub9kG1yvRCADYQlMarE5sIFrcUhwFJkqG0MFQyA9BrAftAqIdtLtQZc6pDEtDmqhPC0vARMEMQAYACzaHDQDR4mYEshoCRoeHsohEdKYFHUFBYPp0NB0LAvXb-XZkAxKXZKRy7bRKMi7EK45SqcpUco4EGwc7TWpxcgc1hc5FoXn8jCCqjC0XiyVuaV6WXyxXKgzadWq6mlBB6PUs00Q9mc7k2vkCzaOkVYMUSqUyuUKpXwRVq3a%2B6loR2AhDMo1RMFXeIWynR21xoWJ5Ou9Vpr2ZkAhP3Z6n-DTaFBnMv4s2Ry012P2%2BNOpMu1Me9Pe%2BCqsgd6mGNC08Jh8FWKtWnnjh1Txuzz0ZxzQNUB7UgIvlAwaTPG8ts3dju2Hhszt0ts-weVkC9qW0EIPTQAwtwrc0o2tWsJ3rZ0U2-OdW2VNV5WpWkNSUcpaQgl9oP3d9J0-RDm2Q39fnVTNAgMFBtCoPRATw4dXxgg9iIQpt3VPBcQEvaldkBWlQj0ZiIzoPA2kySkWncR4yCoJEwC-VIEUSGhXWpA0qF2FBKlLC5WWHCSpJkuSFKUlT4EUqhlNItUJKotUAFtqUdFAUAfMSrBMvBpLQWT5JsuzNOsyzSOzMhHN9Fy3KUDRAX%2Bbz4l8-zAos2yrJAYKvzlJdHNVWLrx0NANQiAyTW3FLJL8sygvC0Lsoal5CqivAnKKwJ0D0BLDSfIdxJqtLzJyxDHFGrilCmtr02m1z0XgcIgVpNF%2BqMwbTICkbmqIcadtmhz2tpKaip%2BDRoEBJQLuS8hUrqjKQvaPbMtI47poKk6yHmn40D0DddgHIwTBAPBuGyrw6HcABHfkAGtkRoTxYf6TIUTwOgqCICUBXWqx5V9fIiAFOSNAILAEDIMAtQGqwWhyLGPC8BB%2BloPIAC92loMgBiwTJ3A0QhKepzpWDIZn6DJjR0lI3HSEcWXzWkrAUHSDA6HSSl7Xpin0hoNEafiNoWlV3LOiIDS6Hk-G2wV-JqEZtmmZ5CnEjac2sA0LBsEt9lqFyeXwysPWJGRZxxXcUWsGc8kUDofx4Ft%2BE8AwPzla%2BgL5xtwPKwImMiPg6cIp-Xjbburb6pexrbZuZIHGBgAPbhgdcyAuHVXY9AAOhCOkFVgaAQk7pRaSOI4jU7gwDGgOAVCUIwAF8gA";
+
 const processSteps = [
   {
     number: "01",
@@ -378,6 +380,46 @@ export default function MapScanStoryPage() {
               <Link
                 className="story-map-link story-map-link-desktop story-insight-link"
                 href={populationFarmsElevationExampleHref}
+              >
+                <span>Open this composition</span>
+                <ArrowIcon />
+              </Link>
+            </div>
+          </div>
+          <div className="story-insight-example">
+            <figure className="story-insight-figure">
+              <Image
+                src="/mapscan/editorial/mapscan/examples/forest-elevation.jpg"
+                alt="A MapScan composition showing green forest classes over rust-colored elevation bands in California’s Sierra Nevada."
+                width={658}
+                height={662}
+                sizes="(max-width: 767px) 100vw, 55vw"
+              />
+              <figcaption>6 layers · 2 datasets</figcaption>
+            </figure>
+            <div className="story-insight-copy">
+              <p className="story-kicker">Example 02</p>
+              <h3>Tree types roughly follow elevation.</h3>
+              <p>
+                Fir-spruce, pinyon-juniper, and lodgepole pine broadly align
+                with the 1,000–5,000 meter elevation bands beneath them. The
+                fit is not exact—elevation is only one part of a habitat—but
+                combining the two datasets makes the relationship immediately
+                visible.
+              </p>
+              <div className="story-insight-key" aria-label="Map color key">
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-forest" />
+                  Three forest types
+                </span>
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-elevation-bands" />
+                  1,000–5,000 m
+                </span>
+              </div>
+              <Link
+                className="story-map-link story-map-link-desktop story-insight-link"
+                href={forestElevationExampleHref}
               >
                 <span>Open this composition</span>
                 <ArrowIcon />
