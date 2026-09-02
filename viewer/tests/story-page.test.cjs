@@ -58,11 +58,13 @@ test("hides MapScan story links entirely on mobile without an emoji arrow", () =
   assert.doesNotMatch(styles, /\.story-map-link-mobile/);
 });
 
-test("publishes the population, farms, and elevation composition as a saved example", () => {
-  assert.match(storyPage, /Population and farms follow low ground/);
-  assert.match(storyPage, /53 layers · 3 datasets/);
-  assert.match(storyPage, /population-farms-elevation\.jpg/);
-  assert.match(storyPage, /populationFarmsElevationExampleHref/);
+test("publishes the grapes and elevation composition as a saved example", () => {
+  assert.match(storyPage, /Grapes grow within particular elevation bands/);
+  assert.match(storyPage, /9 layers · 2 datasets/);
+  assert.match(storyPage, /grapes-elevation\.jpg/);
+  assert.match(storyPage, /grapesElevationExampleHref/);
+  assert.match(storyPage, /Grapes/);
+  assert.match(storyPage, /Elevation/);
   assert.match(storyPage, /config=3&state=/);
   assert.doesNotMatch(storyPage, /Examples coming soon/);
   assert.equal(
@@ -73,19 +75,20 @@ test("publishes the population, farms, and elevation composition as a saved exam
         "editorial",
         "mapscan",
         "examples",
-        "population-farms-elevation.jpg",
+        "grapes-elevation.jpg",
       ),
     ),
     true,
   );
 });
 
-test("publishes the forest and elevation composition as a saved example", () => {
-  assert.match(storyPage, /Tree types roughly follow elevation/);
-  assert.match(storyPage, /6 layers · 2 datasets/);
-  assert.match(storyPage, /forest-elevation\.jpg/);
-  assert.match(storyPage, /forestElevationExampleHref/);
-  assert.match(storyPage, /Fir-spruce, pinyon-juniper, and lodgepole pine/);
+test("publishes the Palm Desert climate and population composition as a saved example", () => {
+  assert.match(storyPage, /Palm Desert sits where dry and windy overlap/);
+  assert.match(storyPage, /6 layers · 3 datasets/);
+  assert.match(storyPage, /palm-desert-rain-wind-population\.jpg/);
+  assert.match(storyPage, /palmDesertClimateExampleHref/);
+  assert.match(storyPage, /0–5 inches/);
+  assert.match(storyPage, /winds above 60 mph/);
   assert.equal(
     fs.existsSync(
       path.join(
@@ -94,7 +97,7 @@ test("publishes the forest and elevation composition as a saved example", () => 
         "editorial",
         "mapscan",
         "examples",
-        "forest-elevation.jpg",
+        "palm-desert-rain-wind-population.jpg",
       ),
     ),
     true,
@@ -104,7 +107,7 @@ test("publishes the forest and elevation composition as a saved example", () => 
 test("presents saved examples as compact thumbnails", () => {
   assert.match(
     styles,
-    /\.story-insight-example\s*\{[^}]*grid-template-columns:\s*clamp\(160px, 15vw, 190px\)/s,
+    /\.story-insight-heading-row\s*\{[^}]*grid-template-columns:\s*clamp\(160px, 15vw, 190px\)/s,
   );
   assert.match(
     styles,
@@ -112,8 +115,9 @@ test("presents saved examples as compact thumbnails", () => {
   );
   assert.match(
     styles,
-    /\.story-insight-figure\s*\{[^}]*margin:\s*28px 0 28px 28px/s,
+    /\.story-insight-figure\s*\{[^}]*margin:\s*0/s,
   );
+  assert.match(storyPage, /className="story-insight-heading-row"/);
 });
 
 test("shows all nine source maps with lightweight editorial previews", () => {

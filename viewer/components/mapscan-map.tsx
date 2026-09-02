@@ -19,6 +19,7 @@ import {
   indexedRasterCategoryLayerId,
   indexedRasterSourceId,
 } from "@/lib/indexed-raster";
+import geologicUnitDescriptions from "@/lib/geologic-unit-descriptions.json";
 import type { CategoryManifest, CategoryStyle, ViewerDataset } from "@/lib/types";
 
 type CompositionStyles = Record<string, Record<string, CategoryStyle>>;
@@ -53,6 +54,7 @@ const DEFAULT_ACTIVE_DATASET_IDS = new Set([
   "california-agricultural-land-use",
 ]);
 const DEFAULT_FOCUSED_DATASET_ID = "california-forest-cover";
+const GEOLOGIC_UNIT_DESCRIPTIONS = geologicUnitDescriptions as Record<string, string>;
 const DATASET_PALETTES = [
   { id: "source", label: "Source", kind: "source" },
   {
@@ -92,6 +94,11 @@ const DATASET_PALETTES = [
     colors: ["#247f7d", "#df7056"],
   },
 ] as const satisfies readonly DatasetPalette[];
+
+function categoryDescription(dataset: ViewerDataset, category: CategoryManifest) {
+  if (!dataset.id.includes("geologic")) return null;
+  return GEOLOGIC_UNIT_DESCRIPTIONS[category.id] ?? null;
+}
 
 function mixHexColors(start: string, end: string, amount: number) {
   const startValue = Number.parseInt(start.slice(1), 16);
@@ -1446,6 +1453,7 @@ export function MapScanMap({ datasets }: { datasets: ViewerDataset[] }) {
         <div className="category-list" aria-label={`${dataset.menu_title} layers`}>
           {categories.map((category) => {
             const style = styles[dataset.id][category.id];
+            const description = categoryDescription(dataset, category);
             return (
               <div className={`category-control ${style.enabled ? "" : "disabled"}`} key={category.id}>
                 <button
@@ -1459,7 +1467,10 @@ export function MapScanMap({ datasets }: { datasets: ViewerDataset[] }) {
                 </button>
                 <div className="category-fields">
                   <div className="category-heading">
-                    <label>{category.label}</label>
+                    <div>
+                      <label>{category.label}</label>
+                      {description ? <p className="category-description">{description}</p> : null}
+                    </div>
                     <button
                       type="button"
                       onClick={() => resetCategoryColor(category)}

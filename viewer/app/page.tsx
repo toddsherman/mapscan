@@ -94,9 +94,9 @@ const sourceMaps: SourceMap[] = [
   },
 ];
 
-const populationFarmsElevationExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWgBc8AHPAcwLWoAsBPMgUww7DQqzxEQ8DFADaY1JlyES5NAywoArhgrLGGMhjREEZZQGcOwkAHdmHPsICM8HBxw4A7NGEAOAEwBdWJPTY%2BMSkZAoESqrqmtq6%2BkYm8AC2WIYoXDpEHHhGZAxoWEShemTMaKy28BzOHABsAAx1Hj5%2BUoGyIWERahqYMcXxpuFpFSA1AKwoCGhoTb7%2B0kFyoYoq3dEZccamZlgY%2BkMJdiAALGPuAJzOjbBec60ywfIrkT1aGwZbSVgAHhz61GhDFFDpVzgAjJw4WYtAIPJadVZRXrvAZfVLpXRZHJ5QzGQwjc51Y41MHnaHzNqPZZDF7rWIfBIgTA4ZnyYqsjAssjJb7A-GwI7HBANZzHcn3RYdZ5rZH01EgVjZIh0MjUDgEDhEOQYflHWoNabi2GSp40mVvOWfVB4ChUIQC%2BAQhA2JxGhbtU1dJEW-pWsFWIiGMgIAjlB0gdws84cTxuynw6XevqbRmGZREHAYPBmdW6%2BA1TzuaAoGpxuFSs1JlFW5LojAZLFBnBYLj6FAEGh5k6eGrHNBgssm6le17JhmmQxoJxZnMEEaeMbHZyRwce4eI0fVxkoWRkQyEOjMZSJIr6NNTe1HOoxlxim7NCnlz0bum%2BxlURJ8PAcLtWBwQ1cqQRWlZTfUwd24Mh207EYEBQHBPDBGxAITStN0tRluFtZQ0m0P92AYDhNS7NIOHONBS3vO5jTXYDzTHeV0AIDsKBIuoEDI9wUIrEdXxTUxaAoL8f1PPccw4ChVRtYSuzBIVjncAcqJhd0gMTdCwKSLhBCDQwAEdlEBZhRJUFREn9AguzQdwUHOLxuOfECfX4%2BwZ1zMgiA0YxQxM5hwiBT8gwoDUODIFkCESLtznBBBnDGBz1ychi-SMYyLPCH8RkUsFoBqFAEroqsMNMQQBEDUS6DQAhsHy8N3DqayamQ5THyHQqNJckAgUYMx0pbLs4vOHAxmcAr1L48d4DVag1UskYami44hTGtCJvlWs0nrTFsiCggcIAaygjtqC7MYEHcNBThW3jQM6lAsGCowRicWzxmul9bsmxA%2BEy8McEUpaoRaiVaPGz75TwbAwF%2Bo4cAamxoBmYGaLU1bwatfasB2X93Bshd3qSrdTA2jFMh2vdlDBYKaCUXocD2h7fzqZxzhsWNkdU1Cbucr60DAPB0AQPAuwQMEanqa5bhU%2BMeI%2Bnn5UwRJBAQLsnD%2BACOZlxz6KJ%2BAmGobhVfcc60FGzWn0SnXiqmjBjyDag9syIN6SYIYbVVzwUGOQkCatzTUEsZj%2BpGDgwTQFBnEoqXWtBtH5atagUiElBmAEX8FugMYgejkHUe55LGTVKqRaqUVapzlGublguBKsFORMyFAhPCJ3YLQCZct9or-doRIODyIgfpFzxoBjO8K852XCetkASa2smcg4%2B6EGUHaRhQFAXRsZqJ61y3u86sxME81j16uBpJYfXOq%2Bn-28jVLsLmOXL4vNtqwfjxlCM1ZgdpBEAxhZzhpfaik9tYHy%2BlgBA3B15TAolHK%2BlcQi0GoKoPgZVgzEQeuwTwdRcGmBsBfMgC4GjPWAaQt%2Ba4UFoP4IITBgZsHELwdcEAJC6hkDGBfEOF8KG7wttQnQtDCgcQYRQHBzDTCcIaGQQhXDwwoB4SA6W-CaA0IwSIwwjDcH4PgLIihRw0CKISlQWg982CcG4LwIRpguA8HQXQkhlA8AcOkYkEYpsGhgiQJQqkJj6CMBYOwWxViyo2MsfYwoUinEyKIW4uq0AGjnHHogsBTjTEBPMcEiJYS7FCJidIqgTDXEjGgMcBoy0fFLD8WYoJ4TrGVDqRg3BBTnFlOKeGGwbSKm3F8CAPA4hr7IIyJJUoBAEAFB-EGAAXoIBuHAsCHjBIQMgYBmogCsAQCgzADJoH2qFQwpRMbKikhQTU-BehIPINosYYUCi9DYGCcI%2BhVmmA4uqYMSdwhgmUHky54FUlBB-JJHc0M5zwEubcjUJQ0BTKqvoekGpDC0AYWCXYjCqpWH5IM8gxhQWhRzHwQOZAsCJABE3LFEK6BZCzHQJQ3ImBMMIf8vefN1QKFCroTyvQHYcHuonISeSbB2RsIylhELqkZNqbk0J4LUntTWlaCFAiIn0M0WIph%2BDenfHEL0txkAxAyJsO4AAdGMBaNheywGgM4Y1Ngxjb2gHAGotqzU1FgHUd13gAC%2BQA";
+const grapesElevationExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWjQHMCsUBXDAFzoMzIzSITLoGcBTEPAxQA2qNSZchEuXwF%2BvRmRR4w-AkJAKEAdzx4ksAAzwEKfgCMEAViEAOAEwBdWBPTZ5ssvMXLV6prwun4aRGQAFmgEegYIvEKmqI4IAOyWOA4ubpKeMqQ%2BhH4qahpaCHh0lBy8PlhBSWipKNBoAJxZru5SXgW%2BSiWBWgAOeFwaeLzkw1hEgibw9ghoOG3QnTke0sR9RQMBZfA49WS8wwR0FonwqdBtlqlGTl252979-qVBIDNEAJ5jMgAKzoJGGhySNja9lSADZUhtunkdnI9p8hsJDJR%2BKMMPwyL95kloPxbjYAIyI169VEKfZfLQoKLDaKsEQLECOAAsNhw0EsVK2NIo1FoDGYbPYnG4fHmIF0EX4aEY1xASvMOEcQnJxmMLyF%2BXIVBo9CYLDYHC4PAEWgAtlheBYMJb%2BJVatQ0LMKFaon9VaSEPZ%2BJlYDq9ZseoaRSbxeaMFKrbKtCaifB%2BFyEFz%2BChtbr9ZGUdGxWbJZaZTbglgMNwU-7jAhjPwOqG8xHkd5jcWJRbpda5faAB78bgspQsVOIcwWWG58NIt4FTum7vxst9u0Op0ut1kD28AQJDnLFBBrmz-Ptxei5dxhPluWYHCPo1W58YJ9kQcSxSqtIoLOUi2c7UlGS6xqWvZJvAAKgpQBIaPwRCyBgh5JAg0AoPW8xhheC5Gte4E9omFaoHgjCMGMv7GJYKAIAKQG4cKYElkR95aJYSpELUCAEH6HK0ZYSz2OebZ4UWN4QcRcq8KCOAYHgIQEKh8DoJYGZ2AxolMQRLGrpBJH2o6-DOpwrp8HUxncCgBB4MMymoOk9Zapp87aTGul3uu8BTDgckKRCKmtCgKAhjhWmgTpK6eVBpHEKchCUBEdC2t63AycsRCqphaD2MFImuRF7lRWuMUUbayp4D%2BHLWGgXLoPlIGFsxxX6XKqh4ioNl2aqlhoGgxgoAiLmNR2kW3iVJF4uRlz4niKx-LuCiIfZliwm0wVnsNBpNWNklsSprJkStdy5YBYUFTtRXja1IxkRViipacIT8MooyMPdK3GG0XIcQ122jVde1eSAtrGWMtS8AAjnQaC8BEj30PQtocUpqpoAgbTUfR50jVegOscDfmKbURAsAIvEIxENBKOVtSMEtPjRLa9ntLlgl-QWANdtdUnsXw8MozQVWNLC9j2JYGk4-9ePc0DMVjFg4OPZQ0TYDmHJoNA9g2JY6xbZzMsSQTMVKKwuiC1gwvwP19jkpYxgc5e%2BH43pvPwOCwzgqjHJtGkyxGFLBvO7LxsGZuxnbuZ9OXAA1p1tn2W0bSpG0fWO2JzU8-tqBYNHifwjYTTp25Ieu9nyyMFbIBrKk5K1cXhWl9FJF4Ng6iJ8YsLLGdrYXVzRtl8DMdYLoDqqrla1tNhve48HA-N-24cmXMO4yZY9O2bQbA4Bcuf2fYbSwlC2Mz9Lc%2BEYPMVoGAeDoBU%2B%2BwrC5JJw3l1NxND4YLaYzxOP0A2BjGc%2BsnbiQvgvLQaBPZ4n3sYKEaxX79zAR-EYGBkq1HOKCB6vZIEmiOqqZoNgoQO2ARnXaoc2qKgIELeyKcKRLAQYbJBN13YOnekyRWNDYQZnsGgBh58PLIPdkqb2SRbhcmhENQOIDM5yxIuCNATIHpzBQO9Ggcx7KwhwDyewm0pGkJduA92eBQYeiIMqKusJ-zkltnw0BAjmEgyXpHbi2YsAIDoG6VUa1oBpFCqfIOdiWpu3lJgUmjANGwjuM0WxMjyFaA9OCQ85Jrb9WML5GJZDL4kWoPwRCEQ3QTl5NAckcIMkGMESANxeJVQ2BQCkW4tiKKjASREBaxl%2BBgGVIrTKZgcR0l4N07UZgp5tBwJI-xICml4BaW0vEnTGCDLTHMrpgJjBkAomQMMn4hkgGsOhfgksJliSmTMsg7T5mLLVMshZgItkbMcDYNZtodloDtrRPWejhQnNYMMVpZzrmXPOSs8IDy1kbMeU8nZ2s0CWJ7sBM%2B6zbLTJ%2BX8oFNyelXI6cCsgELEWbN1JC0M8BYTtGMGgae8KAnfMgaigFlEllYvRfi3UeLHAEu2USkAWZUjtHVp8qM1LfmzMZYCulIL2UbK5Oy55nLoCOEiTwxpSLTlotFSKwEUqWXgulTs8kXC0jCQYq4EAeAxBqmiIwCI0M0Ax3xHDG1sw4JvUQgstgCK2UPLqGY%2BMrTLA0G4GAQCs8CSWmUFEGIsxFC1AAF5jCUfwLAiVLCEDIIG8ouSCBkAQKwmglg6BMrPoyAJoxhgMGxQgZaucFoeuIcG44ChIhoGjdEbgvY6SjC4lgSwVYq0UAULDItICBCBHxCEZUlCyBYFtCyFRh5g3YlbtM2gn5IFkDZTqQdGdAhUHxJwUmbBziuJmO9Jlz9bZruMBug6kzlUouFRc%2Blda0SDEOMG2JWTBDGoHGIY1zzICiE2Y4ckAA6GEEi4Ba2A3KrkotYSwHsFB8kjhUgLD1AAXyAA";
 
-const forestElevationExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWnwIFMBnAFzJTzCoJHgygG0vVNdCJcpVoMmLNvGoIA7njxJYABngIUVAEYIArOwAcAJgC6sXumyUhFQqMbNW7EDNGsiZABZoCs%2BQhrsVVAMEAHYNHH1jUz4LQVJrano7CUcEPABXAHMMNBoKLElAtBCUaDQATkiTM35LeJEk8Qd4AAc8IgRWPBpyFqwiKgD4PQQ0HHLoKujzAWJ6m0b7SRAcArIaFoJ09XYARngQ6HKNEMVDapjZqwaxJcc%2BogBPdrIAK3SSFub9kG1yvRCADYQlMarE5sIFrcUhwFJkqG0MFQyA9BrAftAqIdtLtQZc6pDEtDmqhPC0vARMEMQAYACzaHDQDR4mYEshoCRoeHsohEdKYFHUFBYPp0NB0LAvXb-XZkAxKXZKRy7bRKMi7EK45SqcpUco4EGwc7TWpxcgc1hc5FoXn8jCCqjC0XiyVuaV6WXyxXKgzadWq6mlBB6PUs00Q9mc7k2vkCzaOkVYMUSqUyuUKpXwRVq3a%2B6loR2AhDMo1RMFXeIWynR21xoWJ5Ou9Vpr2ZkAhP3Z6n-DTaFBnMv4s2Ry012P2%2BNOpMu1Me9Pe%2BCqsgd6mGNC08Jh8FWKtWnnjh1Txuzz0ZxzQNUB7UgIvlAwaTPG8ts3dju2Hhszt0ts-weVkC9qW0EIPTQAwtwrc0o2tWsJ3rZ0U2-OdW2VNV5WpWkNSUcpaQgl9oP3d9J0-RDm2Q39fnVTNAgMFBtCoPRATw4dXxgg9iIQpt3VPBcQEvaldkBWlQj0ZiIzoPA2kySkWncR4yCoJEwC-VIEUSGhXWpA0qF2FBKlLC5WWHCSpJkuSFKUlT4EUqhlNItUJKotUAFtqUdFAUAfMSrBMvBpLQWT5JsuzNOsyzSOzMhHN9Fy3KUDRAX%2Bbz4l8-zAos2yrJAYKvzlJdHNVWLrx0NANQiAyTW3FLJL8sygvC0Lsoal5CqivAnKKwJ0D0BLDSfIdxJqtLzJyxDHFGrilCmtr02m1z0XgcIgVpNF%2BqMwbTICkbmqIcadtmhz2tpKaip%2BDRoEBJQLuS8hUrqjKQvaPbMtI47poKk6yHmn40D0DddgHIwTBAPBuGyrw6HcABHfkAGtkRoTxYf6TIUTwOgqCICUBXWqx5V9fIiAFOSNAILAEDIMAtQGqwWhyLGPC8BB%2BloPIAC92loMgBiwTJ3A0QhKepzpWDIZn6DJjR0lI3HSEcWXzWkrAUHSDA6HSSl7Xpin0hoNEafiNoWlV3LOiIDS6Hk-G2wV-JqEZtmmZ5CnEjac2sA0LBsEt9lqFyeXwysPWJGRZxxXcUWsGc8kUDofx4Ft%2BE8AwPzla%2BgL5xtwPKwImMiPg6cIp-Xjbburb6pexrbZuZIHGBgAPbhgdcyAuHVXY9AAOhCOkFVgaAQk7pRaSOI4jU7gwDGgOAVCUIwAF8gA";
+const palmDesertClimateExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWjTAFMC0BzKioogV0zIAcCqUsOsALmgFY8RMgEYAnAA4JZAEwAGCUpDwMUANpbUmXIRLl83AM4CyKPNQLqQ3BAHc8eJLCXwEKKgCMEAVnUZBQBdWF10bBMjMhMqc0trGjtHeIEacQALNAInFwRTdQ9UBQQAdh8cINDwvSjDUljCNMSbOwQ8FjoMNFNYrFt3eDQylGg0KWqwiP1oxriEqzb4DjEEGjxTcn4iKiL4GQQ0HCloKdrIg2J55sWkwZAcAbJTLhZvfZAy6CkfMrdgtM6lcYgsLEtkissEQAJ5iMgAKxYJA4kOK-lkZQAbGVzjN6tdjLdwfc7BhXAxVhhGDs9kMQNAqN9-BI8cC5kSzCTlqhshwcrRNPSFAAWfw4aA%2BNmXDmcPAcFg9ETw9ZEUyCGGKJTKOyqJRKRT%2BfXqCTwHA4fXG2CAi6zBrbeWK4SicSq9UCTXKHXwBRGg1%2BtSwU0gKiWq02-EgxqrBVKl1kN0arXekAByRhk3wFBhwMR9n2uWx50qqhqpNewMgPVW4NoHPSu2El5UGyMVLCTI0MhYAC2-JQAkK8B7aAAHr2WD2yI5oQgXqiqG5g0cZCgfJNrTVI7LKDR6Iw0Mw2BhONxePwhMrxNI5FrVLqjZIyqz6QgpFQpDhcZugTKC7vaAYJhWHYLgeD4QRi2vWR5GUe94AkX1JCNT4xgQGQPwbAkYgA-dgOPU9wIvKDJBgu9Kz1SRfU%2BNAeCxBApR-W1sMaXCgMPECTzA89IKvUjbzgysyn8dNA2KWQfH8FAAS3fMmzYg8j1As8IMveMb1glRK0fYTPmCNARUqLCo3IBT8OUojePUsjBLsaB-TE%2BB6KkBQfFzWS-3kmw8I4gjuNUkiNPIuxlDIezPn8Mo5DQBRjJ3bz2KUriVOIvigtshCDW9YoRQkMolCkEU4v-BLFM4wieLU%2BF0q0uwRPg4oFBQfwqBkLFiq8vdEvK-zUusgTavgf1MyrLERXKGQOpiAR5TwOhaA4TJNSoakwCg9oqDA0x1TET4vyoCQUA3PNPOm2b5rQRbltW9b4BWlsSINGbRLIHtPh4FA13c39GzO1YLqush7rWq87GBwL9TIZ7fQNN76VDHwsVkKbGhm-6FqWoGbtBu7sfjGGobwMg-Vez4AjQPKqiY7cCzRuaMeuh6cZDPH4RJ57q1J%2Bl0BkRHvxO37UfOhmsaZl0wdZ69LUJrVIbh4pKmxEU6QFljyDpgHMfB5ntfx6XnpFaX5fgHxoCxJQzZR9XhcurXJYlsX4UNyHnrTY2QDQGRDIkGSQjCEA8G0EMcgETIAEc2AAa0YUxskj6E6DldIiBEdhTsaL0RKeIh2CWnwCCwOcwBfOSYg4HoU7IbJcmheI%2BgALzEeIyF2LA6EyHxCDIYuNq7BAsHMAufBYPj07QOwx4oeasBQRUBBYQUyArucWFMOlS-mAZGGyeucjnQ85zMVYyx8LBsA9ChuF6CfBfIBg8HJOgZ9ey7gqzW%2BKFK8zkssqroIG%2BCG9yBr1bNOKgHYuy9n7IOG%2BatCxOj4omC%2BFZYEmUJujW2jMQbi3fnAsErRkj%2B1HNof2b1IBaEkBILEAA6M2sgcSwGgNAahwksSISxEGJQtCsTQAUEMJQIQAC%2BQA";
 
 const processSteps = [
   {
@@ -342,44 +342,42 @@ export default function MapScanStoryPage() {
             </p>
           </div>
           <div className="story-insight-example">
-            <figure className="story-insight-figure">
-              <Image
-                src="/mapscan/editorial/mapscan/examples/population-farms-elevation.jpg"
-                alt="A MapScan composition showing purple elevation bands, red population density, and multicolored agricultural land across California."
-                width={658}
-                height={662}
-                sizes="(max-width: 767px) 100vw, 55vw"
-              />
-              <figcaption>53 layers · 3 datasets</figcaption>
-            </figure>
+            <div className="story-insight-heading-row">
+              <figure className="story-insight-figure">
+                <Image
+                  src="/mapscan/editorial/mapscan/examples/grapes-elevation.jpg"
+                  alt="A MapScan composition showing purple grape-growing areas over blue elevation bands around the Sacramento–San Joaquin Delta."
+                  width={658}
+                  height={662}
+                  sizes="(max-width: 767px) 96px, 190px"
+                />
+                <figcaption>9 layers · 2 datasets</figcaption>
+              </figure>
+              <div className="story-insight-title">
+                <p className="story-kicker">Example 01</p>
+                <h3>Grapes grow within particular elevation bands.</h3>
+              </div>
+            </div>
             <div className="story-insight-copy">
-              <p className="story-kicker">Example 01</p>
-              <h3>Population and farms follow low ground.</h3>
               <p>
-                This makes visible something we already know intuitively:
-                California’s most densely populated areas—above 1,000 in the
-                population-density layer—and its farms sit largely on
-                lower-elevation land. Purple shows elevation, red shows
-                population density, and the remaining colors distinguish the
-                many types of agriculture.
+                California’s grape-growing areas, shown in purple, cluster
+                within particular elevation bands, shown in blue. The overlay
+                makes the Central Valley, North Coast, and foothill patterns
+                easier to compare than either source map alone.
               </p>
               <div className="story-insight-key" aria-label="Map color key">
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-grapes" />
+                  Grapes
+                </span>
                 <span>
                   <i className="story-insight-swatch story-insight-swatch-elevation" />
                   Elevation
                 </span>
-                <span>
-                  <i className="story-insight-swatch story-insight-swatch-population" />
-                  Population
-                </span>
-                <span>
-                  <i className="story-insight-swatch story-insight-swatch-farms" />
-                  Farms
-                </span>
               </div>
               <Link
                 className="story-map-link story-map-link-desktop story-insight-link"
-                href={populationFarmsElevationExampleHref}
+                href={grapesElevationExampleHref}
               >
                 <span>Open this composition</span>
                 <ArrowIcon />
@@ -387,39 +385,46 @@ export default function MapScanStoryPage() {
             </div>
           </div>
           <div className="story-insight-example">
-            <figure className="story-insight-figure">
-              <Image
-                src="/mapscan/editorial/mapscan/examples/forest-elevation.jpg"
-                alt="A MapScan composition showing green forest classes over rust-colored elevation bands in California’s Sierra Nevada."
-                width={658}
-                height={662}
-                sizes="(max-width: 767px) 100vw, 55vw"
-              />
-              <figcaption>6 layers · 2 datasets</figcaption>
-            </figure>
+            <div className="story-insight-heading-row">
+              <figure className="story-insight-figure">
+                <Image
+                  src="/mapscan/editorial/mapscan/examples/palm-desert-rain-wind-population.jpg"
+                  alt="A MapScan composition of population, the driest rainfall band, and the highest wind band around Palm Desert, California."
+                  width={658}
+                  height={662}
+                  sizes="(max-width: 767px) 96px, 190px"
+                />
+                <figcaption>6 layers · 3 datasets</figcaption>
+              </figure>
+              <div className="story-insight-title">
+                <p className="story-kicker">Example 02</p>
+                <h3>Palm Desert sits where dry and windy overlap.</h3>
+              </div>
+            </div>
             <div className="story-insight-copy">
-              <p className="story-kicker">Example 02</p>
-              <h3>Tree types roughly follow elevation.</h3>
               <p>
-                Fir-spruce, pinyon-juniper, and lodgepole pine broadly align
-                with the 1,000–5,000 meter elevation bands beneath them. The
-                fit is not exact—elevation is only one part of a habitat—but
-                combining the two datasets makes the relationship immediately
-                visible.
+                One of the driest and windiest places where people live appears
+                to be the Palm Desert area. The map combines 0–5 inches of
+                annual rain, winds above 60 mph, and populated areas to make
+                that overlap visible.
               </p>
               <div className="story-insight-key" aria-label="Map color key">
                 <span>
-                  <i className="story-insight-swatch story-insight-swatch-forest" />
-                  Three forest types
+                  <i className="story-insight-swatch story-insight-swatch-rain" />
+                  0–5 in rain
                 </span>
                 <span>
-                  <i className="story-insight-swatch story-insight-swatch-elevation-bands" />
-                  1,000–5,000 m
+                  <i className="story-insight-swatch story-insight-swatch-wind" />
+                  &gt;60 mph wind
+                </span>
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-population" />
+                  Population
                 </span>
               </div>
               <Link
                 className="story-map-link story-map-link-desktop story-insight-link"
-                href={forestElevationExampleHref}
+                href={palmDesertClimateExampleHref}
               >
                 <span>Open this composition</span>
                 <ArrowIcon />
