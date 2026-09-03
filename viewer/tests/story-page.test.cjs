@@ -172,11 +172,21 @@ test("opens source maps in an accessible dismissible lightbox", () => {
   assert.match(gallery, /role="dialog"/);
   assert.match(gallery, /aria-modal="true"/);
   assert.match(gallery, /event\.key === "Escape"/);
+  assert.match(gallery, /event\.key === "ArrowLeft"/);
+  assert.match(gallery, /event\.key === "ArrowRight"/);
+  assert.match(gallery, /View previous source map/);
+  assert.match(gallery, /View next source map/);
+  assert.match(gallery, /showRelativeMap\(-1\)/);
+  assert.match(gallery, /showRelativeMap\(1\)/);
   assert.match(gallery, /document\.body\.style\.overflow = "hidden"/);
   assert.match(gallery, /Open full resolution/);
   assert.match(
     styles,
     /\.story-lightbox-image\s*\{[^}]*overflow:\s*hidden/s,
+  );
+  assert.match(
+    styles,
+    /\.story-lightbox-nav\s*\{[^}]*position:\s*absolute[^}]*border-radius:\s*50%/s,
   );
 });
 

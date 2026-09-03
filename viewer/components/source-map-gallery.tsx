@@ -16,27 +16,54 @@ export type SourceMap = {
 export function SourceMapGallery({ maps }: { maps: SourceMap[] }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const isOpen = activeIndex !== null;
   const activeMap = activeIndex === null ? null : maps[activeIndex];
+  const currentIndex = activeIndex ?? 0;
+  const previousIndex = maps.length === 0
+    ? 0
+    : (currentIndex - 1 + maps.length) % maps.length;
+  const nextIndex = maps.length === 0 ? 0 : (currentIndex + 1) % maps.length;
+
+  function showRelativeMap(offset: number) {
+    setActiveIndex((currentIndex) => {
+      if (currentIndex === null || maps.length === 0) return currentIndex;
+      return (currentIndex + offset + maps.length) % maps.length;
+    });
+  }
 
   useEffect(() => {
-    if (activeIndex === null) return;
+    if (!isOpen) return;
 
     const previousFocus = document.activeElement as HTMLElement | null;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     closeButtonRef.current?.focus();
 
-    function closeOnEscape(event: KeyboardEvent) {
-      if (event.key === "Escape") setActiveIndex(null);
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setActiveIndex(null);
+      } else if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        setActiveIndex((currentIndex) =>
+          currentIndex === null
+            ? null
+            : (currentIndex - 1 + maps.length) % maps.length,
+        );
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        setActiveIndex((currentIndex) =>
+          currentIndex === null ? null : (currentIndex + 1) % maps.length,
+        );
+      }
     }
 
-    document.addEventListener("keydown", closeOnEscape);
+    document.addEventListener("keydown", handleKeyDown);
     return () => {
-      document.removeEventListener("keydown", closeOnEscape);
+      document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = previousOverflow;
       previousFocus?.focus();
     };
-  }, [activeIndex]);
+  }, [isOpen, maps.length]);
 
   return (
     <>
@@ -93,6 +120,16 @@ export function SourceMapGallery({ maps }: { maps: SourceMap[] }) {
               </button>
             </header>
             <div className="story-lightbox-image">
+              <button
+                className="story-lightbox-nav story-lightbox-nav-previous"
+                type="button"
+                onClick={() => showRelativeMap(-1)}
+                aria-label={`View previous source map: ${maps[previousIndex]?.title ?? "source map"}`}
+              >
+                <svg aria-hidden="true" viewBox="0 0 20 20">
+                  <path d="m12.5 4.5-5 5.5 5 5.5" />
+                </svg>
+              </button>
               <Image
                 src={activeMap.preview}
                 alt={activeMap.alt}
@@ -101,10 +138,20 @@ export function SourceMapGallery({ maps }: { maps: SourceMap[] }) {
                 sizes="94vw"
                 priority
               />
+              <button
+                className="story-lightbox-nav story-lightbox-nav-next"
+                type="button"
+                onClick={() => showRelativeMap(1)}
+                aria-label={`View next source map: ${maps[nextIndex]?.title ?? "source map"}`}
+              >
+                <svg aria-hidden="true" viewBox="0 0 20 20">
+                  <path d="m7.5 4.5 5 5.5-5 5.5" />
+                </svg>
+              </button>
             </div>
             <footer>
               <span>
-                {activeMap.width.toLocaleString()} × {activeMap.height.toLocaleString()} px
+                {currentIndex + 1} of {maps.length} · {activeMap.width.toLocaleString()} × {activeMap.height.toLocaleString()} px
               </span>
               <a href={activeMap.original} target="_blank" rel="noreferrer">
                 Open full resolution ↗

@@ -256,8 +256,14 @@ button { color: inherit; }
 .story-lightbox-dialog h2 { margin: 0; font-size: clamp(20px, 2.5vw, 30px); font-weight: 400; letter-spacing: -.025em; }
 .story-lightbox-dialog .story-kicker { margin-bottom: 5px; font-size: 9px; }
 .story-lightbox-dialog header button { width: 36px; height: 36px; border: 0; padding: 0; color: var(--story-ink); background: transparent; font-size: 30px; line-height: 1; cursor: pointer; }
-.story-lightbox-image { min-height: 0; display: grid; place-items: center; overflow: hidden; padding: 20px; background: #dfdbd2; }
+.story-lightbox-image { position: relative; min-height: 0; display: grid; place-items: center; overflow: hidden; padding: 20px; background: #dfdbd2; }
 .story-lightbox-image img { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; }
+.story-lightbox-nav { position: absolute; z-index: 2; top: 50%; display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid rgba(29, 28, 25, .24); border-radius: 50%; padding: 0; color: var(--story-ink); background: rgba(244, 241, 234, .92); box-shadow: 0 5px 20px rgba(29, 28, 25, .14); transform: translateY(-50%); cursor: pointer; }
+.story-lightbox-nav:hover,
+.story-lightbox-nav:focus-visible { border-color: var(--story-accent); color: var(--story-paper); background: var(--story-accent); outline: 0; }
+.story-lightbox-nav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
+.story-lightbox-nav-previous { left: 32px; }
+.story-lightbox-nav-next { right: 32px; }
 .story-lightbox-dialog footer { display: flex; justify-content: space-between; gap: 20px; padding: 14px 22px; border-top: 1px solid var(--story-line); color: var(--story-muted); font-family: Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: .04em; text-transform: uppercase; }
 .story-lightbox-dialog footer a { color: var(--story-ink); font-weight: 700; }
 
@@ -460,6 +466,9 @@ button { color: inherit; }
   .story-lightbox-dialog { width: 100%; height: 96vh; }
   .story-lightbox-dialog header { padding: 14px 16px; }
   .story-lightbox-image { padding: 10px; }
+  .story-lightbox-nav { width: 40px; height: 40px; }
+  .story-lightbox-nav-previous { left: 16px; }
+  .story-lightbox-nav-next { right: 16px; }
   .story-lightbox-dialog footer { padding: 12px 16px; }
   .story-insight-heading-row { grid-template-columns: 96px minmax(0, 1fr); gap: 18px; padding: 20px 20px 0; }
   .story-insight-figure figcaption { right: 6px; bottom: 6px; padding: 4px 5px; font-size: 7px; }
