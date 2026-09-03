@@ -205,13 +205,29 @@ test("illustrates both gated comparison loops with controllable motion", () => {
   assert.match(processLoopAnimation, /Loop 02 · Data/);
   assert.match(processLoopAnimation, /Make the extraction match the source/);
   assert.match(processLoopAnimation, /Extract → compare to source → diff → repair ↻/);
+  assert.match(processLoopAnimation, /story-data-source-substrate/);
+  assert.match(processLoopAnimation, /story-data-extracted-target/);
+  assert.match(processLoopAnimation, /story-data-transfer-a/);
+  assert.match(processLoopAnimation, /story-data-transfer-b/);
+  assert.match(processLoopAnimation, /story-data-transfer-c/);
+  assert.match(processLoopAnimation, /story-data-transfer-d/);
+  assert.match(
+    processLoopAnimation,
+    /"Aligned source", "Lift data", "Map classes", "Match verified"/,
+  );
+  assert.doesNotMatch(processLoopAnimation, /story-data-holes/);
+  assert.doesNotMatch(processLoopAnimation, /story-data-repair-marks/);
   assert.doesNotMatch(storyPage, /className="story-loops"/);
   assert.match(processLoopAnimation, /aria-pressed=\{paused\}/);
   assert.doesNotMatch(processLoopAnimation, /Process schematic/);
   assert.doesNotMatch(processLoopAnimation, /Each loop had to settle/);
   assert.match(styles, /\.story-loop-animation \{ margin: 34px 0 0; \}/);
   assert.match(styles, /@keyframes story-geometry-converge/);
-  assert.match(styles, /@keyframes story-data-cleanup/);
+  assert.match(styles, /@keyframes story-data-transfer-a/);
+  assert.match(styles, /@keyframes story-data-transfer-b/);
+  assert.match(styles, /@keyframes story-data-transfer-c/);
+  assert.match(styles, /@keyframes story-data-transfer-d/);
+  assert.match(styles, /@keyframes story-data-lift-outline/);
   assert.match(
     styles,
     /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.story-loop-animation \* \{ animation: none !important; \}/,
