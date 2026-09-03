@@ -130,6 +130,8 @@ test("publishes the fire, quake, and landslide composition as a saved example", 
 });
 
 test("presents saved examples as compact thumbnails", () => {
+  assert.match(storyPage, /Here are some saved compositions make relationships/);
+  assert.match(storyPage, /Google should probably build this at higher/);
   assert.match(
     styles,
     /\.story-insight-heading-row\s*\{[^}]*grid-template-columns:\s*clamp\(160px, 15vw, 190px\)/s,

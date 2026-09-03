@@ -330,8 +330,11 @@ export default function MapScanStoryPage() {
           <div className="story-section-heading">
             <h2>The interesting part starts when the layers meet.</h2>
             <p>
-              Saved compositions make relationships across the recovered
-              datasets easier to see.
+              Here are some saved compositions make relationships across the
+              recovered datasets easier to see. The data overlays aren&apos;t
+              perfect, but I find it satisfying to be able to easily mix and
+              match data sets. Google should probably build this at higher
+              fidelity right into their products.
             </p>
           </div>
           <div className="story-insight-example">
