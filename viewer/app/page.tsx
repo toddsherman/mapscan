@@ -98,6 +98,8 @@ const grapesElevationExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2B
 
 const palmDesertClimateExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWjTAFMC0BzKioogV0zIAcCqUsOsALmgFY8RMgEYAnAA4JZAEwAGCUpDwMUANpbUmXIRLl83AM4CyKPNQLqQ3BAHc8eJLCXwEKKgCMEAVnUZBQBdWF10bBMjMhMqc0trGjtHeIEacQALNAInFwRTdQ9UBQQAdh8cINDwvSjDUljCNMSbOwQ8FjoMNFNYrFt3eDQylGg0KWqwiP1oxriEqzb4DjEEGjxTcn4iKiL4GQQ0HCloKdrIg2J55sWkwZAcAbJTLhZvfZAy6CkfMrdgtM6lcYgsLEtkissEQAJ5iMgAKxYJA4kOK-lkZQAbGVzjN6tdjLdwfc7BhXAxVhhGDs9kMQNAqN9-BI8cC5kSzCTlqhshwcrRNPSFAAWfw4aA%2BNmXDmcPAcFg9ETw9ZEUyCGGKJTKOyqJRKRT%2BfXqCTwHA4fXG2CAi6zBrbeWK4SicSq9UCTXKHXwBRGg1%2BtSwU0gKiWq02-EgxqrBVKl1kN0arXekAByRhk3wFBhwMR9n2uWx50qqhqpNewMgPVW4NoHPSu2El5UGyMVLCTI0MhYAC2-JQAkK8B7aAAHr2WD2yI5oQgXqiqG5g0cZCgfJNrTVI7LKDR6Iw0Mw2BhONxePwhMrxNI5FrVLqjZIyqz6QgpFQpDhcZugTKC7vaAYJhWHYLgeD4QRi2vWR5GUe94AkX1JCNT4xgQGQPwbAkYgA-dgOPU9wIvKDJBgu9Kz1SRfU%2BNAeCxBApR-W1sMaXCgMPECTzA89IKvUjbzgysyn8dNA2KWQfH8FAAS3fMmzYg8j1As8IMveMb1glRK0fYTPmCNARUqLCo3IBT8OUojePUsjBLsaB-TE%2BB6KkBQfFzWS-3kmw8I4gjuNUkiNPIuxlDIezPn8Mo5DQBRjJ3bz2KUriVOIvigtshCDW9YoRQkMolCkEU4v-BLFM4wieLU%2BF0q0uwRPg4oFBQfwqBkLFiq8vdEvK-zUusgTavgf1MyrLERXKGQOpiAR5TwOhaA4TJNSoakwCg9oqDA0x1TET4vyoCQUA3PNPOm2b5rQRbltW9b4BWlsSINGbRLIHtPh4FA13c39GzO1YLqush7rWq87GBwL9TIZ7fQNN76VDHwsVkKbGhm-6FqWoGbtBu7sfjGGobwMg-Vez4AjQPKqiY7cCzRuaMeuh6cZDPH4RJ57q1J%2Bl0BkRHvxO37UfOhmsaZl0wdZ69LUJrVIbh4pKmxEU6QFljyDpgHMfB5ntfx6XnpFaX5fgHxoCxJQzZR9XhcurXJYlsX4UNyHnrTY2QDQGRDIkGSQjCEA8G0EMcgETIAEc2AAa0YUxskj6E6DldIiBEdhTsaL0RKeIh2CWnwCCwOcwBfOSYg4HoU7IbJcmheI%2BgALzEeIyF2LA6EyHxCDIYuNq7BAsHMAufBYPj07QOwx4oeasBQRUBBYQUyArucWFMOlS-mAZGGyeucjnQ85zMVYyx8LBsA9ChuF6CfBfIBg8HJOgZ9ey7gqzW%2BKFK8zkssqroIG%2BCG9yBr1bNOKgHYuy9n7IOG%2BatCxOj4omC%2BFZYEmUJujW2jMQbi3fnAsErRkj%2B1HNof2b1IBaEkBILEAA6M2sgcSwGgNAahwksSISxEGJQtCsTQAUEMJQIQAC%2BQA";
 
+const fireQuakeLandslideExampleHref = "/map?config=3&state=N4IgbiBcDMA0IBMogMYEMA2BLAZgewCcA7LNAWhywIFMyALNALzQITLSLZoGcAHPItywAjLNgAuAT3Y003EPAxQA2spDUW4ugEcArmgDWtbgwNYiAczL9x1IuNIYy6bPmKkyAJgAMngKwU5pj0ksIEWGxgAIwKIAAeZNRx4jQAtsam5hYKUfAo0J4AHJ4A7Dne3gC6sGoaBFp6hhmGWdZ4tvaOzpi4hCTkPv6BRMF0oeGRMfBxWGQI1GBy4mgOlmQmLZY58ACcaFHCnjvlVTWoPW79gTT0TCxsHFzUfAJCohLSLBry8Kl48wQVtQFN54BoECgcJ4FMVqmoXL13ORKDcGMxWOxOGQePxBCIxFgpDJvrE6FgLHQQfBhMI0J4UIUYZ44edXH0PCjaGj7pini88e9CZ9ZD9wNQCNIyRTtiBCsIAGwlHZIWCws4Iy4cqhcu4Yx7Y564t4EolfOSxDB4FwG-nGj7EtBUkB%2BFCeBAlaBMlka9nkbgLcW0ADuGi04rIWFSvDQKHEooALGRxHgyIUI0QUHRnk6IdRhAg-F71RdfesAzcQysswQI1GY3HYmnk2QovL05ns7BQSBhCVIQqi-CS0iy2BA2RK2Ga5Ho7HRa2kymhiV21mft2dp5hNAdmVVczi2yR-6xxXQ9Xa7OG4pHtxsPN1rpuChqLwHIKpDKKjgcNQpvHoG9YcrhPcdJwvGd61FVI0BmVJdFSCdzDYPhqGoFVu3jXdhD8R19yAo8QPLYNz3DSC51iXgaAQLBY3QihLX%2BLInU8eM-BwaBhC9aoQDwFREDQmsaO4FIRF0BwBG6QjSFiH0R14DAOHEW5WHMZ5uDIRgBGeMgiGock6GEQgyGiWTgI5QhnmUlA8FPMzpPINALHCFBdAwcRdEBJxFKxJ9gTyczyH4Xg3JWLBJPmPEiUGbxYjqBp9CMdZMjWGw7AcYI5KuQYAkoEYnDGMIIhMqZWURK5OVudEHixHFXnxe0zVFLKPFAs8qzIusKIChyyAsag8EtCxaLIGDeC8bwolinryo8NBTyc2gOCIfQnCo6gUCwXhCTCySoh2Qoogmqb7Nm8hk34Zy0F4MZEgwBZdqIEAeLiFRak0HREuaMxUvadKuhagZfFyoICvGYrTNgeMokqHjUhUFtPE8AA6I4psKWBoBKZH5T8eUAPjWAdmRwodx2Lsu0qABfIA";
+
 const processSteps = [
   {
     number: "01",
@@ -416,6 +418,53 @@ export default function MapScanStoryPage() {
               <Link
                 className="story-map-link story-map-link-desktop story-insight-link"
                 href={palmDesertClimateExampleHref}
+              >
+                <span>Open this composition</span>
+                <ArrowIcon />
+              </Link>
+            </div>
+          </div>
+          <div className="story-insight-example">
+            <div className="story-insight-heading-row">
+              <figure className="story-insight-figure">
+                <Image
+                  src="/mapscan/editorial/mapscan/examples/fire-quake-landslide.jpg"
+                  alt="A MapScan composition showing very high fire hazard, extreme earthquake shaking risk, and high landslide susceptibility around the San Francisco Bay Area."
+                  width={658}
+                  height={662}
+                  sizes="(max-width: 767px) 96px, 190px"
+                />
+                <figcaption>4 layers · 3 datasets</figcaption>
+              </figure>
+              <div className="story-insight-title">
+                <p className="story-kicker">Example 03</p>
+                <h3>Some places face three overlapping hazards.</h3>
+              </div>
+            </div>
+            <div className="story-insight-copy">
+              <p>
+                Very high fire hazard, extreme or devastating shaking risk from
+                an earthquake, and high landslide susceptibility overlap across
+                parts of the Bay Area. The composition makes this compound
+                exposure visible in a way the individual maps do not.
+              </p>
+              <div className="story-insight-key" aria-label="Map color key">
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-fire" />
+                  Very high fire hazard
+                </span>
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-quake" />
+                  Extreme shaking risk
+                </span>
+                <span>
+                  <i className="story-insight-swatch story-insight-swatch-landslide" />
+                  Landslide susceptibility
+                </span>
+              </div>
+              <Link
+                className="story-map-link story-map-link-desktop story-insight-link"
+                href={fireQuakeLandslideExampleHref}
               >
                 <span>Open this composition</span>
                 <ArrowIcon />

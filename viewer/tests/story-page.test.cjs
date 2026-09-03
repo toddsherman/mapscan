@@ -106,6 +106,29 @@ test("publishes the Palm Desert climate and population composition as a saved ex
   );
 });
 
+test("publishes the fire, quake, and landslide composition as a saved example", () => {
+  assert.match(storyPage, /Some places face three overlapping hazards/);
+  assert.match(storyPage, /4 layers · 3 datasets/);
+  assert.match(storyPage, /fire-quake-landslide\.jpg/);
+  assert.match(storyPage, /fireQuakeLandslideExampleHref/);
+  assert.match(storyPage, /Very high fire hazard/);
+  assert.match(storyPage, /Extreme shaking risk/);
+  assert.match(storyPage, /Landslide susceptibility/);
+  assert.equal(
+    fs.existsSync(
+      path.join(
+        viewerRoot,
+        "public",
+        "editorial",
+        "mapscan",
+        "examples",
+        "fire-quake-landslide.jpg",
+      ),
+    ),
+    true,
+  );
+});
+
 test("presents saved examples as compact thumbnails", () => {
   assert.match(
     styles,

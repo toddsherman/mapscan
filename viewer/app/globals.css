@@ -402,6 +402,9 @@ button { color: inherit; }
 .story-insight-swatch-rain { background: #4f7090; }
 .story-insight-swatch-wind { background: #c69ab8; }
 .story-insight-swatch-population { background: #c9362f; }
+.story-insight-swatch-fire { background: #e59c9e; }
+.story-insight-swatch-quake { background: #956ea8; }
+.story-insight-swatch-landslide { background: #65c3b9; }
 .story-insight-link { width: 100%; margin-top: clamp(34px, 5vw, 54px); }
 .story-footer { display: flex; justify-content: space-between; padding-block: 30px 50px; border-top: 1px solid var(--story-line); color: var(--story-muted); font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; }
 
