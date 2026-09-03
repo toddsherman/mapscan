@@ -142,11 +142,13 @@ function ArrowIcon() {
 function InteractiveMapLink({
   children,
   dark = false,
+  prominent = false,
 }: {
   children: React.ReactNode;
   dark?: boolean;
+  prominent?: boolean;
 }) {
-  const className = `story-map-link${dark ? " story-map-link-dark" : ""}`;
+  const className = `story-map-link${dark ? " story-map-link-dark" : ""}${prominent ? " story-map-link-prominent" : ""}`;
 
   return (
     <Link className={`${className} story-map-link-desktop`} href="/map">
@@ -204,7 +206,7 @@ export default function MapScanStoryPage() {
               viewed together. The maps existed. Their data was trapped inside
               pixels.
             </p>
-            <InteractiveMapLink>Open the interactive map</InteractiveMapLink>
+            <InteractiveMapLink prominent>Open the interactive map</InteractiveMapLink>
           </div>
         </section>
 

@@ -220,6 +220,10 @@ button { color: inherit; }
 .story-map-link { display: flex; align-items: center; justify-content: space-between; gap: 30px; margin: 0; border-top: 1px solid var(--story-ink); border-bottom: 1px solid var(--story-ink); padding: 18px 2px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; }
 .story-map-link-arrow { width: 17px; height: 17px; color: var(--story-accent); fill: none; stroke: currentColor; stroke-linecap: square; stroke-linejoin: miter; stroke-width: 1.25; transition: transform 180ms ease; }
 .story-map-link:hover .story-map-link-arrow { transform: translate(3px, -3px); }
+.story-page a.story-map-link-prominent { border: 1px solid var(--story-ink); padding: 22px 24px; color: var(--story-paper); background: var(--story-ink); font-size: 15px; transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease; }
+.story-map-link-prominent .story-map-link-arrow { width: 20px; height: 20px; color: var(--story-paper); stroke-width: 1.4; }
+.story-page a.story-map-link-prominent:hover,
+.story-page a.story-map-link-prominent:focus-visible { border-color: var(--story-accent); color: #fff; background: var(--story-accent); outline: 0; }
 
 .story-section { padding-block: clamp(82px, 10vw, 138px); border-top: 1px solid var(--story-line); }
 .story-section-label { display: flex; gap: 18px; align-items: center; margin-bottom: clamp(42px, 6vw, 76px); color: var(--story-muted); font-family: Arial, Helvetica, sans-serif; font-size: clamp(18px, 1.6vw, 24px); font-weight: 700; letter-spacing: .09em; line-height: 1; text-transform: uppercase; }

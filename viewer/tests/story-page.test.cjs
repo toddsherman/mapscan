@@ -41,6 +41,8 @@ const sourceMaps = [
 test("publishes the project story at the MapScan root and the viewer at /map", () => {
   assert.match(storyPage, /Turning flat map images into data I could actually combine/);
   assert.match(storyPage, /href="\/map"/);
+  assert.match(storyPage, /<InteractiveMapLink prominent>Open the interactive map<\/InteractiveMapLink>/);
+  assert.match(styles, /\.story-page a\.story-map-link-prominent\s*\{[^}]*color:\s*var\(--story-paper\)[^}]*background:\s*var\(--story-ink\)/s);
   assert.match(mapPage, /<DesktopMapGate datasets=\{datasets\} \/>/);
   assert.match(desktopMapGate, /<MapScanShell datasets=\{datasets\} \/>/);
   assert.doesNotMatch(storyPage, /<MapScanShell/);
