@@ -48,6 +48,11 @@ test("publishes the project story at the MapScan root and the viewer at /map", (
   assert.doesNotMatch(storyPage, /<MapScanShell/);
 });
 
+test("ends the story without a duplicate footer or divider", () => {
+  assert.doesNotMatch(storyPage, /className="story-footer/);
+  assert.doesNotMatch(styles, /\.story-footer\s*\{/);
+});
+
 test("hides MapScan story links entirely on mobile without an emoji arrow", () => {
   assert.doesNotMatch(storyPage, /The map is build for desktop/);
   assert.doesNotMatch(storyPage, /story-map-link-mobile/);

@@ -476,11 +476,6 @@ export default function MapScanStoryPage() {
           </div>
         </section>
       </article>
-
-      <footer className="story-footer story-container">
-        <span>MapScan</span>
-        <a href="/">Todd Sherman</a>
-      </footer>
     </main>
   );
 }
