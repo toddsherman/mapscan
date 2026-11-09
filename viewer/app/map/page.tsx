@@ -10,7 +10,18 @@ import fireDataset from "@/public/data/datasets/fire-hazard-responsibility/datas
 import severeWeatherDataset from "@/public/data/datasets/severe-weather-impacts/dataset.json";
 import geologicDataset from "@/public/data/datasets/geologic-units-highres/dataset.json";
 import { DesktopMapGate } from "@/components/desktop-map-gate";
+import type { Metadata } from "next";
+import { socialMetadata } from "@/lib/social-metadata";
 import type { ViewerDataset } from "@/lib/types";
+
+// Title and description are inherited from the root layout; repeated here so
+// the map's canonical and social tags describe this page, not the story page.
+export const metadata: Metadata = socialMetadata({
+  path: "/mapscan/map",
+  title: "MapScan — Compose recovered California map data",
+  description:
+    "Select and combine individual layers recovered from static California map images.",
+});
 
 const datasets = [
   {
